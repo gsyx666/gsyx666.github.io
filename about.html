@@ -1,0 +1,50 @@
+---
+layout: page
+title: "About"
+description: "All things in their being are good for something"
+header-img: "img/nav/nav-about.jpg"
+---
+
+<div class="zh post-container">
+<!-- 感谢爆胎的一言使用教程：https://www.itggg.cn/xuexi/363.html-->
+ <!-- <blockquote><p id="hitokoto_text">酝酿中...</p></blockquote>-->
+
+
+    <h5>关于博主</h5>
+    <ul>
+        
+    </ul>
+
+    <h5>关于博客</h5>
+    <ul>
+        <li>本博客为个人学习记录。</li>
+        <li>本博客内所有文章仅供学习交流，禁止用于任何违法行为，后果自负，与博主无关。</li>
+    </ul>
+
+
+    <h5>博客声明</h5>
+    <ul>
+	    <li>本博客内所有文章仅供学习交流，禁止用于任何违法行为和商业目的，后果自负，与博主无关。</li>
+    </ul>
+
+</div>
+<hr>
+
+
+<!-- 老式写法，兼容性最好; 支持 IE -->
+<!--<script>
+  var xhr = new XMLHttpRequest();
+  xhr.open('get', 'https://v1.itggg.cn');
+  xhr.onreadystatechange = function () {
+    if (xhr.readyState === 4) {
+      var data = JSON.parse(xhr.responseText);
+      var hitokoto = document.getElementById('hitokoto_text');
+      hitokoto.href = 'https://hitokoto.cn/?uuid=' + data.uuid
+      hitokoto.innerText = data.hitokoto;
+    }
+  }
+  xhr.send();
+</script>-->
+
+<!-- 新 API 方法， 十分简洁 -->
+<!--<script src="https://v1.itggg.cn/?encode=js&select=%23hitokoto" defer></script>-->

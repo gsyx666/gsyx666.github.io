@@ -1,0 +1,163 @@
+# Site settings
+title: gsyx666
+SEOTitle: 盖世英雄的技术博客
+header-img: img/nav/nav-about.jpg
+email: gsyx666@gmail.com
+description: "盖世英雄, gsyx666, Android博客, Android源码, Flutter博客，Flutter源码"
+keyword: "盖世英雄, gsyx666, Android博客, Android源码, Flutter博客，Flutter源码"
+url: "https://gsyx666.github.io"              # your host, for absolute URL
+baseurl: ""                             # for example, '/blog' if your blog hosted on 'host/blog'
+
+
+# SNS settings
+RSS: true
+#weibo_username:     gsyx666
+zhihu_username:     gsyx666
+# linkedin_username:  gsyx666
+#google_userId:   101388994961262711072
+github_username:    gsyx666
+#twitter_username:  gsyx666
+
+
+
+# Build settings
+# from 2016, 'pygments' is unsupported on GitHub Pages. Use 'rouge' for highlighting instead.
+highlighter: rouge
+permalink: /:year/:month/:day/:title/
+paginate: 15
+paginate_path: "page:num"
+
+exclude: ["less","node_modules","Gruntfile.js","package.json","README.md","README.zh.md"]
+anchorjs: true                          # if you want to customize anchor. check out line:181 of `post.html`
+
+# Gems
+# from PR#40, to support local preview for Jekyll 3.0
+gems: [jekyll-paginate]
+
+# Markdown settings
+# replace redcarpet to kramdown,
+# although redcarpet can auto highlight code, the lack of header-id make the catalog impossible, so I switch to kramdown
+# document: http://jekyllrb.com/docs/configuration/#kramdown
+markdown: kramdown
+kramdown:
+  input: GFM                            # use Github Flavored Markdown !important
+
+
+# Gitalk
+
+# gitalk:
+#  enable: false    #是否开启Gitalk评论
+#  clientID:               #生成的clientID
+# clientSecret:     #生成的clientSecret
+#  repo: gsyx666.github.io    #仓库名称
+#  owner: gsyx666   #github用户名
+#  admin: gsyx666
+#  distractionFreeMode: true #是否启用类似FB的阴影遮罩
+
+#ba_track_id:
+  
+
+
+# Disqus settings
+#disqus_username: _your_disqus_short_name_
+# valine comment settings
+valine_comment.enable: true
+
+# Duoshuo settings
+# duoshuo_username: 
+# Share component is depend on Comment so we can NOT use share only.
+# duoshuo_share: false                     # set to false if you want to use Comment without Sharing
+
+
+# Sidebar settings
+sidebar: true                           # whether or not using Sidebar.
+#sidebar-about-description: "gsyx666"
+sidebar-avatar: /images/about-me/gsyx666_weixin_logo_raw.jpg
+
+
+
+# Featured Tags
+featured-tags: true                     # whether or not using Feature-Tags
+featured-condition-size: 0              # A tag will be featured if the size of it is more than this condition value
+
+
+# hotpages
+hotpages: [
+    {
+        title: "Android 操作系统架构开篇    ",
+        href:  "http://gsyx666.com/android"
+    }, {
+        title: "Flutter 跨平台演进及架构开篇",
+        href:  "http://gsyx666.com/flutter"
+
+    },{
+        title: "Binder系列开篇",
+        href:  "http://gsyx666.com/2015/10/31/binder-prepare/"
+    },{
+      title: "彻底理解Android Binder通信架构",
+      href:  "http://gsyx666.com/2016/09/04/binder-start-service/"
+    },{
+        title: "如何自学 Android   ",
+        href:  "http://gsyx666.com/2016/04/24/how-to-study-android/"
+    }, {
+        title: "Android 操作系统架构开篇    ",
+        href:  "http://gsyx666.com/android"
+    }, {
+        title: "Flutter 跨平台演进及架构开篇",
+        href:  "http://gsyx666.com/flutter"
+
+    },{
+        title: "Binder系列开篇",
+        href:  "http://gsyx666.com/2015/10/31/binder-prepare/"
+    },{
+      title: "彻底理解Android Binder通信架构",
+      href:  "http://gsyx666.com/2016/09/04/binder-start-service/"
+    },{
+        title: "如何自学 Android   ",
+        href:  "http://gsyx666.com/2016/04/24/how-to-study-android/"
+    }
+]
+
+# Friends
+friends: [
+    {
+        title: "AIDE-Android",
+        href: "https://gsyx666.github.io/AIDE-Android"
+    },{
+        title: "邱柏荧",
+        href: "http://qiubaiying.vip"
+    },{
+        title: "尼古拉斯.赵四",
+        href: "http://www.wjdiankong.cn"
+    },{
+        title: "廖雪峰",
+        href: "https://www.liaoxuefeng.com/"
+    },{
+        title: "Android",
+        href: "https://developer.android.google.cn/"
+    },{ 
+        title: "Java",
+        href: "https://snailclimb.gitee.io/javaguide-interview"
+    },{
+        title: "源码在线阅读",
+        href: "http://www.coderead.cn/"
+    },{
+        title: "JavaGuide",
+        href: "https://snailclimb.gitee.io/javaguide/"
+    },{
+        title: "阿里java开发手册",
+        href: "https://developer.aliyun.com/special/tech-java"
+    },{
+        title: "中文技术文档的写作规范",
+        href: "https://github.com/ruanyf/document-style-guide"
+    },{
+        title: "make-money",
+        href: "https://github.com/easychen/howto-make-more-money"
+    }
+]
+
+#money settings
+
+#money-alipay: /images/about-me/
+#money-weixin: /images/about-me/
+#money-description: 如果博客对您有所帮助，请打赏支持或者分享给更多朋友，您的支持与认可将鼓励我坚持不懈的创作，谢谢您！

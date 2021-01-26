@@ -1,0 +1,80 @@
+---
+layout: page
+description: "Keep on going never give up"
+---
+<!--<script src="//instant.page/5.1.0" type="module" integrity="sha384-by67kQnR+pyfy8yWP4kPO12fHKRLHZPfEsiSXR8u2IKcTdxD805MGUXBzVPnkLHw"></script>-->
+
+<div class="post-preview">
+    <a target="_blank" href="https://gsyx666.github.io/android">
+        <h2>
+            <font color="#EE0000">[置顶]</font>Android 操作系统架构开篇
+        </h2>
+        <div class="post-content-preview">
+          基于Android 6.0或更高版本的源码，专注于分享Android系统原理、架构分析的原创文章，这是Android系列文章的开篇。
+        </div>
+    </a>
+    <p class="post-meta">
+        Posted by Gityuan on January 31, 2016
+    </p>
+</div>
+<hr>
+<div class="post-preview">
+    <a target="_blank" href="https://gsyx666.github.io/flutter">
+        <h2>
+            <font color="#EE0000">[置顶]</font>Flutter 跨平台演进及架构开篇
+        </h2>
+        <div class="post-content-preview">
+          基于Flutter 1.5.4或更高版本的源码，专注于分享Flutter引擎、框架、虚拟机等架构与原理解读的原创文章。
+        </div>
+    </a>
+    <p class="post-meta">
+        Posted by Gityuan on June 1, 2019
+    </p>
+</div>
+<hr>
+
+{% for post in paginator.posts %}
+<div class="post-preview">
+    <a target="_blank" href="{{ post.url | prepend: site.baseurl }}">
+        <h2 class="post-title">
+            {{ post.title }}
+        </h2>
+        {% if post.subtitle %}
+        <h3 class="post-subtitle">
+            {{ post.subtitle }}
+        </h3>
+        {% endif %}
+        <div class="post-content-preview">
+            {{ post.content | strip_html | truncate:200 }}
+        </div>
+    </a>
+    <p class="post-meta">
+        Posted by {% if post.author %}{{ post.author }}{% else %}{{ site.title }}{% endif %} on {{ post.date | date: "%B %-d, %Y" }}
+    </p>
+</div>
+<hr>
+{% endfor %}
+
+<!-- Pager -->
+{% if paginator.total_pages > 1 %}
+<ul class="pager">
+    {% if paginator.previous_page %}
+    <li class="previous">
+        <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr; Previous</a>
+    </li>
+    {% endif %}
+    {% if paginator.next_page %}
+    <li class="next">
+        <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Next &rarr;</a>
+    </li>
+    {% endif %}
+</ul>
+{% endif %}
+
+<!-- {% if site.search %}
+        <div class="search-card">
+            <input id="search_input" type="text" placeholder="Search...">
+            <i class="iconfont icon-search"></i>
+            <div class="search_result"></div>
+        </div>
+        {% endif %} -->
