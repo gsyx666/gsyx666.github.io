@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Navigation
+title: archive
 description: Here is the information you need
 permalink: /archive/
 ---

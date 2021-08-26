@@ -1,7 +1,6 @@
 ---
 layout: post
 title:  "Flutter 跨平台演进及架构开篇"
-permalink: /flutter/
 date:   2019-06-01 22:22:22
 catalog:  true
 tags:

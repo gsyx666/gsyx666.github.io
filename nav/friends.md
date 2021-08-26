@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Info
-permalink: /friends/
+permalink: /info/
 description: "Android官方源码、学习资料、技术博客"
 header-img: "img/nav/nav-about.jpg"
 ---
