@@ -2,7 +2,7 @@
 title: gsyx
 SEOTitle: 盖世英雄的技术博客
 header-img: img/home-bg.jpg
-email: huxpro@gmail.com
+email: gsyx@gmail.com
 description: "盖世英雄, gsyx666, Android博客, Android源码"
 keyword: "盖世英雄, gsyx666, Android博客, Android源码"
 url: "https://gsyx666.github.io"              # your host, for absolute URL
@@ -78,7 +78,7 @@ netease_comment: false
 
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
-sidebar-about-description: "gsyx，编程语言初心者 <br> An UI/Frontend dev & designer accidentally growing into a compiler/PL hacker."
+sidebar-about-description: "gsyx，编程语言初心者"
 sidebar-avatar: /img/avatar-hux-ny.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
