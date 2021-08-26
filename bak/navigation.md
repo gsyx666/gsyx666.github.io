@@ -1,8 +1,8 @@
 ---
 layout: page
-title: archive
+title: Navigation
 description: Here is the information you need
-permalink: /archive/
+permalink: /navigation/
 ---
 
 ### Blogs
