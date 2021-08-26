@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Navigation
+hide-in-nav: true
 description: Here is the information you need
 permalink: /navigation/
 ---
