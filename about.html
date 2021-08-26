@@ -1,50 +1,47 @@
 ---
 layout: page
 title: "About"
-description: "All things in their being are good for something"
-header-img: "img/nav/nav-about.jpg"
+description: "《你是我的梦想》"
+header-img: "img/about-bg.jpg"
+multilingual: true
 ---
 
+{% include multilingual-sel.html %}
+
+<!-- Chinese Version -->
 <div class="zh post-container">
-<!-- 感谢爆胎的一言使用教程：https://www.itggg.cn/xuexi/363.html-->
- <!-- <blockquote><p id="hitokoto_text">酝酿中...</p></blockquote>-->
-
-
-    <h5>关于博主</h5>
-    <ul>
-        
-    </ul>
-
-    <h5>关于博客</h5>
-    <ul>
-        <li>本博客为个人学习记录。</li>
-        <li>本博客内所有文章仅供学习交流，禁止用于任何违法行为，后果自负，与博主无关。</li>
-    </ul>
-
-
-    <h5>博客声明</h5>
-    <ul>
-	    <li>本博客内所有文章仅供学习交流，禁止用于任何违法行为和商业目的，后果自负，与博主无关。</li>
-    </ul>
-
+    {% capture about_zh %}{% include about/zh.md %}{% endcapture %}
+    {{ about_zh | markdownify }}
 </div>
-<hr>
+
+<!-- English Version -->
+<div class="en post-container">
+    {% capture about_en %}{% include about/en.md %}{% endcapture %}
+    {{ about_en | markdownify }}
+</div>
 
 
-<!-- 老式写法，兼容性最好; 支持 IE -->
-<!--<script>
-  var xhr = new XMLHttpRequest();
-  xhr.open('get', 'https://v1.itggg.cn');
-  xhr.onreadystatechange = function () {
-    if (xhr.readyState === 4) {
-      var data = JSON.parse(xhr.responseText);
-      var hitokoto = document.getElementById('hitokoto_text');
-      hitokoto.href = 'https://hitokoto.cn/?uuid=' + data.uuid
-      hitokoto.innerText = data.hitokoto;
-    }
-  }
-  xhr.send();
-</script>-->
+{% if site.disqus_username %}
+<!-- disqus 评论框 start -->
+<div class="comment">
+    <div id="disqus_thread" class="disqus-thread">
 
-<!-- 新 API 方法， 十分简洁 -->
-<!--<script src="https://v1.itggg.cn/?encode=js&select=%23hitokoto" defer></script>-->
+    </div>
+</div>
+<!-- disqus 评论框 end -->
+
+<!-- disqus 公共JS代码 start (一个网页只需插入一次) -->
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES * * */
+    var disqus_shortname = "{{site.disqus_username}}";
+    var disqus_identifier = "{{site.disqus_username}}/{{page.url}}";
+    var disqus_url = "{{site.url}}{{page.url}}";
+
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<!-- disqus 公共JS代码 end -->
+{% endif %}
