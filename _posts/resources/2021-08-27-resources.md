@@ -1,5 +1,5 @@
 ---
-layout:     post
+layout:     keynote
 title:      "资源"
 subtitle:   "资源网站"
 date:       2021-08-27 12:00:00
