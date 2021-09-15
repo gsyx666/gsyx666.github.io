@@ -135,5 +135,9 @@ friends: [
     },{
         title: "make-money",
         href: "https://github.com/easychen/howto-make-more-money"
+    },{
+        title: "Indie Hackers",
+        href: "https://indiehacker.im/"
     }
+    
 ]
