@@ -138,6 +138,9 @@ friends: [
     },{
         title: "Indie Hackers",
         href: "https://indiehacker.im/"
+    },{
+        title: "linux-0.12",
+        href: "http://www.oldlinux.org/Book-Lite/" # PDF：http://www.oldlinux.org/download/CLK-5.0.1-WithCover.pdf
     }
     
 ]
