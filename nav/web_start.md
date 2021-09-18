@@ -1,6 +1,6 @@
 ---
 layout: page
-title: 网先收藏
+title: 网站收藏
 permalink: /web_start/
 description: "Android官方源码、学习资料、技术博客"
 header-img: "img/nav/nav-about.jpg"
