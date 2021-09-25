@@ -72,9 +72,8 @@ header-img: "img/nav/nav-about.jpg"
 |---|---|
 |[https://ckj375.github.io/categories/Android/](https://ckj375.github.io/categories/Android/)|ckj375安卓博客|
 |[l123456789jy.github.io](https://liujingyuan.top/)|l123456789jy博客|
-
+|以下为其他||
 |[二十五画生](https://blog.laoda.de)|https://blog.laoda.de/archives/telegram|
-
 |[telegram.md](https://github.com/ting-talk/blog/blob/master/source/_posts/digital-life/telegram.md)|庭说博客|
 
 
