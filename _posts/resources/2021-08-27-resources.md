@@ -6,7 +6,7 @@ date:       2021-08-27 12:00:00
 author:     "gsyx"
 catalog: false
 header-style: text
-iframe: https://upos-sz-mirrorcos.bilivideo.com/upgcxcode/26/13/297601326/297601326_nb2-1-16.mp4?e=ig8euxZM2rNcNbRVhwdVhwdlhWdVhwdVhoNvNC8BqJIzNbfq9rVEuxTEnE8L5F6VnEsSTx0vkX8fqJeYTj_lta53NCM=&uipk=5&nbs=1&deadline=1630068695&gen=playurlv2&os=cosbv&oi=1879992868&trid=a8c45510ee604d588da3282ac7d01c14h&platform=html5&upsig=72600a9d8384f9e49bed7291e40d0a09&uparams=e,uipk,nbs,deadline,gen,os,oi,trid,platform&mid=489945833&bvc=vod&nettype=0&logo=80000000
+iframe: https://player.bilibili.com/player.html?bvid=BV1TN411d7FL&cid=297601326&page=1
 tags:
   - 资源
 ---
