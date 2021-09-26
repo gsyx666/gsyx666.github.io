@@ -6,7 +6,7 @@ date:       2021-08-27 12:00:00
 author:     "gsyx"
 catalog: false
 header-style: text
-iframe: https://player.bilibili.com/player.html?bvid=BV1TN411d7FL&cid=297601326&page=1
+iframe: https://player.bilibili.com/player.html?bvid=BV1TN411d7FL
 tags:
   - 资源
 ---
