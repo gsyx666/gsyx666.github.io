@@ -103,9 +103,6 @@ page-mathjax: false
 # Friends
 friends: [
     {
-        title: "AIDE-Android",
-        href: "https://gsyx666.github.io/AIDE-Android"
-    },{
         title: "邱柏荧",
         href: "http://qiubaiying.vip"
     },{
@@ -141,6 +138,12 @@ friends: [
     },{
         title: "linux-0.12",
         href: "http://www.oldlinux.org/Book-Lite/" # PDF：http://www.oldlinux.org/download/CLK-5.0.1-WithCover.pdf
+    },{
+        title: "Jianwu Gao",
+        href: "https://www.androidperformance.com/2019/12/01/BlogMap/"
+    },{
+        title: "wanandroid nav",
+        href: "https://www.wanandroid.com/navi"
     }
     
 ]
