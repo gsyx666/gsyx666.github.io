@@ -144,6 +144,9 @@ friends: [
     },{
         title: "wanandroid nav",
         href: "https://www.wanandroid.com/navi"
+    },{
+        title: "有关 git 的学习资料",
+        href: "https://github.com/xirong/my-git"
     }
     
 ]
