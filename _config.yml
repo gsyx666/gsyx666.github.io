@@ -5,7 +5,7 @@ header-img: img/post-bg-desk.jpg
 email: gsyx@gmail.com
 description: "盖世英雄, gsyx666, Android博客, Android源码"
 keyword: "盖世英雄, gsyx666, Android博客, Android源码"
-url: "https://gsyx666.github.io"              # your host, for absolute URL
+url:  https://gsyx.vercel.app/ #"https://gsyx666.github.io"              # your host, for absolute URL
 baseurl: ""                             # for example, '/blog' if your blog hosted on 'host/blog'
 
 # Publish posts or collection documents with a future date.
