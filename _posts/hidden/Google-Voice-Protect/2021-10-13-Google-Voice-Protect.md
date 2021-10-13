@@ -42,16 +42,16 @@ Google Voice 如何保号 ？此篇文章不进行注册环节
 ## 发送订阅短信
 
 发送短信内容:JOIN到22122这个电话号码，这个号码会每月发送两条短信给你，但只是收短信，可能会保不了号
-![GV1](_posts/hidden/Google-Voice-Protect/GV1.png)
-![GV1](/img/in-post/Google-Voice-Protect/GV1.png)
+![GV1](/_posts/hidden/Google-Voice-Protect/GV1.jpg)
+![GV1](/img/in-post/Google-Voice-Protect/GV1.jpg)
 
 ## 回复订阅短信
 1. 打开GoogleVoice的设置，把将短信转发到电子邮件地址打开
-![GV2](_posts/hidden/Google-Voice-Protect/GV2.png)
+![GV2](/_posts/hidden/Google-Voice-Protect/GV2.png)
 2. 打开谷歌邮箱https://mail.google.com/
 点击搜索栏右边的下拉图标，展开，创建过滤规则
-![GV3](_posts/hidden/Google-Voice-Protect/GV3.png)
-![GV4](_posts/hidden/Google-Voice-Protect/GV4.png)
+![GV3](/_posts/hidden/Google-Voice-Protect/GV3.png)
+![GV4](/_posts/hidden/Google-Voice-Protect/GV4.png)
 3. 打开谷歌appsScript：https://script.google.com/home
 选择左上角的新建项目，输入如下代码，修改自己的信息后保存
 ```js
@@ -76,7 +76,7 @@ for (var gg = 0; gg < labelObj.getUnreadCount(); gg++) {
 }
 ```
 4. 点击左侧的触发器，然后右下角添加触发器，按如下图设置就可以了
-![GV5](_posts/hidden/Google-Voice-Protect/GV5.png)
+![GV5](/_posts/hidden/Google-Voice-Protect/GV5.png)
 
 到此处即已经完成了，接下来我们到GoogleVoice向22122发一条信息测试一下
 可以看出我发送了test1和test2触发了两次(只得到了一条回复，延迟的原有稍后就会再收到一条，我这只截到了一条)
