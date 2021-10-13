@@ -81,4 +81,4 @@ for (var gg = 0; gg < labelObj.getUnreadCount(); gg++) {
 可以看出我发送了test1和test2触发了两次(只得到了一条回复，延迟的原有稍后就会再收到一条，我这只截到了一条)
 此处的test1和test2只是测试，前面已经发送JONI订阅了
 每月会自动发送两条短信到号上，触发器就会自动回复，达到保号的目的
-![GV6](_posts/hidden/Google-Voice-Protect/GV6.png)
+![GV6](/img/in-post/Google-Voice-Protect/GV6.png)
