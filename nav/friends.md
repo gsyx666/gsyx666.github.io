@@ -79,3 +79,7 @@ header-img: "img/nav/nav-about.jpg"
 
 sudojia / sudojia.github.io https://blog.imzjw.cn/
 
+卢松松博客 https://lusongsong.com/
+
+ruanyifeng.com
+
