@@ -2,7 +2,7 @@
 layout:     post
 title:      "当我们谈论解锁 BootLoader 时，我们在谈论什么？"
 subtitle:   "解锁 BootLoader 到底意味着什么？为什么它会有限制？我们能绕过限制强制解锁吗？"
-date:       2021-07-24 2021-10-20
+date:       2021-07-24
 author:     "weishu"
 catalog: false
 header-img: img/in-post/BootLoader/BootLoader0.jpg
@@ -10,6 +10,7 @@ tags:
   - android
   - bootloader
 ---
+
 
 > 本文转载自 [维术-当我们谈论解锁 BootLoader 时，我们在谈论什么？](https://weishu.me/2021/07/24/what-is-bootloader-unlock/) 
  https://mp.weixin.qq.com/s/-9VKyraHq5Qt2PTzqVqZOg
