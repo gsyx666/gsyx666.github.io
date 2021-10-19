@@ -26,7 +26,7 @@ github_username:    gsyx666
 # from 2016, 'pygments' is unsupported on GitHub Pages. Use 'rouge' for highlighting instead.
 highlighter: rouge
 permalink: pretty
-paginate: 10
+paginate: 10         #一页中的帖子数
 exclude: ["bak","less","node_modules","Gruntfile.js","package.json","README.md","README.zh.md"]
 anchorjs: true                          # if you want to customize anchor. check out line:181 of `post.html`
 # If you have timezone issue (e.g. #68) in China, uncomment to use this:
@@ -60,6 +60,8 @@ kramdown:
 
 # Disqus settings
 #disqus_username: hux
+
+# https://github.com/posativ/isso/ Disqus替代品
 
 # Netease settings
 netease_comment: false
