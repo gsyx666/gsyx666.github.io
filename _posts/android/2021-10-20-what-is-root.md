@@ -2,7 +2,7 @@
 layout:     post
 title:      "何为 root？"
 subtitle:   "what-is-root"
-date:       2021-09-13 2021-10-20
+date:       2021-10-20 15:46:01
 author:     "weishu"
 catalog: true
 header-style: text 
