@@ -9,6 +9,7 @@ header-img: img/in-post/BootLoader/BootLoader0.jpg
 tags:
   - android
   - bootloader
+  - 转载
 ---
 
 
