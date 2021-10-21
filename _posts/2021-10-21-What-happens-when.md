@@ -5,6 +5,7 @@ subtitle:   "What happens when you type google.com into your browser's address b
 date:       2021-10-21
 author:     "Alex Gaynor"
 catalog: true
+hidden: true
 header-style: text 
 tag:
   - 转载
