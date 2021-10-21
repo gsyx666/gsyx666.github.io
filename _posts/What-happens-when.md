@@ -1,10 +1,9 @@
 ---
 layout:     post
 title:      "What happens when..."
-subtitle:   "What
-happens when you type google.com into your browser's address box and press enter?"
+subtitle:   "What happens when you type google.com into your browser's address box and press enter?"
 date:       2021-10-21
-author:     "weishu"
+author:     "Alex Gaynor"
 catalog: true
 header-style: text 
 tag:
