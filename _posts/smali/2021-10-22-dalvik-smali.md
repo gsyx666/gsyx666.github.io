@@ -1126,14 +1126,16 @@ ushr-int/2addr v0, v1
 - 执行语句来执行 java 中的每一行代码，包含方法的调用，字段的读写，异常的捕捉等操作。
 
 
-
 ## 声明语句
 
 在 smali 代码中，声明语句一般都是以 `.` 开始。
 
+----
 
 
 
+
+<details markdown='1'><summary>展开/收起</summary>
 
 
 # smali
@@ -1245,6 +1247,7 @@ invoke-指令类型 {参数1, 参数2,...}, L类名;->方法名
 * 函数返回结果
   * 要用指令move-result或move-result-object来保存函数返回的结果
   
+  </details>
   
  
 
