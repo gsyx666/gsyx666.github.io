@@ -1,0 +1,439 @@
+---
+layout:     post
+title:      "Smali"
+subtitle:   "what-is-smali"
+date:       2021-10-22 14:43:01
+author:     "gsyx"
+catalog: true
+header-style: text 
+tags:
+  - Android 逆向
+  - Smali
+  - Dalvik
+---
+
+
+# smali
+
+## 介绍
+
+在执行 Android Java 层的代码时，其实就是 Dalvik （ART） 虚拟机（使用 C或 C++ 代码实现）在解析 Dalvik 字节码，从而模拟程序的执行过程。
+
+二进制 Dalvik 字节这平台实际理解的格式。但是，读取或修改二进制代码并不容易，因此有一些工具可以在人类可读的表示形式之间进行转换。最常见的人类可读格式称为 Smali。这与您提到的反汇编程序基本相同。
+
+例如，假设您有执行类似操作的 Java 代码
+```java
+int x = 42
+```
+假设这是第一个变量，那么该方法的 dex 代码很可能包含十六进制序列
+```
+13 00 2A 00
+```
+如果你在它上面运行 baksmali，你会得到一个包含该行的文本文件
+```smali
+const/16 v0, 42
+```
+**这显然比二进制代码更具可读性。但是平台对smali一无所知，它只是一个使字节码更容易工作的工具。**
+
+Dalvik 和 ART 都采用包含 dalvik 字节码的 .dex 文件。它对应用程序开发人员是完全透明的，唯一的区别是安装和运行应用程序时幕后发生的事情。
+
+## 寄存器
+
+在 [Dalvik 字节码][Dalvik 字节码]中，寄存器总是 32 位，可以保存任何类型的值。2 个寄存器（两个相邻的32位寄存器）用于保存 64 位类型（Long 和 Double）。
+
+## smali 类型，字段，方法的表示方法
+
+### 类型
+
+ dalvik 只有两种类型，基本类型和引用类型。dalvik 使用这两种类型表示 Java 的全部类型。Java 的对象与数组属于引用类型，其他的 Java 类型都是基本类型。
+
+基本类型共有9个，它们在 smali 中的对应关系是：
+
+| Smali            | Java     | 备注                                                         |
+| ---------------- | -------- | ------------------------------------------------------------ |
+| v                | void     | 只能用于返回值类型                                           |
+| Z                | boolean  |                                                              |
+| B                | byte     |                                                              |
+| S                | short    |                                                              |
+| C                | char     |                                                              |
+| I                | int      |                                                              |
+| J                | long (64 bits)     |                                                              |
+| F                | float    |        |                                      
+| D                | double (64 bits)   |                    |                                          
+
+引用类型：
+
+* 类在 Smali 中都是用 `L包名路径/类名;` 表示，例如 Android 中的 TextView 类，它的包名是`android.widget`，如果你要在 Smali 中表示这个类，就要写成 `Landroid/widget/TextView;`，最后的分号表示对象名的结束。
+
+* Smali 中通过在类型前面加 [ 来表示该类型的数组，例如 `[I` 表示 int[]，`[Ljava/lang/String;` 表示 String[]，如果要表示多维数组，只需要增加 `[` 的数量，例如 `[[I` 表示二维数组 int[][]
+
+### 方法
+> [TypesMethodsAndFields · JesusFreke/smali Wiki (github.com)](https://github.com/JesusFreke/smali/wiki/TypesMethodsAndFields#methods)
+
+Smali 使用类名、方法名、参数类型和返回类型
+
+```smali
+Lpackage/name/ObjectName;->MethodName(III)Z
+```
+
+在此示例中，`Lpackage/name/ObjectName;` 应该理解为**类型**。 MethodName 是方法的名称。(III)Z 是方法的签名，括号里的 III 方法是参数（这里是三个整形参数），Z (boolen) 是方法返回类型。
+
+**当要表达多个参数类型时，只需简单地将它们连接到一起，例如  (int, int, String)  表示为  (IILjava/lang/String;)**
+
+下面是一个更复杂的示例：
+
+```smali
+method(I[[IILjava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+```
+
+在 java 中， 这将是
+
+```java
+String method(int, int[][], int, String, Object[])
+```
+
+方法格式：
+```smali
+.method 描述符 方法名(参数类型)返回类型
+    方法代码...
+.end method
+```
+
+### 字段
+
+字段与方法很相似，只是字段没有方法签名域中的参数和返回值，取而代之的是字段的类型。字段格式：
+```smali
+Lpackage/name/ObjectName;->FieldName:Ljava/lang/String;
+```
+字段由对类型、字段名（FieldName）、与字段类型（Ljava/lang/String;）组成。其中字段名与字段类型用 `:` 隔开
+
+**Smali 中申明字段的语法是：**
+
+```smali
+#instance fields
+.field <访问权限修饰符> [非权限修饰符] <字段名>:<字段类型>
+```
+其中访问权限修饰符可以为
+
+- public
+- private
+- protected
+
+非权限修饰符可以为（**查明其用法!!!**）
+
+- final
+- volidate
+- transient
+
+例如 Java 代码中定义了 text 字段：
+```java
+public java.lang.String text;
+```
+其对应的Smali代码是：
+```smali
+# instance fields
+.field public text:Ljava/lang/String;
+```
+
+**静态字段**
+
+```smali
+#static fields
+.field <访问权限> static [修饰词] <字段名>:<字段类型>
+```
+当一个字段是 static 和 final （即**静态常量**）且它的类型是**基本类型**时，可以直接为它赋值：
+```smali
+.field public static final ID:I = 0x7f0a0001
+```
+如果定义的字段包含注解，那么语法是：
+```smali
+.field XXXXX
+
+{注解列表}
+
+.end field
+```
+
+## Dalvik指令集
+> [Davilk指令集大全](http://pallergabor.uw.hu/androidblog/dalvik_opcodes.html)
+
+### Dalvik 指令格式 
+
+在介绍 smali 语法中的指令之前，我们先来看看 Dalvik 指令的基本格式。
+
+Dalvik 中指令的格式主要包含两个方面：位描述，格式 ID。目前 Dalvik 中基本上所有的指令如下图所示，其中第一列给出了指令按照位进行描述的格式，第二列是格式化 ID ，第三列表示相应的句法，第四列对其进行说明
+
+![](/img/in-post/smali/Dalvik-Executable-instruction-formats.png)
+
+**位描述**
+
+在位描述中，Davik 中的每一类指令一般由如下的元素构成
+
+* 一个 op，8 位指令码
+* 若干个字符，每一个字符表示 4 位
+* 若干个 | ，进行分割，方便阅读。
+* 若干个 
+∅
+ ，同样也是 4 个字符，表示该部分位为 0。
+ 
+此外，在上面的展现形式种，指令由一个或者多个空格分割的 16 位的 word 组成，其中每一个 word 可以包含上述的几个元素。
+
+举个例子，指令 B|A|op CCCC 包含 2 个 word，一共 32 位。其中，第一个字的低 8 位是操作码，中间 4 位是 A，高 4 位是 B。第二个字是单独的 16 位的数值。
+
+**格式 ID**
+
+但是，正如表格里所展现的
+
+![](/img/in-post/smali/Dalvik-Instruction-sample.png)
+这样的一种指令格式，根据ID的不同，仍然可以表示不同的指令含义。
+
+一般来说，格式ID由若干个字符组成，一般来说包含3个字符
+
+- 第一个数字表示word的数量
+
+- 第二个
+
+    - 数字的话，表示指令包含的寄存器的最大数量（这是因为有些指令可以包含不定个数的寄存器）
+    - r的话，表示使用了一定范围内的寄存器(range)。
+
+- 第三个字符表示指令使用到的额外数据的类型。如下表
+
+  | Mnemonic | Bit Sizes | Meaning                                  |
+  | -------- | --------- | ---------------------------------------- |
+  | b        | 8         | immediate signed byte                    |
+  | c        | 16, 32    | constant pool index                      |
+  | f        | 16        | interface constants (only used in statically linked formats) |
+  | h        | 16        | immediate signed hat (high-order bits of a 32- or 64-bit value; low-order bits are all `0`) |
+  | i        | 32        | immediate signed int, or 32-bit float    |
+  | l        | 64        | immediate signed long, or 64-bit double  |
+  | m        | 16        | method constants (only used in statically linked formats) |
+  | n        | 4         | immediate signed nibble                  |
+  | s        | 16        | immediate signed short                   |
+  | t        | 8, 16, 32 | branch target                            |
+  | x        | 0         | no additional data                       |
+
+- 如果存在第四个字符的话
+
+  - s表示采用静态链接
+  - i表示指令应该被内联处理。
+  
+ **句法**
+ 
+ 其基本要求如下
+
+- 指令以操作码op开始，后面直接跟上一个或者多个参数，参数间以逗号分隔。
+- 指令的参数从指令第一部分开始，op位于低8位，高8位可以是一个8位的参数，也可以是两个4位的参数，还可以为空。如果指令超过16位，则后面部分依次作为参数。
+- 参数`Vx`表示寄存器，如v0、v1等。这里之所以采用v而不用r是为了避免与实现该虚拟机架构的机器架构中的寄存器命名产生冲突。
+- 参数 `#+X` 表示常量数字。
+- 参数 `+X` 表示相对指令的地址偏移。
+- 参数 `kind@X`  表示常量池索引值，其中kind表示常量池类型，可以是以下四种类型
+    - string，字符串常量池索引
+    - type，类型常量池索引
+    - field，字段常量池索引
+    - meth，方法常量池索引
+
+以指令 `op vAA, type@BBBB` 为例，指令使用了1个寄存器vAA，一个32位的类型常量池索引。
+ 
+### 指令特点
+
+Dalvik指令在调用规范上大致模仿常见的架构和 C 样式的调用规范，如下
+
+- 参数顺序为 Dest-then-source 。
+
+- 利用后缀用来表明运算类型，从而消除歧义：
+
+    - 32 位常规类型字节码未添加任何后缀。
+    - 64 位常规类型字节码添加 -wide 后缀。
+    - 特殊类型的字节码根据具体的类型添加后缀。它们可以是 -boolean、-byte、-char、-short、-int、-long、-float、-double、-object、-string、-class、-void 之一。
+
+- 利用运算码部分后缀区分具有不同指令样式或者或选项的相同运算，这些后缀与主要名称之间以 `/` 分开，主要目的是使生成和解析可执行文件的代码中存在与静态常量的一对一映射关系，以便于降低让读者感到模糊不清的可能性。
+
+
+
+  例如，在指令`move-wide/from16 vAA, vBBBB` 中
+
+  - `move`为基础运算码，表示这是基本运算，用来移动寄存器的值。
+  - `wide`为名称后缀，表示指令对64 位数据进行运算。
+  - `from16`为运算码后缀，表示源为一个 16 位寄存器的引用变量。
+  - `vAA`为目的寄存器，取值范围为 `v0` - `v255`。
+  - `vBBBB`为源寄存器，取值范围为 `v0` - `v65535`。
+
+
+* 根路字节码的大小类型不同，一些字节码添加了后缀来消除歧义。
+  * 32 位常规类型字节码未添加任何后缀。
+  * 64 位常规类型字节码添加 -wide 后缀。
+  * 特殊类型的字节码根据具体的类型添加后缀。它们可以是 -boolean、-byte、-char、-short、-int、-long、-float、-double、-object、-string、-class、-void 之一。
+* 根据字节码的布局与选项不同，一些字节码添加了字节码后缀以用来消除歧义。这些后缀通过在字节码主名称后添加“/”来分割开。
+
+
+> 节选自 [非虫 《Android软件安全与逆向分析》][非虫 《Android软件安全与逆向分析》]
+
+### 空指令
+
+空指令的助记符为 nop。它的值位 00，通常 nop 指令用来作对齐代码之用，无实际操作。
+
+### 数据操作指令
+
+### 返回指令
+
+### 数据定义指令
+
+### 锁指令
+
+### 实例操作指令
+
+### 数组操作指令
+
+### 异常指令
+
+### 跳转指令
+
+### 比较指令
+
+### 字段操作指令
+
+### 方法调用指令
+
+### 数据转换指令
+
+### 数据运算指令
+
+
+# smali
+
+> Smali 实质上就是 Java 字节码，一句 Java 代码会对应多句 Smali 代码（如果你不知道什么是字节码，那汇编总听过吧，两者有点类似，要是汇编也没听过，emmmm。。自个百度去）。
+
+## 详解smali文件
+
+上面我们介绍了Dalvik的相关指令,下面我们则来认识一下smali文件.尽管我们使用java来写Android应用,但是Dalvik并不直接加载.class文件,而是通过dx工具将.class文件优化成.dex文件,然后交由Dalvik加载.这样说来,我们无法通过分析.class来直接分析apk文件,而是需要借助工具baksmali.jar反编译dex文件来获得对应smali文件,smali文件可以认为是Davilk的字节码文件,但是并两者并不完全等同.
+
+通过baksmali.jar反编译出来每个.smali,都对应与java中的一个类,每个smali文件都是Davilk指令组成的,并遵循一定的结构.smali存在很多的指令用于描述对应的java文件,所有的指令都以”.”开头,常用的指令如下:
+
+| 关键词 |	说明 |
+| ---- | ---- | 
+| .filed	| 定义字段|
+.method…end method	定义方法
+.annotation…end annotation	定义注解
+.implements	定义接口指令
+.local	指定了方法内局部变量的个数
+.registers	指定方法内使用寄存器的总数
+.prologue	表示方法中代码的开始处
+.line	表示java源文件中指定行
+.paramter	指定了方法的参数
+.param	和.paramter含义一致,但是表达格式不同
+
+在这里很多人对.local和.register感到困惑,如果你也是请重新看上面的有关寄存器的点。
+
+
+--------
+
+
+
+smali 和 baksmali 则是针对 DEX 执行文件格式的汇编器和反汇编器，反汇编后 DEX 文件会产生.smali 后缀的代码文件，smali 代码拥有特定的格式与语法，smali 语言是对 Dalvik 虚拟机字节码的一种解释。目前ART虚拟机相较于dalvik虚拟机算是一种升级，没有本质的区别。 - 来自[Android逆向之Smali汇编](https://zhuanlan.zhihu.com/p/266603183#:~:text=smali%20和%20baksmali%20则是针对%20DEX%20执行文件格式的汇编器和反汇编器，反汇编后,DEX%20文件会产生.smali%20后缀的代码文件，smali%20代码拥有特定的格式与语法，smali%20语言是对%20Dalvik%20虚拟机字节码的一种解释。)
+## 数据类型 Type
+
+> [TypesMethodsAndFields · JesusFreke/smali Wiki (github.com)](https://github.com/JesusFreke/smali/wiki/TypesMethodsAndFields#types)
+
+在Java中类型分为基本类型和引用类型
+
+基本类型共有9个，它们在Smali中的对应关系是：
+
+| Smali            | Java     | 备注                                                         |
+| ---------------- | -------- | ------------------------------------------------------------ |
+| v                | void     | 只能用于返回值类型                                           |
+| Z                | boolean  |                                                              |
+| B                | byte     |                                                              |
+| S                | short    |                                                              |
+| C                | char     |                                                              |
+| I                | int      |                                                              |
+| J                | long     |                                                              |
+| F                | float    |                                                              |
+| D                | double   |                                                              |
+|                  |          | 以上是基本类型                                               |
+| `Lpackage/name;` | 对象类型 | `L`表示这是一个对象类型，`package/name`表示该对象所在的包，`；`表示对象名称的结束<br/> `Lpackage/name/ObjectName;` 相当于`java`中的`package.name.ObjectName;` |
+| `[类型`          | 数组     | `[I`表示一个`int`型`数组，`[Ljava/lang/String`表示一个`String`的对象`数组` 如果要表示多维数组，只需要增加[的数量，例如[[I表示二维数组int[][] |
+
+## 方法 - Methods
+
+
+
+### 表示方法
+
+
+
+
+### 方法定义格式
+
+
+
+其中参数类型可以有0个或多个，返回类型必须是一个。
+
+###  调用方法
+
+Smali中必须以非常详细的形式指定要调用的方法，包括类名、方法名、参数类型和返回类型，其具体形式是：类名->方法名(参数类型)返回类型
+
+例如：
+
+```smali
+System.out.println("Hello world");
+```
+
+其中 out 是 System 的一个静态字段，它的类型是 PrintStream，println 是 PrintStream 中的一个方法
+
+所以在上一篇的例子中，最后调用 println 方法是通过：
+
+```smali
+invoke-virtual {v0, v1}, Ljava/io/PrintStream;->println(Ljava/lang/String;)V
+```
+
+
+后面那部分正是方法 println 的完整表达形式
+
+### 方法类型
+
+* `direct method`= private方法
+* `virtual method` = 其余的方法
+
+* 方法调用
+  * 格式
+```java
+invoke-指令类型 {参数1, 参数2,...}, L类名;->方法名
+```
+  * 包含
+    * invoke-direct
+    * invoke-virtual
+    * invoke-static
+    * invoke-super
+    * invoke-interface
+* 函数返回结果
+  * 要用指令move-result或move-result-object来保存函数返回的结果
+  
+  
+ 
+
+
+----
+
+References
+
+* [深入理解Dalvik字节码指令及Smali文件][深入理解Dalvik字节码指令及Smali文件]
+* [Home · JesusFreke/smali Wiki (github.com)](https://github.com/JesusFreke/smali/wiki)
+* [ruanyf/document-style-guide: 中文技术文档的写作规范 (github.com)](https://github.com/ruanyf/document-style-guide)
+* [非虫 《Android软件安全与逆向分析》][非虫 《Android软件安全与逆向分析》]
+
+
+https://ctf-wiki.org/android/basic_operating_mechanism/java_layer/smali/smali/ https://github.com/ctf-wiki/ctf-wiki/tree/master/docs/zh/docs/android
+https://www.jianshu.com/p/9931a1e77066
+http://wossoneri.github.io/2019/09/12/[Android][Security]Decompile-smali/
+https://juejin.cn/post/6844903732774174734
+https://stackoverflow.com/questions/30837450/what-is-smali-code-android
+https://mobsecguys.medium.com/smali-assembler-for-dalvik-e37c8eed22f9
+https://programmer.help/blogs/smali-introduction-manual.html
+
+[非虫 《Android软件安全与逆向分析》]: https://douban.com/book/subject/20556210/
+
+[深入理解Dalvik字节码指令及Smali文件]: https://blog.csdn.net/dd864140130/article/details/52076515
+
+[Dalvik 字节码]:[https://source.android.google.cn/devices/tech/dalvik/dalvik-bytecode.html]
+
+本文部分图片来自 网络
