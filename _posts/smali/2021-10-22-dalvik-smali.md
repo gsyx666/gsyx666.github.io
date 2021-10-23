@@ -40,6 +40,95 @@ Dalvik 和 ART 都采用包含 dalvik 字节码的 .dex 文件。它对应用程
 ## 寄存器
 
 在 [Dalvik 字节码][Dalvik 字节码]中，寄存器总是 32 位，可以保存任何类型的值。2 个寄存器（两个相邻的32位寄存器）用于保存 64 位类型（Long 和 Double）。
+那么什么是寄存器呢？你可以把它认为是变量，或者是暂时存放东西的地方。
+
+举个例子：
+
+有一个静态方法 `abc(String)`，如果你要在Java方法中调用这个方法，直接输入 `abc("Hello");`就行了。
+
+而在 Smali 中，你不能直接把字符串参数传递给方法，你需要一个寄存器（比如 v0），先把"Hello"放到 v0 中，然后再调用 `abc` 方法，并告诉它你需要的参数在v0 里面，自己去拿吧。
+```smali
+# 定义一个字符串常量"Hello"放到v0中
+const-string v0, "Hello"
+# 调用abc方法，需要的参数放在v0中
+invoke-static {v0}, LXX;->abc(Ljava/lang/String;)V
+```
+现在大家理解什么是寄存器了吧。
+
+### 寄存器声明
+
+在执行具体方法时，Dalvik 会根据  `.registers`  指令来确定该函数要用到的寄存器数目，虚拟机会根据申请的寄存器的数目来为该方法分配相应大小的栈空间，dalvik 在对这些寄存器操作时，其实都是在操作栈空间。
+
+**需要在方法的开头用`.registers N`来指定寄存器的数量，然后才可以使用寄存器 v0 到 v(N-1)。**
+
+### 寄存器命名规则
+
+一个方法所申请的寄存器会分配给函数方法的参数 (parameter) 以及局部变量 (local variable) 。在 smali 中，一般有两种命名规则
+
+- v 命名法 （本文不介绍）
+- p 命名法
+
+
+### 参数寄存器
+
+上面说的都是普通寄存器 vN，另外 Smali 还特意定义了一种参数寄存器 pN ，用于存放这个方法传入的参数的值。
+
+**如果一个方法有 n 个寄存器，有 m 个参数，那么 n 必须大于等于 m，并且 n 个寄存器的后面 m 个是参数寄存器，举个例子：**
+
+某个静态方法 abc(int, int, int)，它一共有 3 个参数，如果它一共有 5 个寄存器（通过`.registers N`定义，N 不能小于 3）。
+
+|普通寄存器|对应参数寄存器|
+|---|---|
+|v0| |	
+|v1| |	
+|v2|p0|
+|v3|p1|
+|v4|p2|
+
+当我调用 abc(11, 22, 33) 时，p0 中的值初始化为 11，p1 中的值初始化为 22，p2 中的值初始化为 33，v0 和v1 不会初始化。
+
+|普通寄存器|参数寄存器|初始化|
+|---|---|---|
+|v0| | |
+|v1| | |
+|v2|p0|11|
+|v3|p1|22|
+|v4|p2|33|
+
+当我把寄存器数量改成 6（.registers 6），寄存器就会变成下表所示：
+
+|普通寄存器|参数寄存器|初始化|
+|---|---|---|
+|v0| | |
+v1| | |
+v2| | |		
+|v3|p0|11|
+|v4|p1|22|
+|v5|p2|33|
+
+思考一下，如果不使用参数寄存器，代码中全部用vN，那么改变寄存器数量后，你还得改多少代码？
+
+### 隐藏的参数
+
+对于非静态方法，它的参数寄存器数量比实际参数多了一个，p0 会固定用于表示当前类实例（Java 中的 this），从 p1 开始才是真正的参数，我们可以通过Java2Smali 工具来验证一下。
+Java 代码如下：
+![](/img/in-post/smali/1.png)
+
+test1() 和 test2() 的唯一区别就是一个是静态一个非静态
+
+test1() 的Smali代码：
+[test1-smali.png](![](/img/in-post/smali/test1-smali.png)
+
+test2()的Smali代码：
+[test2-smali.png](![](/img/in-post/smali/test2-smali.png)
+
+两个方法都是依次打印出两个参数，test1()中24行是打印第一个参数用的是p0，29行是打印第二个参数用的是p1；对照下test2()中则分别用的是p1和p2。
+
+那test2()中的p0真的代表this吗？我们也可以修改代码验证下：
+[test2-java.png](![](/img/in-post/smali/test2-java.png)
+
+[test2-java2.png](/img/in-post/smali/test2-java2.png)
+
 
 ## smali 类型，字段，方法的表示方法
 
@@ -107,7 +196,7 @@ Lpackage/name/ObjectName;->FieldName:Ljava/lang/String;
 ```
 字段由对类型、字段名（FieldName）、与字段类型（Ljava/lang/String;）组成。其中字段名与字段类型用 `:` 隔开
 
-**Smali 中申明字段的语法是：**
+**Smali 中声明字段的语法是：**
 
 ```smali
 #instance fields
@@ -990,6 +1079,58 @@ shl-int/2addr v0, v1
 shr-int/2addr v0, v1
 ushr-int/2addr v0, v1
 ```
+
+## 详解smali文件
+
+### Smali文件格式
+
+在你可以在一个xxx.java中定义多个类（包括匿名内部类），但一个smali文件只能定义一个类，一般格式是：
+```smali
+.class 修饰符 类名
+.super 父类的类名
+.source 源文件名
+
+{实现的接口}
+
+{注解列表}
+
+{字段列表}
+
+{方法列表}
+```
+1、其中修饰符就是public、private、protected、static、final等，和Java中的差不多，另外对于类还有interface和enum来表示这个类是一个接口或者枚举类；
+
+2、Smali中的类名都是L包名路径/类名;，例如Android中的TextView类，它的包名是android.widget，如果你要在Smali中表示这个类，就要写成Landroid/widget/TextView;
+
+3、源文件名就是编译这个类的java文件名，如Main.java，仅用于debug删了也没影响；
+
+4、接口的语法是：
+.implements 接口类名
+可以有0个或者多个，表示这个类实现了哪些接口；
+
+5、注解的话就是Java代码中@XXX之类的代码，例如比较常见的@Override、@Nullable、@NonNull，它的Smali语法是：
+.annotation xxxxxxx
+    xxxxxx
+.end annotation
+如果你不知道注解是干嘛用的也没关系，反正一般情况也用不上，只要在Smali中看到annotation时知道它是注解就行了；
+
+6、声明的字段（field），方法就是method，下次会详细讲讲。
+
+比较有意思的是，Smali 代码基本上还原了 Java 代码中含义。它主要有以下两种类型的语句：
+
+- 声明语句用来声明 java 中自顶向下的类，方法，变量类型，以及每个方法中所要使用的寄存器的个数等信息。
+- 执行语句来执行 java 中的每一行代码，包含方法的调用，字段的读写，异常的捕捉等操作。
+
+
+
+## 声明语句
+
+在 smali 代码中，声明语句一般都是以 `.` 开始。
+
+
+
+
+
 
 # smali
 
