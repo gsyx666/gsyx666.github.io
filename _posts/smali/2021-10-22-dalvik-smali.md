@@ -1253,11 +1253,16 @@ invoke-指令类型 {参数1, 参数2,...}, L类名;->方法名
 
 References
 
+* [教你读懂Smali代码（三）](https://bbs.binmt.cc/thread-1266-1-1.html)
+* [教你读懂Smali代码（一）](https://bbs.binmt.cc/thread-1205-1-1.html)
+* [教你读懂Smali代码（二）](https://bbs.binmt.cc/thread-1206-1-1.html)
+* [教你读懂Smali代码（四）](https://bbs.binmt.cc/thread-1640-1-1.html)
 * [深入理解Dalvik字节码指令及Smali文件][深入理解Dalvik字节码指令及Smali文件]
 * [Home · JesusFreke/smali Wiki (github.com)](https://github.com/JesusFreke/smali/wiki)
 * [ruanyf/document-style-guide: 中文技术文档的写作规范 (github.com)](https://github.com/ruanyf/document-style-guide)
 * [非虫 《Android软件安全与逆向分析》][非虫 《Android软件安全与逆向分析》]
-* [basic_operating_mechanism](https://ctf-wiki.org/android/basic_operating_mechanism/java_layer/smali/smali)(https://github.com/ctf-wiki/ctf-wiki/tree/master/docs/zh/docs/android)
+* [basic_operating_mechanism](https://ctf-wiki.org/android/basic_operating_mechanism/java_layer/smali/smali)
+  * [basic_operating_mechanism](https://github.com/ctf-wiki/ctf-wiki/tree/master/docs/zh/docs/android)
 * [Android逆向基础：Smali语法](https://www.jianshu.com/p/9931a1e77066)
 * [Android 逆向之 smali](http://wossoneri.github.io/2019/09/12/[Android][Security]Decompile-smali/)
 * [Smali 语法解析——Hello World](https://juejin.cn/post/6844903732774174734)

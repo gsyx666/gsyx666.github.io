@@ -2,7 +2,8 @@
 
 layout:     post   				    # 使用的布局（不需要改）
 title:      教你读懂Smali代码（四） 				# 标题 
-subtitle:   Hello Android #副标题
+subtitle:   Teach you to read Smali code (IV) #副标题
+hidden: true
 date:       2020-03-19 				# 时间
 author:     BY bin 						# 作者
 header-img: img/post-bg-2015.jpg 	#这篇文章标题背景图片
@@ -10,7 +11,7 @@ catalog: true 						# 是否归档
 tags:								#标签
     - Android 逆向
     - 转载
-
+    - smali
 ---
 
 > 本文转载自[MT论坛bin](https://bbs.binmt.cc/thread-1640-1-1.html)

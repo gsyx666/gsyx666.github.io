@@ -5,6 +5,7 @@ title:      教你读懂Smali代码（三） 				# 标题
 subtitle:   Hello Android #副标题
 date:       2020-03-19 				# 时间
 author:     BY bin 						# 作者
+hidden: true
 header-img: img/post-bg-2015.jpg 	#这篇文章标题背景图片
 catalog: true 						# 是否归档
 tags:								#标签

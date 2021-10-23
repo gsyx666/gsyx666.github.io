@@ -2,6 +2,7 @@
 
 layout:     post   				    # 使用的布局（不需要改）
 title:     教你读懂Smali代码（一）				# 标题 
+hidden: true
 subtitle:   Hello Android #副标题
 date:       2020-03-19 				# 时间
 author:     BY bin 						# 作者
