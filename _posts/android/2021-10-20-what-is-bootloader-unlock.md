@@ -7,8 +7,8 @@ author:     "weishu"
 catalog: false
 header-img: img/in-post/BootLoader/BootLoader0.jpg
 tags:
-  - android
-  - bootloader
+  - Android
+  - BootLoader
   - 转载
 ---
 

@@ -198,7 +198,7 @@ String method(int, int[][], int, String, Object[])
 ```smali
 Lpackage/name/ObjectName;->FieldName:Ljava/lang/String;
 ```
-字段由对类型、字段名（FieldName）、与字段类型（Ljava/lang/String;）组成。其中字段名与字段类型用 `:` 隔开
+字段由对类型、字段名（FieldName）和字段类型（Ljava/lang/String;）组成。其中字段名与字段类型用 `:` 隔开
 
 **Smali 中声明字段的语法是：**
 
@@ -399,7 +399,7 @@ Dalvik指令在调用规范上大致模仿常见的架构和 C 样式的调用�
 
 ### 数据定义指令
 
-数据定义用来定义程序中用到的常量、字符串、类等数据。它的基础字节码为 const。
+数据定义用来定义程序中用到的常量、字符串和类等数据。它的基础字节码为 const。
 
 | op&id  | 语法                                       | 参数                                       | 说明                                       |
 | ------ | ---------------------------------------- | ---------------------------------------- | ---------------------------------------- |
@@ -1102,7 +1102,7 @@ ushr-int/2addr v0, v1
 
 {方法列表}
 ```
-1、其中修饰符就是public、private、protected、static、final等，和Java中的差不多，另外对于类还有interface和enum来表示这个类是一个接口或者枚举类；
+1、其中修饰符就是public、private、protected、static和final等，和Java中的差不多，另外对于类还有interface和enum来表示这个类是一个接口或者枚举类；
 
 2、Smali中的类名都是L包名路径/类名;，例如Android中的TextView类，它的包名是android.widget，如果你要在Smali中表示这个类，就要写成Landroid/widget/TextView;
 
@@ -1112,7 +1112,7 @@ ushr-int/2addr v0, v1
 .implements 接口类名
 可以有0个或者多个，表示这个类实现了哪些接口；
 
-5、注解的话就是Java代码中@XXX之类的代码，例如比较常见的@Override、@Nullable、@NonNull，它的Smali语法是：
+5、注解的话就是Java代码中@XXX之类的代码，例如比较常见的 @Override、 @Nullable和@NonNull，它的 Smali 语法是：
 .annotation xxxxxxx
     xxxxxx
 .end annotation

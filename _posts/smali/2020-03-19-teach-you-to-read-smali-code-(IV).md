@@ -11,7 +11,7 @@ catalog: true 						# 是否归档
 tags:								#标签
     - Android 逆向
     - 转载
-    - smali
+    - Smali
 ---
 
 > 本文转载自[MT论坛bin](https://bbs.binmt.cc/thread-1640-1-1.html)

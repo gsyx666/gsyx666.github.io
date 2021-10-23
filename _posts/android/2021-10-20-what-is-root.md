@@ -7,8 +7,8 @@ author:     "weishu"
 catalog: true
 header-style: text 
 tags:
-  - android
-  - root
+  - Android
+  - Root
   - 转载
 ---
 
