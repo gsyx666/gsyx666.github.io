@@ -1257,20 +1257,17 @@ References
 * [Home · JesusFreke/smali Wiki (github.com)](https://github.com/JesusFreke/smali/wiki)
 * [ruanyf/document-style-guide: 中文技术文档的写作规范 (github.com)](https://github.com/ruanyf/document-style-guide)
 * [非虫 《Android软件安全与逆向分析》][非虫 《Android软件安全与逆向分析》]
+* [basic_operating_mechanism](https://ctf-wiki.org/android/basic_operating_mechanism/java_layer/smali/smali)(https://github.com/ctf-wiki/ctf-wiki/tree/master/docs/zh/docs/android)
+* [Android逆向基础：Smali语法](https://www.jianshu.com/p/9931a1e77066)
+* [Android 逆向之 smali](http://wossoneri.github.io/2019/09/12/[Android][Security]Decompile-smali/)
+* [Smali 语法解析——Hello World](https://juejin.cn/post/6844903732774174734)
+* [What is Smali Code Android](https://stackoverflow.com/questions/30837450/what-is-smali-code-android)
+* [smali-assembler-for-dalvik](https://mobsecguys.medium.com/smali-assembler-for-dalvik-e37c8eed22f9)
+* [Smali Introduction Manual](https://programmer.help/blogs/smali-introduction-manual.html)
 
-
-https://ctf-wiki.org/android/basic_operating_mechanism/java_layer/smali/smali/ https://github.com/ctf-wiki/ctf-wiki/tree/master/docs/zh/docs/android
-https://www.jianshu.com/p/9931a1e77066
-http://wossoneri.github.io/2019/09/12/[Android][Security]Decompile-smali/
-https://juejin.cn/post/6844903732774174734
-https://stackoverflow.com/questions/30837450/what-is-smali-code-android
-https://mobsecguys.medium.com/smali-assembler-for-dalvik-e37c8eed22f9
-https://programmer.help/blogs/smali-introduction-manual.html
 
 [非虫 《Android软件安全与逆向分析》]: https://douban.com/book/subject/20556210/
-
 [深入理解Dalvik字节码指令及Smali文件]: https://blog.csdn.net/dd864140130/article/details/52076515
-
 [Dalvik 字节码]:[https://source.android.google.cn/devices/tech/dalvik/dalvik-bytecode.html]
 
 本文部分图片来自 网络
