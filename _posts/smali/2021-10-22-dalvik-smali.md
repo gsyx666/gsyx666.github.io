@@ -119,19 +119,19 @@ test1() 和 test2() 的唯一区别就是一个是静态一个非静态
 
 test1() 的Smali代码：
 
-[test1-smali.png](/img/in-post/smali/test1-smali.png)
+![test1-smali.png](/img/in-post/smali/test1-smali.png)
 
 test2()的Smali代码：
 
-[test2-smali.png](/img/in-post/smali/test2-smali.png)
+![test2-smali.png](/img/in-post/smali/test2-smali.png)
 
 两个方法都是依次打印出两个参数，test1()中24行是打印第一个参数用的是p0，29行是打印第二个参数用的是p1；对照下test2()中则分别用的是p1和p2。
 
 那test2()中的p0真的代表this吗？我们也可以修改代码验证下：
 
-[test2-java.png](/img/in-post/smali/test2-java.png)
+![test2-java.png](/img/in-post/smali/test2-java.png)
 
-[test2-java2.png](/img/in-post/smali/test2-java2.png)
+![test2-java2.png](/img/in-post/smali/test2-java2.png)
 
 
 ## smali 类型，字段，方法的表示方法
