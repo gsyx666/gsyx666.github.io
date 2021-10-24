@@ -1272,6 +1272,9 @@ References
 * [What is Smali Code Android](https://stackoverflow.com/questions/30837450/what-is-smali-code-android)
 * [smali-assembler-for-dalvik](https://mobsecguys.medium.com/smali-assembler-for-dalvik-e37c8eed22f9)
 * [Smali Introduction Manual](https://programmer.help/blogs/smali-introduction-manual.html)
+* [安卓逆向系列教程（一）Dalvik 指令集](https://github.com/jsonhui/fl-android-re-tut/blob/master/1.md) by [飞龙](https://github.com/wizardforcel)
+* [smali](https://github.com/HelloHuDi/AndroidReverseNotes/blob/master/smali.md)
+* [吾爱破解安卓逆向入门教程--导航帖（2018-06）](https://www.52pojie.cn/thread-408645-1-1.html)
 
 
 [非虫 《Android软件安全与逆向分析》]: https://douban.com/book/subject/20556210/
