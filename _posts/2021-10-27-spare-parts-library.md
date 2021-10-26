@@ -5,7 +5,7 @@ subtitle:   "What is the spare parts library"
 date:       2021-10-27 14:43:01
 author:     "晓色暮云"
 catalog: true
-header-img: http://image.coolapk.com/feed_cover/2020/0724/17/1117667_8ae58eba_3539_9181@1080x486.jpeg.m.jpg
+header-img: img/in-post/spare-parts-library-1-1.jpg
 tags:
   - Shopping
   - 转载
@@ -14,7 +14,7 @@ tags:
 > 本文转载自 [备件库是什么：如何科学选购备件库商](https://www.coolapk.com/feed/20415119?shareKey=MmQyZDJlNDhiMzg1NjE3ODhiOGE~) - 酷安@[晓色暮云](http://www.coolapk.com/u/1117667)
 
 京东，又被称为二手东，以其优质的快递服务和售后服务闻名。优质的售后服务体系就免不了被人钻空子，有些人会退回一些无法二次销售的商品，这些商品本来不能被7天无理由退货。那这部分商品怎么办呢？这部分商品就会流入备件库。这篇文章将告诉你：备件库是什么？如何科学的选购备件库的商品？
-![](http://image.coolapk.com/feed/2020/0724/17/1117667_f93df06e_3541_018@1080x2182.jpeg.m.jpg)
+![](https://image.coolapk.com/feed/2020/0724/17/1117667_f93df06e_3541_018@1080x2182.jpeg)
 > 注：除了京东，苏宁易购等平台其实也有备件库，但是体系最为完善的还是京东，故但这篇文章将主要以京东为例。本文不含任何利益交换或者利益输送，没有任何推广费用。
 
 ## 备件库是什么
