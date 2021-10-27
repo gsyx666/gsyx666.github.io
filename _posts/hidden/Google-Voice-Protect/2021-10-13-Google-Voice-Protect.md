@@ -10,7 +10,7 @@ tags:
     - Google Voice
     - 转载
 ---
-> 转载自 [Lete乐特-Google Voice 如何保号](https://blog.imlete.cn/article/Google-Voice-Protect.html)
+> 转载自 [Lete乐特-Google Voice 如何保号](https://blog.imlete.cn/article/Google-Voice-Protect.html) [github](lete114.github.io)
 
 Google Voice 如何保号 ？此篇文章不进行注册环节
 国人注册的话还是免了吧，除非你已经有了一个美国号码，并且有一个美国ip才能注册
