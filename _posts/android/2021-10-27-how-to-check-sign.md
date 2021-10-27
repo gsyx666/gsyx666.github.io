@@ -45,31 +45,31 @@ private boolean doNormalSignCheck() {
 
 编译出 release 包并安装，可以看见运行效果很满意。但是事实真的如此么？下面我们让他作为受害者，被一键破解。
 
-![目前看起来很好](https://github.com/gtf35/how-to-check-sign/blob/master/pic/image-20200119192020020.png)
+![目前看起来很好](https://raw.githubusercontent.com/gtf35//how-to-check-sign/blob/master/pic/image-20200119192020020.png)
 
 ## 1 使用通用工具去除我们先前的校验
 
 很多人可能不知道，去除简单的签名校验连小朋友都能做到！
 
-![太可怕](https://github.com/gtf35/how-to-check-sign/blob/master/pic/image-20200119193534667.png)
+![太可怕](https://raw.githubusercontent.com/gtf35/how-to-check-sign/blob/master/pic/image-20200119193534667.png)
 
 请看具有「安全性测试」功能的「M* 管理器」上场，一键去除我们上文准备好的受害者的签名校验：
 
-![一键去除签名校验演示](https://github.com/gtf35/how-to-check-sign/blob/master/pic/killsign.gif)
+![一键去除签名校验演示](https://raw.githubusercontent.com/gtf35/how-to-check-sign/blob/master/pic/killsign.gif)
 
 神奇的一幕发生了，居然还是通过，也就是我们刚才的操作形同虚设，我们把被破解后的安装包传回 PC，准备下一步分析
 
 ## 2 JADX 上场
 
-为了知道他做了什么，我们需要逆向出目前受害者的代码。这里我们使用开源项目「[jadx](https://github.com/skylot/jadx)」来完成。
+为了知道他做了什么，我们需要逆向出目前受害者的代码。这里我们使用开源项目「[jadx](https://raw.githubusercontent.com/skylot/jadx)」来完成。
 
 打开 jadx 之后会直接弹出「打开」对话框，选取被破解的 apk 即可：
 
-![JADX 打开文件](https://github.com/gtf35/how-to-check-sign/blob/master/pic/image-20200119200522083.png)
+![JADX 打开文件](https://raw.githubusercontent.com/gtf35/how-to-check-sign/blob/master/pic/image-20200119200522083.png)
 
 简单对比下可以发现，多了一个「HookApplication」类
 
-![对比代码](https://github.com/gtf35/how-to-check-sign/blob/master/pic/image-20200119200808336.png)
+![对比代码](https://raw.githubusercontent.com/gtf35/how-to-check-sign/blob/master/pic/image-20200119200808336.png)
 
 点击进去即可直接看见源代码：
 
@@ -177,7 +177,7 @@ private boolean checkApplication(){
 -   然后通过 getSimpleName() 获取到类名
 -   与正确的值比对然后返回
 
-![可以检测出被二改](https://github.com/gtf35/how-to-check-sign/blob/master/pic/checkApp.gif)
+![可以检测出被二改](https://raw.githubusercontent.com/gtf35/how-to-check-sign/blob/master/pic/checkApp.gif)
 
 可以看到可以检测出被二次打包
 
@@ -340,7 +340,7 @@ public class MyApp extends Application {
 
 效果也很棒：
 
-![可以检测出被二改](https://github.com/gtf35/how-to-check-sign/blob/master/pic/earlyCheck.gif)
+![可以检测出被二改](https://raw.githubusercontent.com/gtf35/how-to-check-sign/blob/master/pic/earlyCheck.gif)
 
 ## 5 反抗-检查 IPackageManager  有没有被动态代理
 
@@ -372,7 +372,7 @@ public class MyApp extends Application {
 
 相当简单，因为 IPackageManager 的实例存在于 PackageManager 实例的 mPM 字段里，所以我们反射他获取即可拿到。拿到后可以判断类名，正常的类名是 「android.content.pm.IPackageManager$Stub$Proxy」。因为是远端对象的缘故，会有 $Stub$Proxy 后缀。如果他被动态被代理了，应该是类似「$Proxy0」这种类名，效果图如下：
 
-![可以检测出被二改](https://github.com/gtf35/how-to-check-sign/blob/master/pic/checkProxy.gif)
+![可以检测出被二改](https://raw.githubusercontent.com/gtf35/how-to-check-sign/blob/master/pic/checkProxy.gif)
 
 ## 6 反抗-使用别的 API 去获取
 
@@ -411,7 +411,7 @@ private boolean useNewAPICheck(){
 
 用 API28 以上的设备运行，事实证明是可以的：
 
-![可以检测出被二改](https://github.com/gtf35/how-to-check-sign/blob/master/pic/useNewAPICheck.gif)
+![可以检测出被二改](https://raw.githubusercontent.com/gtf35/how-to-check-sign/blob/master/pic/useNewAPICheck.gif)
 
 使用过时 API 应该是每个开发者都应该尽力避免的，但是关键性的代码确实是可以通过不走寻常路来调用，只要破解者想不到，我们就成功了。比如....校验类的签名，方法数，等等，这里我不操作了，留给读者自己思考，反破解方法往往越没人知道就越有效，我在此公开更多特殊方法校验签名的细节其实并不是一件好事，抛砖引玉即可
 
