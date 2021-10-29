@@ -10,6 +10,13 @@ tags:
     - Google Voice
     - 转载
 ---
+> 更新时间 2021-10-30
+
+> 博主：谷歌不允许使用自动化脚本发送短信，可能限制或终止用户对 Google 语音的访问。
+
+> 如果您在 3 个月内没有拨打或接听电话，或者发送或打开短信，Google 可能会收回您的 Google 语音号码（如果您有的话）。我们不会收回已移植到 Google 语音或永久保留的号码。
+https://support.google.com/voice/answer/9230450
+
 > 转载自 [Lete乐特-Google Voice 如何保号](https://blog.imlete.cn/article/Google-Voice-Protect.html) [github](lete114.github.io)
 
 Google Voice 如何保号 ？此篇文章不进行注册环节
