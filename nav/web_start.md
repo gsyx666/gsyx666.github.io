@@ -29,3 +29,5 @@ header-img: "img/nav/nav-about.jpg"
 |---|---|
 |[https://m.yuzhua.com](https://m.yuzhua.com)|鱼爪传媒|
 |[https://www.kaolamedia.com/](https://www.kaolamedia.com/)|考拉新媒体导航|
+
+https://github.com/Kensuke-Hinata/statistic
