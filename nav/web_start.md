@@ -11,6 +11,7 @@ header-img: "img/nav/nav-about.jpg"
 |网站|备注|
 |---|---|
 |[https://ykt.eduyun.cn/ykt/sjykt/index.html](https://ykt.eduyun.cn/ykt/sjykt/index.html)|国家中小学网络云平台|
+|[https://ebook.hep.com.cn/ebooks/index.html](https://ebook.hep.com.cn/ebooks/index.html)|高教书苑|
 |[https://ai.12348.gov.cn/](https://ai.12348.gov.cn/)|中国法律服务网|
 |[https://mobile.fatsecret.cn/热量营养/](https://mobile.fatsecret.cn/热量营养/)|中国各种食物和品牌|
 |[https://zh.wikihow.com/首页](https://zh.wikihow.com/首页)|wikihow|
