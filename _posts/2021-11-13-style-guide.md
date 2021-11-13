@@ -1,9 +1,8 @@
 ---
 layout:     post
 title:      "文案风格指南：中英混排和标点符号的用法"
-date:       2017-12-05
-updated: 2020-08-14   
-header-img: img/in-pos/style-guide/essay.png
+date:       2020-08-14 
+header-img: img/in-post/style-guide/essay.png
 author:     "ting talk"
 catalog: true
 tags:
@@ -14,7 +13,7 @@ tags:
 
 > 本文转载自 [文案风格指南：中英混排和标点符号的用法](https://github.com/ting-talk/blog/blob/master/source/_posts/writing/style-guide.md)
 
-![essay](img/in-pos/style-guide/essay.png)
+![essay](/img/in-post/style-guide/essay.png)
 
 评价一个科技媒体或者设计师是否专业，我会看中英文之间是否空一格，因为美好的文字值得用更优雅更干净的方式呈现。
 
