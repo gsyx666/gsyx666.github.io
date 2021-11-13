@@ -9,7 +9,7 @@ tags:
     - 转载
 ---
 
-> 本文转载自：https://github.com/CyC2018/CS-Notes/blob/master/notes/Git.md
+> 本文转载自 [https://github.com/CyC2018/CS-Notes/blob/master/notes/Git.md](https://github.com/CyC2018/CS-Notes/blob/master/notes/Git.md)
 
 <!-- GFM-TOC -->
 * [集中式与分布式](#集中式与分布式)
