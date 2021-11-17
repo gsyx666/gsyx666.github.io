@@ -35,7 +35,7 @@ tags:
 
 | 科目                                      | 为何要学？                                                                             | 最佳书籍                                                                                                                                      | 最佳视频                          |  更多 |    
 |-------------------------------------------|----------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------|
-| **[编程](#编程)**                         | 不要做一个“永远没彻底搞懂”诸如递归等概念的程序员。                                     | _[《计算机程序的构造和解释》](https://book.douban.com/subject/1148282/)_                                                                      | Brian Harvey’s Berkeley CS 61A    | [2020 FA UC Berkeley: CS 61A Structure and Interpretation of Computer Programs](2020-FA-UC-Berkeley-CS-61A-Structure-and-Interpretation-of-Computer-Programs.md)   |
+| **[编程](#编程)**                         | 不要做一个“永远没彻底搞懂”诸如递归等概念的程序员。                                     | _[《计算机程序的构造和解释》](https://book.douban.com/subject/1148282/)_                                                                      | Brian Harvey’s Berkeley CS 61A    | [2020 FA UC Berkeley: CS 61A Structure and Interpretation of Computer Programs](https://www.yuque.com/ob26eq/nshoar/kvrdpq)   |
 | **[计算机系统结构](#计算机系统结构)**             | 如果你对于计算机如何工作没有具体的概念，那么你所做出的所有高级抽象都是空中楼阁。       | _[《深入理解计算机系统》](https://book.douban.com/subject/26912767/)_                                                                           | Berkeley CS 61C                   |   |
 | **[算法与数据结构](#算法和数据结构)**     | 如果你不懂得如何使用栈、队列、树、图等常见数据结构，遇到有难度的问题时，你将束手无策。 | _[《算法设计手册》](https://book.douban.com/subject/4048566/)_                                                                                | Steven Skiena’s lectures          |        |
 | **[数学知识](#数学知识)**                 | 计算机科学基本上是应用数学的一个“跑偏的”分支，因此学习数学将会给你带来竞争优势。       | _[《计算机科学中的数学》](https://book.douban.com/subject/33396340/)_                                                                         | Tom Leighton’s MIT 6.042J         |       |
@@ -44,6 +44,8 @@ tags:
 | **[数据库](#数据库)**                     | 对于多数重要程序，数据是其核心，然而很少人理解数据库系统的工作原理。                   | _[《Readings in Database Systems》](https://book.douban.com/subject/2256069/) （暂无中译本）_                                                 | Joe Hellerstein’s Berkeley CS 186 |      |
 | **[编程语言与编译器](#编程语言与编译器)** | 若你懂得编程语言和编译器如何工作，你就能写出更好的代码，更轻松地学习新的编程语言。     | _[《Crafting Interpreters》](https://craftinginterpreters.com/)_                                                                                    | Alex Aiken’s course on Lagunita   |       |
 | **[分布式系统](#分布式系统)**             | 如今，_多数_ 系统都是分布式的。                                                        | _[《数据密集型应用系统设计》](https://book.douban.com/subject/30329536/)_                                                              | MIT 6.824                          |       |
+
+> [更多](https://www.yuque.com/ob26eq/cv94p5/gdbvcd)
 
 ## 还是太多？
 
