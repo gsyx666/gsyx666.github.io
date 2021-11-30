@@ -1282,3 +1282,10 @@ References
 [Dalvik 字节码]:[https://source.android.google.cn/devices/tech/dalvik/dalvik-bytecode.html]
 
 本文部分图片来自 网络
+
+TODO:
+
+https://juejin.cn/post/6949050113595539469
+https://segmentfault.com/a/1190000012669267
+https://github.com/lulululbj/android-reverse
+https://github.com/lulululbj/Pyramid/blob/master/article/reverse/dalvik.md
