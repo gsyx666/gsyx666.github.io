@@ -1,13 +1,14 @@
 <script>
+
+const isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
+
 function initMermaid() {
   var config = {
     startOnLoad: true,
     theme: "forest",
-    flowchart:{
-      useMaxWidth: true,
-      htmlLabels: true
-    }
+    logLevel: 4,
   };
+  if (isDarkMode) conf.theme = 'dark';
   mermaid.initialize(config);
   window.mermaid.init(undefined, document.querySelectorAll('.language-mermaid'));
 }
