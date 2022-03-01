@@ -3,7 +3,7 @@ layout:     postno
 title:    Google Voice 如何保号
 date:       2021-10-13
 author:     BY Lete乐特
-hidden: true
+hide: true
 header-img: img/post/hui.jpg
 catalog: true
 tags:
