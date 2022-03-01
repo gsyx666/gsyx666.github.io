@@ -4,17 +4,17 @@
 # atom.xml
 
 # Site
-title: Hexo
-subtitle: ''
-description: ''
-keywords:
-author: John Doe
+title: gsyx
+subtitle: '盖世英雄的技术博客'
+description: '盖世英雄, gsyx666, Android博客, Android源码'
+keywords: 盖世英雄, gsyx666, Android博客, Android源码
+author: gsyx
 language: zh-CN  # 指定语言，会影响主题显示的语言，按需修改
 timezone: ''
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: http://example.com
+url: http://gsyx666.github.io
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:
