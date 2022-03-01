@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"
+  xmlns:atom="http://www.w3.org/2005/Atom"
+  xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Hexo</title>
+    <link>http://example.com/</link>
+    
+    <image>
+      <url>http://example.com/icon.png</url>
+      <title>Hexo</title>
+      <link>http://example.com/</link>
+    </image>
+    
+    <atom:link href="http://example.com/rss2.xml" rel="self" type="application/rss+xml"/>
+    
+    <description></description>
+    <pubDate>Tue, 01 Mar 2022 07:57:11 GMT</pubDate>
+    <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>Hello World</title>
+      <link>http://example.com/2022/03/01/hello-world/</link>
+      <guid>http://example.com/2022/03/01/hello-world/</guid>
+      <pubDate>Tue, 01 Mar 2022 07:57:11 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description>&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt;</description>
+          
+        
+      
+      
+      
+      
+      
+      
+      <comments>http://example.com/2022/03/01/hello-world/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>Markdown 入门教程及书写风格指南</title>
+      <link>http://example.com/2016/03/15/markdown/</link>
+      <guid>http://example.com/2016/03/15/markdown/</guid>
+      <pubDate>Tue, 15 Mar 2016 00:00:00 GMT</pubDate>
+      
+      <description>&lt;p&gt;&lt;img src=&quot;/markdown/markdown.png&quot; alt=&quot;markdown&quot;&gt;现代汉语就像用脏了的人民币，要用 Markdown 洗一洗。Markdown 是一种轻量级标记语言。你不需要关心标题多大字号，段前距多少，列表缩进几格，只要在&lt;strong&gt;纯文本&lt;/strong&gt;前后增加一些标记符号（例如 &lt;code&gt;#&lt;/code&gt; &lt;code&gt;-&lt;/code&gt; &lt;code&gt;*&lt;/code&gt; &lt;code&gt;&amp;gt;&lt;/code&gt;），就能毫不费力地写出工整精美的文章。毫不夸张地说，Markdown 是比特世界赠与写作者的「笔」。&lt;/p&gt;</description>
+      
+      
+      
+      
+      <category domain="http://example.com/categories/%E5%86%99%E4%BD%9C%E6%8A%80%E5%B7%A7/">写作技巧</category>
+      
+      
+      <category domain="http://example.com/tags/%E6%8E%92%E7%89%88/">排版</category>
+      
+      <category domain="http://example.com/tags/%E5%86%99%E4%BD%9C/">写作</category>
+      
+      
+      <comments>http://example.com/2016/03/15/markdown/#disqus_thread</comments>
+      
+    </item>
+    
+  </channel>
+</rss>
