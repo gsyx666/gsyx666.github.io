@@ -9,6 +9,7 @@ header-img: img/in-post/spare-parts-library-1-1.jpg
 tags:
   - Shopping
   - 转载
+categories: 转载
 ---
 
 > 本文转载自 [备件库是什么：如何科学选购备件库商](https://www.coolapk.com/feed/20415119?shareKey=MmQyZDJlNDhiMzg1NjE3ODhiOGE~) - 酷安@[晓色暮云](http://www.coolapk.com/u/1117667)
