@@ -1,0 +1,793 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=auto>
+
+
+
+<head><!-- hexo injector head_begin start --><link href="https://cdn.jsdelivr.net/npm/hexo-tag-common@0.0.5/css/index.css" rel="stylesheet"/><!-- hexo injector head_begin end -->
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon.png">
+  <link rel="icon" href="/img/favicon.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="author" content="BY cmoly">
+  <meta name="keywords" content="盖世英雄, gsyx666, Android博客, Android源码">
+  
+    <meta name="description" content="本博客内所有文章仅供学习交流，禁止用于任何违法行为，后果自负，与博主无关。  Android 逆向 忘记判断文件夹里的文件了，使用脚本前请确认目标文件夹没有dex文件！！      -- main code      local bintmp&#x3D;&amp;#123;&amp;#125;      local function tobytes(x)      local byte1&#x3D;string.char(x%25">
+<meta property="og:type" content="article">
+<meta property="og:title" content="一小白自编GG脱壳脚本(最终版)">
+<meta property="og:url" content="http://gsyx666.github.io/2020/03/18/2020-03-18-GG%E8%84%B1%E5%A3%B3%E8%84%9A%E6%9C%AC/index.html">
+<meta property="og:site_name" content="gsyx">
+<meta property="og:description" content="本博客内所有文章仅供学习交流，禁止用于任何违法行为，后果自负，与博主无关。  Android 逆向 忘记判断文件夹里的文件了，使用脚本前请确认目标文件夹没有dex文件！！      -- main code      local bintmp&#x3D;&amp;#123;&amp;#125;      local function tobytes(x)      local byte1&#x3D;string.char(x%25">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2020-03-18T00:00:00.000Z">
+<meta property="article:modified_time" content="2022-03-01T08:30:32.734Z">
+<meta property="article:author" content="gsyx">
+<meta property="article:tag" content="Android 逆向">
+<meta property="article:tag" content="转载">
+<meta name="twitter:card" content="summary_large_image">
+  
+  
+  <title>一小白自编GG脱壳脚本(最终版) - gsyx</title>
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4/dist/css/bootstrap.min.css" />
+
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/github-markdown-css@4/github-markdown.min.css" />
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hint.css@2/hint.min.css" />
+
+  
+    
+    
+      
+      <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@10/styles/github-gist.min.css" />
+    
+  
+
+  
+    <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3/dist/jquery.fancybox.min.css" />
+  
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_ba1fz6golrf.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_lbnruvf0jn.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+<!-- 自定义样式保持在最底部 -->
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    var CONFIG = {"hostname":"gsyx666.github.io","root":"/","version":"1.8.14","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"right","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"copy_btn":true,"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml"};
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+<meta name="generator" content="Hexo 6.0.0"><link rel="alternate" href="/atom.xml" title="gsyx" type="application/atom+xml">
+<link rel="alternate" href="/rss2.xml" title="gsyx" type="application/rss+xml">
+</head>
+
+
+<body>
+  <header style="height: 70vh;">
+    <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <strong>GSYX</strong>
+    </a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-home-fill"></i>
+                首页
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/">
+                <i class="iconfont icon-archive-fill"></i>
+                归档
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/">
+                <i class="iconfont icon-category-fill"></i>
+                分类
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/">
+                <i class="iconfont icon-tags-fill"></i>
+                标签
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">
+                <i class="iconfont icon-user-fill"></i>
+                关于
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/atom.xml">
+                <i class="iconfont icon-rss-fill"></i>
+                RSS
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" target="_self" href="javascript:;" rel="external nofollow noreferrer" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
+              &nbsp;<i class="iconfont icon-search"></i>&nbsp;
+            </a>
+          </li>
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" target="_self" href="javascript:;" rel="external nofollow noreferrer" aria-label="Color Toggle">&nbsp;<i
+                class="iconfont icon-dark" id="color-toggle-icon"></i>&nbsp;</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <div class="banner" id="banner" parallax=true
+         style="background: url('/img/default.png') no-repeat center center;
+           background-size: cover;">
+      <div class="full-bg-img">
+        <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+          <div class="page-header text-center fade-in-up">
+            <span class="h2" id="subtitle" title="Hello Android">
+              
+            </span>
+
+            
+              <div class="mt-3">
+  
+  
+    <span class="post-meta">
+      <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+      <time datetime="2020-03-18 00:00" pubdate>
+        2020年3月18日 凌晨
+      </time>
+    </span>
+  
+</div>
+
+<div class="mt-1">
+  
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-chart"></i>
+      4k 字
+    </span>
+  
+
+  
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-clock-fill"></i>
+      
+      
+      34 分钟
+    </span>
+  
+
+  
+  
+</div>
+
+            
+          </div>
+
+          
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div class="py-5" id="board">
+          <article class="post-content mx-auto">
+            <!-- SEO header -->
+            <h1 style="display: none">Hello Android</h1>
+            
+            <div class="markdown-body">
+              <blockquote>
+<p>本博客内所有文章仅供学习交流，禁止用于任何违法行为，后果自负，与博主无关。</p>
+</blockquote>
+<h2 id="Android-逆向"><a href="#Android-逆向" class="headerlink" title="Android 逆向"></a>Android 逆向</h2><blockquote>
+<p>忘记判断文件夹里的文件了，使用脚本前请确认目标文件夹没有dex文件！！</p>
+</blockquote>
+<div class="code-wrapper"><pre><code class="hljs">    -- main code
+
+    local bintmp=&#123;&#125;
+
+    local function tobytes(x)
+
+    local byte1=string.char(x%256) x=(x-x%256)/256
+
+    local byte2=string.char(x%256) x=(x-x%256)/256
+
+    local byte3=string.char(x%256) x=(x-x%256)/256
+
+    local byte4=string.char(x%256) x=(x-x%256)/256
+
+    local byte5=string.char(x%256) x=(x-x%256)/256
+
+    local byte6=string.char(x%256) x=(x-x%256)/256
+
+    local byte7=string.char(x%256) x=(x-x%256)/256
+
+    local byte8=string.char(x%256) x=(x-x%256)/256
+
+    table.insert(bintmp, byte1)
+
+    table.insert(bintmp, byte2)
+
+    table.insert(bintmp, byte3)
+
+    table.insert(bintmp, byte4)
+
+    table.insert(bintmp, byte5)
+
+    table.insert(bintmp, byte6)
+
+    table.insert(bintmp, byte7)
+
+    table.insert(bintmp, byte8)         
+
+    end
+
+    -- 内存范围如果找不到DEX可以自己修改某数字壳在这里
+
+    --gg.setRanges(gg.REGION_JAVA_HEAP | gg.REGION_C_HEAP | gg.REGION_C_ALLOC | gg.REGION_C_DATA | gg.REGION_C_BSS |      gg.REGION_PPSSPP | gg.REGION_ANONYMOUS | gg.REGION_JAVA | gg.REGION_STACK | gg.REGION_ASHMEM | gg.REGION_VIDEO | gg.REGION_OTHER | gg.REGION_BAD | gg.REGION_CODE_APP | gg.REGION_CODE_SYS)
+
+    gg.setRanges(gg.REGION_ANONYMOUS)
+
+    gg.clearResults()
+
+    gg.searchNumber(&quot;h700000007856341200000000&quot;, gg.TYPE_BYTE, false, gg.SIGN_EQUAL, 0, -1)
+
+    gg.processResume()
+
+    gg.refineNumber(&quot;h78&quot;, gg.TYPE_BYTE, false, gg.SIGN_EQUAL, 0, -1)
+
+    resultCounts = gg.getResultsCount()
+
+    gg.alert(&quot;从内存中搜索到&quot;.. resultCounts ..&quot;个dex文件&quot;)
+
+    --获取结果集合
+
+    results = gg.getResults(resultCounts)
+
+    --遍历结果集
+
+    for i=1 , resultCounts do
+
+    --初始化DEX起始地址
+
+    startAddr = results[i].address - 0x28
+
+    --校验指定偏移特征是否正确，正确第话基本上就确定上dex了
+
+    local Temp = &#123;&#125;
+
+    Temp[1] = &#123;&#125;
+
+    Temp[1].address = startAddr + 0x3c
+
+    Temp[1].flags = gg.TYPE_DWORD
+
+    Temp = gg.getValues(Temp)
+
+    if Temp[1].value == 112 then
+
+            --正确的dex文件 读取fileSize(偏移量)
+
+            local enTemp = &#123;&#125;
+
+            enTemp[1] = &#123;&#125;
+
+            enTemp[1].address = startAddr + 0x20
+
+            enTemp[1].flags = gg.TYPE_DWORD
+
+            enTemp = gg.getValues(enTemp)
+
+            dexsize = enTemp[1].value -- + 0x24
+
+            --读取内存dex尾地址
+
+    endAddr = startAddr + dexsize
+
+            local dexTemp = &#123;&#125;
+
+            dexTemp[1] = &#123;&#125;
+
+            dexTemp[1].address = startAddr
+
+            dexTemp[1].flags = gg.TYPE_DWORD
+
+            dexTemp = gg.getValues(dexTemp)
+
+            if dexTemp[1].value == 0 then
+
+                    --Dex035被壳偷了补回给他
+
+                    local dexTemp = &#123;&#125;
+
+                    dexTemp[1] = &#123;&#125;
+
+                    dexTemp[1].address = startAddr
+
+                    dexTemp[1].flags = gg.TYPE_DWORD
+
+                    dexTemp[1].value=175662436
+
+                    dexTemp[2] = &#123;&#125;
+
+                    dexTemp[2].address = startAddr + 4
+
+                    dexTemp[2].flags = gg.TYPE_DWORD
+
+                    dexTemp[2].value=3486512
+
+                    gg.setValues(dexTemp)
+
+            end
+
+            local file = io.open(&quot;/sdcard/DEXdump/classes&quot; .. i ..&quot;.dex&quot;,&quot;ab&quot;)
+
+            local be=0 
+
+            local l=0
+
+            local leng=20480
+
+            gg.toast(&quot; DEX总长度&quot;..dexsize,true)
+
+            for k=0, dexsize ,leng+64 do
+
+                    bintmp=&#123;&#125;   
+
+                    for f =0 ,leng ,64 do
+
+                            l = f + k
+
+                            addr= startAddr + f +k;
+
+                            local tmpdword = &#123;&#125;
+
+                            tmpdword[1] = &#123;&#125;
+
+                            tmpdword[1].address = addr 
+
+                            tmpdword[1].flags = gg.TYPE_QWORD
+
+                            tmpdword[2] = &#123;&#125;
+
+                            tmpdword[2].address = addr+0x8 
+
+                            tmpdword[2].flags = gg.TYPE_QWORD
+
+                            tmpdword[3] = &#123;&#125;
+
+                            tmpdword[3].address = addr +0x10
+
+                            tmpdword[3].flags = gg.TYPE_QWORD
+
+                            tmpdword[4] = &#123;&#125;
+
+                            tmpdword[4].address = addr +0x18
+
+                            tmpdword[4].flags = gg.TYPE_QWORD
+
+                            tmpdword[5] = &#123;&#125;
+
+                            tmpdword[5].address = addr +0x20
+
+                            tmpdword[5].flags = gg.TYPE_QWORD
+
+                            tmpdword[6] = &#123;&#125;
+
+                            tmpdword[6].address = addr +0x28
+
+                            tmpdword[6].flags = gg.TYPE_QWORD
+
+                            tmpdword[7] = &#123;&#125;
+
+                            tmpdword[7].address = addr +0x30
+
+                            tmpdword[7].flags = gg.TYPE_QWORD
+
+                            tmpdword[8] = &#123;&#125;
+
+                            tmpdword[8].address = addr +0x38
+
+                            tmpdword[8].flags = gg.TYPE_QWORD
+
+                            tmpdword = gg.getValues(tmpdword)
+
+                            be=tmpdword[1].value
+
+                            tobytes(be) 
+
+                            l=l+8
+
+                            if l &gt;= dexsize then
+
+                                    break 
+
+                            end
+
+                            be=tmpdword[2].value
+
+                            tobytes(be)  
+
+                            l=l+16
+
+                            if l &gt;= dexsize then
+
+                                    break 
+
+                            end
+
+                            be=tmpdword[3].value
+
+                            tobytes(be) 
+
+                            l=l+24
+
+                            if l &gt;= dexsize then
+
+                                    break 
+
+                            end
+
+                            be=tmpdword[4].value
+
+                            tobytes(be)
+
+                            l=l+32
+
+                            if l &gt;= dexsize then
+
+                                    break 
+
+                            end      
+
+                            be=tmpdword[5].value
+
+                            tobytes(be)
+
+                            l=l+40
+
+                            if l &gt;= dexsize then
+
+                                    break 
+
+                            end
+
+                            be=tmpdword[6].value
+
+                            tobytes(be) 
+
+                            l=l+48
+
+                            if l &gt;= dexsize then
+
+                                    break 
+
+                            end
+
+                            be=tmpdword[7].value
+
+                            tobytes(be) 
+
+                            l=l+56
+
+                            if l &gt;= dexsize then
+
+                                    break 
+
+                            end
+
+                            be=tmpdword[8].value
+
+                            tobytes(be)
+
+                            l=l+64
+
+                            if l &gt;= dexsize then
+
+                                    break
+
+                            end
+
+                    end
+
+                    file:write(table.unpack(bintmp))
+
+                    gg.toast(&quot;已完成&quot;.. l ..&quot;\n        DEX总长度&quot;..dexsize,true)
+
+                    if l &gt;= dexsize then
+
+                            break
+
+                    end
+
+            end
+
+            file:close()
+
+   end
+
+   end
+
+   gg.clearResults()
+
+   gg.alert(&quot;脱壳完成!请查看/sdcard/DEXdump/文件夹!&quot;);
+</code></pre></div>
+
+            </div>
+            <hr>
+            <div>
+              <div class="post-metas mb-3">
+                
+                
+                  <div class="post-meta">
+                    <i class="iconfont icon-tags"></i>
+                    
+                      <a class="hover-with-bg" href="/tags/Android-%E9%80%86%E5%90%91/">Android 逆向</a>
+                    
+                      <a class="hover-with-bg" href="/tags/%E8%BD%AC%E8%BD%BD/">转载</a>
+                    
+                  </div>
+                
+              </div>
+              
+                <p class="note note-warning">
+                  
+                    本博客所有文章除特别声明外，均采用 <a target="_blank" href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh" rel="nofollow noopener noopener">CC BY-SA 4.0 协议</a> ，转载请注明出处！
+                  
+                </p>
+              
+              
+                <div class="post-prevnext">
+                  <article class="post-prev col-6">
+                    
+                    
+                      <a href="/2020/03/18/2020-03-18-GG%E8%84%B1%E5%A3%B3%E6%95%99%E7%A8%8B/">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">GG脱壳教程</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/2019/06/01/flutter/">
+                        <span class="hidden-mobile">Flutter 跨平台演进及架构开篇</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+          </article>
+        </div>
+      </div>
+    </div>
+    
+      <div class="d-none d-lg-block col-lg-2 toc-container" id="toc-ctn">
+        <div id="toc">
+  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;目录</p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+      </div>
+    
+  </div>
+</div>
+
+<!-- Custom -->
+
+
+    
+
+    
+      <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v"
+                 for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+
+    
+  </main>
+
+  <footer class="text-center mt-5 py-3">
+  <div class="footer-content">
+     <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+  </div>
+  
+
+  
+
+  
+</footer>
+
+
+  <!-- SCRIPTS -->
+  
+  <script  src="https://cdn.jsdelivr.net/npm/nprogress@0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/nprogress@0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js" ></script>
+<script  src="https://cdn.jsdelivr.net/npm/bootstrap@4/dist/js/bootstrap.min.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+<!-- Plugins -->
+
+
+  <script  src="/js/local-search.js" ></script>
+
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+  
+
+
+
+  
+    <script  src="https://cdn.jsdelivr.net/npm/tocbot@4/dist/tocbot.min.js" ></script>
+  
+  
+    <script  src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3/dist/jquery.fancybox.min.js" ></script>
+  
+  
+    <script  src="https://cdn.jsdelivr.net/npm/anchor-js@4/anchor.min.js" ></script>
+  
+  
+    <script defer src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js" ></script>
+  
+
+
+
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/typed.js@2/lib/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var title = document.getElementById('subtitle').title;
+      
+        typing(title);
+      
+    })(window, document);
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 主题的启动项 保持在最底部 -->
+<script  src="/js/boot.js" ></script>
+
+
+<!-- hexo injector body_end start --><script src="https://cdn.jsdelivr.net/npm/hexo-tag-common@0.0.5/js/index.js"></script><!-- hexo injector body_end end --></body>
+</html>
