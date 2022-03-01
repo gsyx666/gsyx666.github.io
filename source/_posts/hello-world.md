@@ -14,6 +14,18 @@ abbrlink: 16107
 
 #hide: true
 #sticky: 100 #sticky 数值越大，该文章越靠前
+
+#mermaid: true
+
+#password: mikemessi abstract: 有东西被加密了, 请输入密码查看.
+#message: 您好, 这里需要密码. 
+#解密后部分元素可能无法正常显示或者表现，见详细配置 https://github.com/D0n9X1n/hexo-blog-encrypt/blob/master/ReadMe.zh.md
+
+#sitemap: false
+
+#https://github.com/TankNee/hexo-douban-card
+#https://github.com/YunYouJun/hexo-tag-common
+
 ---
 
 
@@ -21,13 +33,23 @@ abbrlink: 16107
 <!-- more -->
 余下的正文
 
-{% note success %}
-文字 或者 `markdown` 均可
-{% endnote %}
+> 转自 *
+> 本文为转载文章，请忽略本站默认原创声明，以原始页面为准。
+> 如果原始链接永久失效，且其声明、权利人均不可考证，请按本站声明的许可协议，加注失效的原始链接及原作者。
 
-{% label primary @text %}
+
+<p class="note note-primary">标签</p>
+
+<span class="label label-primary">Label</span>
+primary default info success warning danger
 
 <a class="btn" href="url" title="title">text</a>
+url：跳转链接
+text：显示的文字
+title：鼠标悬停时显示的文字（可选）
+
+
+
 ## Plugin
 
 
