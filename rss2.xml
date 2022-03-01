@@ -15,65 +15,14 @@
     <atom:link href="http://gsyx666.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>盖世英雄, gsyx666, Android博客, Android源码</description>
-    <pubDate>Tue, 01 Mar 2022 08:35:04 GMT</pubDate>
+    <pubDate>Tue, 01 Mar 2022 08:36:43 GMT</pubDate>
     <generator>http://hexo.io/</generator>
-    
-    <item>
-      <title>Hello World</title>
-      <link>http://gsyx666.github.io/2022/03/01/hello-world/</link>
-      <guid>http://gsyx666.github.io/2022/03/01/hello-world/</guid>
-      <pubDate>Tue, 01 Mar 2022 08:35:04 GMT</pubDate>
-      
-        
-        
-          
-          
-      <description>&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt;</description>
-          
-        
-      
-      
-      
-      
-      
-      
-      <comments>http://gsyx666.github.io/2022/03/01/hello-world/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>git</title>
-      <link>http://gsyx666.github.io/2022/03/01/git/cs-notes-git/</link>
-      <guid>http://gsyx666.github.io/2022/03/01/git/cs-notes-git/</guid>
-      <pubDate>Tue, 01 Mar 2022 08:35:04 GMT</pubDate>
-      
-        
-        
-          
-          
-      <description>&lt;blockquote&gt;
-&lt;p&gt;本文转载自 &lt;a</description>
-          
-        
-      
-      
-      
-      
-      
-      <category domain="http://gsyx666.github.io/tags/%E8%BD%AC%E8%BD%BD/">转载</category>
-      
-      <category domain="http://gsyx666.github.io/tags/git/">git</category>
-      
-      
-      <comments>http://gsyx666.github.io/2022/03/01/git/cs-notes-git/#disqus_thread</comments>
-      
-    </item>
     
     <item>
       <title>面向对象思想</title>
       <link>http://gsyx666.github.io/2022/03/01/java/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E6%80%9D%E6%83%B3/</link>
       <guid>http://gsyx666.github.io/2022/03/01/java/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E6%80%9D%E6%83%B3/</guid>
-      <pubDate>Tue, 01 Mar 2022 08:35:04 GMT</pubDate>
+      <pubDate>Tue, 01 Mar 2022 08:36:43 GMT</pubDate>
       
         
         
@@ -98,118 +47,10 @@
     </item>
     
     <item>
-      <title></title>
-      <link>http://gsyx666.github.io/2022/03/01/gityuanREADME/</link>
-      <guid>http://gsyx666.github.io/2022/03/01/gityuanREADME/</guid>
-      <pubDate>Tue, 01 Mar 2022 08:35:04 GMT</pubDate>
-      
-        
-        
-          
-          
-      <description>&lt;blockquote&gt;
-&lt;p&gt;本博客模仿于&lt;a href=&quot;http://gityuan.com/&quot;&gt;http://gityuan.com&lt;/a&gt; &amp;amp;#160;&amp;amp;#160;&amp;amp;#160;&amp;amp;#160;&lt;a</description>
-          
-        
-      
-      
-      
-      
-      
-      
-      <comments>http://gsyx666.github.io/2022/03/01/gityuanREADME/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>Java IO</title>
-      <link>http://gsyx666.github.io/2022/03/01/java/cs-notes-java-io/</link>
-      <guid>http://gsyx666.github.io/2022/03/01/java/cs-notes-java-io/</guid>
-      <pubDate>Tue, 01 Mar 2022 08:35:04 GMT</pubDate>
-      
-        
-        
-          
-          
-      <description>&lt;blockquote&gt;
-&lt;p&gt;本文转载自：&lt;a</description>
-          
-        
-      
-      
-      
-      
-      
-      <category domain="http://gsyx666.github.io/tags/%E8%BD%AC%E8%BD%BD/">转载</category>
-      
-      <category domain="http://gsyx666.github.io/tags/Java/">Java</category>
-      
-      
-      <comments>http://gsyx666.github.io/2022/03/01/java/cs-notes-java-io/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>Java 基础</title>
-      <link>http://gsyx666.github.io/2022/03/01/java/cs-notes-java-%E5%9F%BA%E7%A1%80/</link>
-      <guid>http://gsyx666.github.io/2022/03/01/java/cs-notes-java-%E5%9F%BA%E7%A1%80/</guid>
-      <pubDate>Tue, 01 Mar 2022 08:35:04 GMT</pubDate>
-      
-        
-        
-          
-          
-      <description>&lt;blockquote&gt;
-&lt;p&gt;本文转载自：&lt;a</description>
-          
-        
-      
-      
-      
-      
-      
-      <category domain="http://gsyx666.github.io/tags/%E8%BD%AC%E8%BD%BD/">转载</category>
-      
-      <category domain="http://gsyx666.github.io/tags/Java/">Java</category>
-      
-      
-      <comments>http://gsyx666.github.io/2022/03/01/java/cs-notes-java-%E5%9F%BA%E7%A1%80/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>Java 容器</title>
-      <link>http://gsyx666.github.io/2022/03/01/java/cs-notes-java-%E5%AE%B9%E5%99%A8/</link>
-      <guid>http://gsyx666.github.io/2022/03/01/java/cs-notes-java-%E5%AE%B9%E5%99%A8/</guid>
-      <pubDate>Tue, 01 Mar 2022 08:35:04 GMT</pubDate>
-      
-        
-        
-          
-          
-      <description>&lt;blockquote&gt;
-&lt;p&gt;本文转载自：&lt;a</description>
-          
-        
-      
-      
-      
-      
-      
-      <category domain="http://gsyx666.github.io/tags/%E8%BD%AC%E8%BD%BD/">转载</category>
-      
-      <category domain="http://gsyx666.github.io/tags/Java/">Java</category>
-      
-      
-      <comments>http://gsyx666.github.io/2022/03/01/java/cs-notes-java-%E5%AE%B9%E5%99%A8/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
       <title>Java 虚拟机</title>
       <link>http://gsyx666.github.io/2022/03/01/java/cs-notes-java-%E8%99%9A%E6%8B%9F%E6%9C%BA/</link>
       <guid>http://gsyx666.github.io/2022/03/01/java/cs-notes-java-%E8%99%9A%E6%8B%9F%E6%9C%BA/</guid>
-      <pubDate>Tue, 01 Mar 2022 08:35:04 GMT</pubDate>
+      <pubDate>Tue, 01 Mar 2022 08:36:43 GMT</pubDate>
       
         
         
@@ -237,7 +78,7 @@
       <title>Java 并发</title>
       <link>http://gsyx666.github.io/2022/03/01/java/cs-notes-java-%E5%B9%B6%E5%8F%91/</link>
       <guid>http://gsyx666.github.io/2022/03/01/java/cs-notes-java-%E5%B9%B6%E5%8F%91/</guid>
-      <pubDate>Tue, 01 Mar 2022 08:35:04 GMT</pubDate>
+      <pubDate>Tue, 01 Mar 2022 08:36:43 GMT</pubDate>
       
         
         
@@ -262,10 +103,33 @@
     </item>
     
     <item>
+      <title>Hello World</title>
+      <link>http://gsyx666.github.io/2022/03/01/hello-world/</link>
+      <guid>http://gsyx666.github.io/2022/03/01/hello-world/</guid>
+      <pubDate>Tue, 01 Mar 2022 08:36:43 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description>&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt;</description>
+          
+        
+      
+      
+      
+      
+      
+      
+      <comments>http://gsyx666.github.io/2022/03/01/hello-world/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
       <title></title>
       <link>http://gsyx666.github.io/2022/03/01/bin/security/</link>
       <guid>http://gsyx666.github.io/2022/03/01/bin/security/</guid>
-      <pubDate>Tue, 01 Mar 2022 08:35:04 GMT</pubDate>
+      <pubDate>Tue, 01 Mar 2022 08:36:43 GMT</pubDate>
       
         
         
@@ -286,10 +150,66 @@
     </item>
     
     <item>
+      <title>git</title>
+      <link>http://gsyx666.github.io/2022/03/01/git/cs-notes-git/</link>
+      <guid>http://gsyx666.github.io/2022/03/01/git/cs-notes-git/</guid>
+      <pubDate>Tue, 01 Mar 2022 08:36:43 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description>&lt;blockquote&gt;
+&lt;p&gt;本文转载自 &lt;a</description>
+          
+        
+      
+      
+      
+      
+      
+      <category domain="http://gsyx666.github.io/tags/%E8%BD%AC%E8%BD%BD/">转载</category>
+      
+      <category domain="http://gsyx666.github.io/tags/git/">git</category>
+      
+      
+      <comments>http://gsyx666.github.io/2022/03/01/git/cs-notes-git/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>Java IO</title>
+      <link>http://gsyx666.github.io/2022/03/01/java/cs-notes-java-io/</link>
+      <guid>http://gsyx666.github.io/2022/03/01/java/cs-notes-java-io/</guid>
+      <pubDate>Tue, 01 Mar 2022 08:36:43 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description>&lt;blockquote&gt;
+&lt;p&gt;本文转载自：&lt;a</description>
+          
+        
+      
+      
+      
+      
+      
+      <category domain="http://gsyx666.github.io/tags/%E8%BD%AC%E8%BD%BD/">转载</category>
+      
+      <category domain="http://gsyx666.github.io/tags/Java/">Java</category>
+      
+      
+      <comments>http://gsyx666.github.io/2022/03/01/java/cs-notes-java-io/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
       <title>HTTP</title>
       <link>http://gsyx666.github.io/2022/03/01/bin/HTTP/</link>
       <guid>http://gsyx666.github.io/2022/03/01/bin/HTTP/</guid>
-      <pubDate>Tue, 01 Mar 2022 08:35:04 GMT</pubDate>
+      <pubDate>Tue, 01 Mar 2022 08:36:43 GMT</pubDate>
       
         
         
@@ -314,6 +234,62 @@
     </item>
     
     <item>
+      <title>Java 容器</title>
+      <link>http://gsyx666.github.io/2022/03/01/java/cs-notes-java-%E5%AE%B9%E5%99%A8/</link>
+      <guid>http://gsyx666.github.io/2022/03/01/java/cs-notes-java-%E5%AE%B9%E5%99%A8/</guid>
+      <pubDate>Tue, 01 Mar 2022 08:36:43 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description>&lt;blockquote&gt;
+&lt;p&gt;本文转载自：&lt;a</description>
+          
+        
+      
+      
+      
+      
+      
+      <category domain="http://gsyx666.github.io/tags/%E8%BD%AC%E8%BD%BD/">转载</category>
+      
+      <category domain="http://gsyx666.github.io/tags/Java/">Java</category>
+      
+      
+      <comments>http://gsyx666.github.io/2022/03/01/java/cs-notes-java-%E5%AE%B9%E5%99%A8/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>Java 基础</title>
+      <link>http://gsyx666.github.io/2022/03/01/java/cs-notes-java-%E5%9F%BA%E7%A1%80/</link>
+      <guid>http://gsyx666.github.io/2022/03/01/java/cs-notes-java-%E5%9F%BA%E7%A1%80/</guid>
+      <pubDate>Tue, 01 Mar 2022 08:36:43 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description>&lt;blockquote&gt;
+&lt;p&gt;本文转载自：&lt;a</description>
+          
+        
+      
+      
+      
+      
+      
+      <category domain="http://gsyx666.github.io/tags/%E8%BD%AC%E8%BD%BD/">转载</category>
+      
+      <category domain="http://gsyx666.github.io/tags/Java/">Java</category>
+      
+      
+      <comments>http://gsyx666.github.io/2022/03/01/java/cs-notes-java-%E5%9F%BA%E7%A1%80/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
       <title>备件库是什么</title>
       <link>http://gsyx666.github.io/2021/10/27/2021-10-27-spare-parts-library/</link>
       <guid>http://gsyx666.github.io/2021/10/27/2021-10-27-spare-parts-library/</guid>
@@ -330,8 +306,6 @@
       
       
       
-      
-      <category domain="http://gsyx666.github.io/categories/%E8%BD%AC%E8%BD%BD/">转载</category>
       
       
       <category domain="http://gsyx666.github.io/tags/%E8%BD%AC%E8%BD%BD/">转载</category>
@@ -541,19 +515,17 @@
     </item>
     
     <item>
-      <title>Flutter 跨平台演进及架构开篇</title>
-      <link>http://gsyx666.github.io/2019/06/01/flutter/</link>
-      <guid>http://gsyx666.github.io/2019/06/01/flutter/</guid>
-      <pubDate>Sat, 01 Jun 2019 22:22:22 GMT</pubDate>
+      <title>使用 .gitignore 忽略 Git 仓库中的文件</title>
+      <link>http://gsyx666.github.io/2017/02/22/git/2017-02-22-%E4%BD%BF%E7%94%A8-.gitignore-%E5%BF%BD%E7%95%A5-git-%E4%BB%93%E5%BA%93%E4%B8%AD%E7%9A%84%E6%96%87%E4%BB%B6/</link>
+      <guid>http://gsyx666.github.io/2017/02/22/git/2017-02-22-%E4%BD%BF%E7%94%A8-.gitignore-%E5%BF%BD%E7%95%A5-git-%E4%BB%93%E5%BA%93%E4%B8%AD%E7%9A%84%E6%96%87%E4%BB%B6/</guid>
+      <pubDate>Wed, 22 Feb 2017 00:00:00 GMT</pubDate>
       
         
         
           
           
       <description>&lt;blockquote&gt;
-&lt;p&gt;&lt;strong&gt;版权声明：&lt;/strong&gt; 转载自&lt;a href=&quot;http://gityuan.com/&quot;&gt;http://gityuan.com&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&quot;一、移动跨平台技术演进&quot;&gt;&lt;a</description>
+&lt;p&gt;本文转载自 &lt;a</description>
           
         
       
@@ -563,10 +535,48 @@
       
       <category domain="http://gsyx666.github.io/tags/%E8%BD%AC%E8%BD%BD/">转载</category>
       
-      <category domain="http://gsyx666.github.io/tags/Flutter/">Flutter</category>
+      <category domain="http://gsyx666.github.io/tags/Mac/">Mac</category>
+      
+      <category domain="http://gsyx666.github.io/tags/%E7%BB%88%E7%AB%AF/">终端</category>
+      
+      <category domain="http://gsyx666.github.io/tags/Git/">Git</category>
+      
+      <category domain="http://gsyx666.github.io/tags/Github/">Github</category>
       
       
-      <comments>http://gsyx666.github.io/2019/06/01/flutter/#disqus_thread</comments>
+      <comments>http://gsyx666.github.io/2017/02/22/git/2017-02-22-%E4%BD%BF%E7%94%A8-.gitignore-%E5%BF%BD%E7%95%A5-git-%E4%BB%93%E5%BA%93%E4%B8%AD%E7%9A%84%E6%96%87%E4%BB%B6/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>Git 代码回滚</title>
+      <link>http://gsyx666.github.io/2017/02/16/git/2017-02-16-Git-%E4%BB%A3%E7%A0%81%E5%9B%9E%E6%BB%9A/</link>
+      <guid>http://gsyx666.github.io/2017/02/16/git/2017-02-16-Git-%E4%BB%A3%E7%A0%81%E5%9B%9E%E6%BB%9A/</guid>
+      <pubDate>Thu, 16 Feb 2017 00:00:00 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description>&lt;blockquote&gt;
+&lt;p&gt;本文转载自 &lt;a href=&quot;http://qiubaiying.vip/2017/02/16/Git-%E4%BB%A3%E7%A0%81%E5%9B%9E%E6%BB%9A/&quot;&gt;邱柏荧&lt;/a&gt;</description>
+          
+        
+      
+      
+      
+      
+      
+      <category domain="http://gsyx666.github.io/tags/%E8%BD%AC%E8%BD%BD/">转载</category>
+      
+      <category domain="http://gsyx666.github.io/tags/Mac/">Mac</category>
+      
+      <category domain="http://gsyx666.github.io/tags/%E7%BB%88%E7%AB%AF/">终端</category>
+      
+      <category domain="http://gsyx666.github.io/tags/Git/">Git</category>
+      
+      
+      <comments>http://gsyx666.github.io/2017/02/16/git/2017-02-16-Git-%E4%BB%A3%E7%A0%81%E5%9B%9E%E6%BB%9A/#disqus_thread</comments>
       
     </item>
     
