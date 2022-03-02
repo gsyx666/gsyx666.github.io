@@ -1,5 +1,5 @@
 ---
-layout:     post
+
 title:      "What happens when..."
 subtitle:   "What happens when you type google.com into your browser's address box and press enter?"
 date:       2021-10-21

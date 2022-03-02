@@ -1,9 +1,7 @@
 ---
-layout:     postno
 title:      HTTP
 date:       
 header-img: img/post/hui.jpg
-catalog: true
 tags:
     - HTTP
     - 转载
