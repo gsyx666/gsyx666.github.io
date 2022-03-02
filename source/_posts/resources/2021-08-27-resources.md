@@ -9,6 +9,7 @@ header-style: text
 iframe: https://player.bilibili.com/player.html?aid=582934745&#038;bvid=BV1TN411d7FL&#038;cid=182710178&#038;page=1
 tags:
   - 资源
+categories: Digital Life
 ---
 
 # 资源导航站

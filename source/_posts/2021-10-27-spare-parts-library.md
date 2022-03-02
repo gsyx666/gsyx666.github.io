@@ -1,10 +1,8 @@
 ---
-layout:     post
 title:      "备件库是什么"
 subtitle:   "What is the spare parts library"
 date:       2021-10-27 14:43:01
 author:     "晓色暮云"
-catalog: true
 header-img: img/in-post/spare-parts-library-1-1.jpg
 tags:
   - Shopping

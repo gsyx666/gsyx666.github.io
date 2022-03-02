@@ -1,4 +1,15 @@
-> 本博客模仿于http://gityuan.com &#160;&#160;&#160;&#160;[github](https://github.com/yuanhuihui/yuanhuihui.github.io)
+---
+title:  "gityuan"
+author: gityuan
+permalink: /android/
+date:   2016-04-01 11:49:40
+tags:
+    - 转载
+categories: Android
+
+---
+
+[github](https://github.com/yuanhuihui/yuanhuihui.github.io)
 
 
            

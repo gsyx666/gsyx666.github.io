@@ -7,7 +7,6 @@ catalog: true
 tags:
     - 美文
     - 转载
-categories: 转载
 ---
 
 > 转载自课本，作者[林清玄](https://baike.baidu.com/item/%E6%9E%97%E6%B8%85%E7%8E%84/477374?fr=kg_general)  
