@@ -16,28 +16,28 @@
   <meta name="author" content="gityuan">
   <meta name="keywords" content="盖世英雄, gsyx666, Android博客, Android源码">
   
-    <meta name="description" content="版权声明： 转载自http:&#x2F;&#x2F;gityuan.com  为便于日常查阅本博客，可通过 盖世英雄博客导航 方便检索文章 一、引言众所周知，Android是谷歌开发的一款基于Linux的开源操作系统，从诞生至今已有10余年，这一路走来Android遇到哪些问题？大版本升级朝着什么方向演进？Android的未来如何？我的公号《Android 技术架构演进与未来》 讲解了Android一路走来，在用户">
+    <meta name="description" content="github 博客网站：http:&#x2F;&#x2F;gityuan.com一、引言本文作为Android系统架构的开篇，起到提纲挈领的作用，从系统整体架构角度概要讲解Android系统的核心技术点，带领大家初探Android系统全貌以及内部运作机制。虽然Android系统非常庞大且错综复杂，需要具备全面的技术栈，但整体架构设计清晰。Android底层内核空间以Linux Kernel作为基石，上层用户空间由Na">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Android 操作系统架构开篇">
+<meta property="og:title" content="gityuan">
 <meta property="og:url" content="http://gsyx666.github.io/android/index.html">
 <meta property="og:site_name" content="gsyx">
-<meta property="og:description" content="版权声明： 转载自http:&#x2F;&#x2F;gityuan.com  为便于日常查阅本博客，可通过 盖世英雄博客导航 方便检索文章 一、引言众所周知，Android是谷歌开发的一款基于Linux的开源操作系统，从诞生至今已有10余年，这一路走来Android遇到哪些问题？大版本升级朝着什么方向演进？Android的未来如何？我的公号《Android 技术架构演进与未来》 讲解了Android一路走来，在用户">
+<meta property="og:description" content="github 博客网站：http:&#x2F;&#x2F;gityuan.com一、引言本文作为Android系统架构的开篇，起到提纲挈领的作用，从系统整体架构角度概要讲解Android系统的核心技术点，带领大家初探Android系统全貌以及内部运作机制。虽然Android系统非常庞大且错综复杂，需要具备全面的技术栈，但整体架构设计清晰。Android底层内核空间以Linux Kernel作为基石，上层用户空间由Na">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="http://gsyx666.github.io/images/android-arch/android-stack.png">
-<meta property="og:image" content="http://gsyx666.github.io/images/android-arch/android-boot.jpg">
-<meta property="og:image" content="http://gsyx666.github.io/images/android-arch/IPC-Binder.jpg">
-<meta property="og:image" content="http://gsyx666.github.io/images/android-arch/handler_thread_commun.jpg">
-<meta property="og:image" content="http://gsyx666.github.io/images/android-arch/android_os.png">
-<meta property="og:image" content="http://gsyx666.github.io/images/android-arch/android-booting.jpg">
+<meta property="og:image" content="http://gityuan.com/images/android-arch/android-stack.png">
+<meta property="og:image" content="http://gityuan.com/images/android-arch/android-boot.jpg">
+<meta property="og:image" content="http://gityuan.com/images/android-arch/IPC-Binder.jpg">
+<meta property="og:image" content="http://gityuan.com/images/android-arch/handler_thread_commun.jpg">
+<meta property="og:image" content="http://gityuan.com/images/android-arch/android_os.png">
+<meta property="og:image" content="http://gityuan.com/images/android-arch/android-booting.jpg">
 <meta property="article:published_time" content="2016-04-01T11:49:40.000Z">
-<meta property="article:modified_time" content="2022-03-02T12:59:30.691Z">
+<meta property="article:modified_time" content="2022-03-02T13:09:22.419Z">
 <meta property="article:author" content="gsyx">
 <meta property="article:tag" content="转载">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="http://gsyx666.github.io/images/android-arch/android-stack.png">
+<meta name="twitter:image" content="http://gityuan.com/images/android-arch/android-stack.png">
   
   
-  <title>Android 操作系统架构开篇 - gsyx</title>
+  <title>gityuan - gsyx</title>
 
   <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4/dist/css/bootstrap.min.css" />
 
@@ -197,7 +197,7 @@
       <div class="full-bg-img">
         <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
           <div class="page-header text-center fade-in-up">
-            <span class="h2" id="subtitle" title="Android 操作系统架构开篇">
+            <span class="h2" id="subtitle" title="gityuan">
               
             </span>
 
@@ -232,7 +232,7 @@
       <i class="iconfont icon-clock-fill"></i>
       
       
-      87 分钟
+      85 分钟
     </span>
   
 
@@ -261,23 +261,18 @@
         <div class="py-5" id="board">
           <article class="post-content mx-auto">
             <!-- SEO header -->
-            <h1 style="display: none">Android 操作系统架构开篇</h1>
+            <h1 style="display: none">gityuan</h1>
             
             <div class="markdown-body">
-              <blockquote>
-<p><strong>版权声明：</strong> 转载自<a target="_blank" rel="noopener external nofollow noreferrer" href="http://gityuan.com/">http://gityuan.com</a></p>
-</blockquote>
-<p>为便于日常查阅本博客，可通过 <strong><a href="https://gsyx666.github.io/archive/">盖世英雄博客导航</a></strong> 方便检索文章</p>
-<h3 id="一、引言"><a href="#一、引言" class="headerlink" title="一、引言"></a>一、引言</h3><p>众所周知，Android是谷歌开发的一款基于Linux的开源操作系统，从诞生至今已有10余年，这一路走来Android遇到哪些问题？大版本升级朝着什么方向演进？Android的未来如何？我的公号<a target="_blank" rel="noopener external nofollow noreferrer" href="https://mp.weixin.qq.com/s/W38aauoCEEUbL8KvUkb_Rw">《Android 技术架构演进与未来》</a> 讲解了Android一路走来，在用户体验、性能、功耗、安全、隐私等方面取得的很大进步，以及未来可能的方向。</p>
-<p>本文作为Android系统架构的开篇，起到提纲挈领的作用，从系统整体架构角度概要讲解Android系统的核心技术点，带领大家初探Android系统全貌以及内部运作机制。虽然Android系统非常庞大且错综复杂，需要具备全面的技术栈，但整体架构设计清晰。Android底层内核空间以Linux Kernel作为基石，上层用户空间由Native系统库、虚拟机运行环境、框架层组成，通过系统调用(Syscall)连通系统的内核空间与用户空间。对于用户空间主要采用C++和Java代码编写，通过JNI技术打通用户空间的Java层和Native层(C++&#x2F;C)，从而连通整个系统。</p>
+              <p><a target="_blank" rel="noopener external nofollow noreferrer" href="https://github.com/yuanhuihui/yuanhuihui.github.io">github</a></p>
+<h2 id="博客网站：http-gityuan-com"><a href="#博客网站：http-gityuan-com" class="headerlink" title="博客网站：http://gityuan.com"></a>博客网站：<a target="_blank" rel="noopener external nofollow noreferrer" href="http://gityuan.com/archive/">http://gityuan.com</a></h2><h3 id="一、引言"><a href="#一、引言" class="headerlink" title="一、引言"></a>一、引言</h3><p>本文作为Android系统架构的开篇，起到提纲挈领的作用，从系统整体架构角度概要讲解Android系统的核心技术点，带领大家初探Android系统全貌以及内部运作机制。虽然Android系统非常庞大且错综复杂，需要具备全面的技术栈，但整体架构设计清晰。Android底层内核空间以Linux Kernel作为基石，上层用户空间由Native系统库、虚拟机运行环境、框架层组成，通过系统调用(Syscall)连通系统的内核空间与用户空间。对于用户空间主要采用C++和Java代码编写，通过JNI技术打通用户空间的Java层和Native层(C++&#x2F;C)，从而连通整个系统。</p>
 <p>为了能让大家整体上大致了解Android系统涉及的知识层面，先来看一张Google官方提供的经典分层架构图，从下往上依次分为Linux内核、HAL、系统Native库和Android运行时环境、Java框架层以及应用层这5层架构，其中每一层都包含大量的子模块或子系统。</p>
-<p><img src="/images/android-arch/android-stack.png" srcset="/img/loading.gif" lazyload alt="android-stack"></p>
-<p>上图采用静态分层方式的架构划分，众所周知，程序代码是死的，系统运转是活的，各模块代码运行在不同的进程(线程)中，相互之间进行着各种错终复杂的信息传递与交互流，从这个角度来说此图并没能体现Android整个系统的内部架构、运行机理，以及各个模块之间是如何衔接与配合工作的。</p>
-<p><strong>为了更深入地掌握Android整个架构思想以及各个模块在Android系统所处的地位与价值，计划以Android系统启动过程为主线，以进程的视角来诠释Android M系统全貌</strong>，全方位的深度剖析各个模块功能，争取各个击破。这样才能犹如庖丁解牛，解决、分析问题则能游刃有余。</p>
+<p><img src="http://gityuan.com/images/android-arch/android-stack.png" srcset="/img/loading.gif" lazyload alt="android-stack"></p>
+<p>上图采用静态分层方式的架构划分，众所周知，程序代码是死的，系统运转是活的，各模块代码运行在不同的进程(线程)中，相互之间进行着各种错终复杂的信息传递与交互流，从这个角度来说此图并没能体现Android整个系统的内部架构、运行机理，以及各个模块之间是如何衔接与配合工作的。<strong>为了更深入地掌握Android整个架构思想以及各个模块在Android系统所处的地位与价值，计划以Android系统启动过程为主线，以进程的视角来诠释Android M系统全貌</strong>，全方位的深度剖析各个模块功能，争取各个击破。这样才能犹如庖丁解牛，解决、分析问题则能游刃有余。</p>
 <h3 id="二、Android架构"><a href="#二、Android架构" class="headerlink" title="二、Android架构"></a>二、Android架构</h3><p>Google提供的5层架构图很经典，但为了更进一步透视Android系统架构，本文更多的是以进程的视角，以分层的架构来诠释Android系统的全貌，阐述Android内部的环环相扣的内在联系。</p>
 <p><strong>系统启动架构图</strong></p>
 <p>点击查看<a target="_blank" rel="noopener external nofollow noreferrer" href="http://gityuan.com/images/android-arch/android-boot.jpg">大图</a></p>
-<p><img src="/images/android-arch/android-boot.jpg" srcset="/img/loading.gif" lazyload alt="process_status"></p>
+<p><img src="http://gityuan.com/images/android-arch/android-boot.jpg" srcset="/img/loading.gif" lazyload alt="process_status"></p>
 <p><strong>图解：</strong><br>Android系统启动过程由上图从下往上的一个过程是由Boot Loader引导开机，然后依次进入 -&gt; <code>Kernel</code> -&gt; <code>Native</code> -&gt; <code>Framework</code> -&gt; <code>App</code>，接来下简要说说每个过程：</p>
 <p>关于Loader层：</p>
 <ul>
@@ -322,7 +317,7 @@
 <h4 id="3-1-Binder"><a href="#3-1-Binder" class="headerlink" title="3.1 Binder"></a>3.1 Binder</h4><p>Binder作为Android系统提供的一种IPC机制，无论从系统开发还是应用开发，都是Android系统中最重要的组成，也是最难理解的一块知识点，想了解<a target="_blank" rel="noopener external nofollow noreferrer" href="https://www.zhihu.com/question/39440766/answer/89210950">为什么Android要采用Binder作为IPC机制？</a> 可查看我在知乎上的回答。深入了解Binder机制，最好的方法便是阅读源码，借用Linux鼻祖Linus Torvalds曾说过的一句话：Read The Fucking Source Code。下面简要说说Binder IPC原理。</p>
 <p><strong>Binder IPC原理</strong></p>
 <p>Binder通信采用c&#x2F;s架构，从组件视角来说，包含Client、Server、ServiceManager以及binder驱动，其中ServiceManager用于管理系统中的各种服务。</p>
-<p><img src="/images/android-arch/IPC-Binder.jpg" srcset="/img/loading.gif" lazyload alt="ServiceManager"></p>
+<p><img src="http://gityuan.com/images/android-arch/IPC-Binder.jpg" srcset="/img/loading.gif" lazyload alt="ServiceManager"></p>
 <ul>
 <li>想进一步了解Binder，可查看<a target="_blank" rel="noopener external nofollow noreferrer" href="http://gityuan.com/2015/10/31/binder-prepare/">Binder系列—开篇</a>，Binder系列花费了13篇文章的篇幅，从源码角度出发来讲述Driver、Native、Framework、App四个层面的整个完整流程。根据有些读者反馈这个系列还是不好理解，这个binder涉及的层次跨度比较大，知识量比较广，建议大家先知道binder是用于进程间通信，有个大致概念就可以先去学习系统基本知识，等后面有一定功力再进一步深入研究Binder机制。</li>
 </ul>
@@ -392,9 +387,45 @@
 </tr>
 </tbody></table>
 <p><strong>Binder驱动篇:</strong></p>
-<p>|—|—|—|<br>|1|<a target="_blank" rel="noopener external nofollow noreferrer" href="http://gityuan.com/2015/11/01/binder-driver/">Binder系列1—Binder Driver初探</a>|驱动open&#x2F;mmap&#x2F;ioctl，以及binder结构体|<br>|2|<a target="_blank" rel="noopener external nofollow noreferrer" href="http://gityuan.com/2015/11/02/binder-driver-2/">Binder系列2—Binder Driver再探</a>|Binder通信协议，内存机制|</p>
+<table>
+<thead>
+<tr>
+<th>序号</th>
+<th>文章名</th>
+<th>概述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>1</td>
+<td><a target="_blank" rel="noopener external nofollow noreferrer" href="http://gityuan.com/2015/11/01/binder-driver/">Binder系列1—Binder Driver初探</a></td>
+<td>驱动open&#x2F;mmap&#x2F;ioctl，以及binder结构体</td>
+</tr>
+<tr>
+<td>2</td>
+<td><a target="_blank" rel="noopener external nofollow noreferrer" href="http://gityuan.com/2015/11/02/binder-driver-2/">Binder系列2—Binder Driver再探</a></td>
+<td>Binder通信协议，内存机制</td>
+</tr>
+</tbody></table>
 <p><strong>Binder使用篇:</strong></p>
-<p>|—|—|—|<br>|1|<a target="_blank" rel="noopener external nofollow noreferrer" href="http://gityuan.com/2015/11/22/binder-use/">Binder系列8—如何使用Binder</a>|Native层、Framwrok层自定义Binder服务|<br>|2|<a target="_blank" rel="noopener external nofollow noreferrer" href="http://gityuan.com/2015/11/23/binder-aidl/">Binder系列9—如何使用AIDL</a>|App层自定义Binder服务|</p>
+<table>
+<thead>
+<tr>
+<th>序号</th>
+<th>文章名</th>
+<th>概述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>1</td>
+<td><a target="_blank" rel="noopener external nofollow noreferrer" href="http://gityuan.com/2015/11/22/binder-use/">Binder系列8—如何使用Binder</a></td>
+<td>Native层、Framwrok层自定义Binder服务</td>
+</tr>
+<tr>
+<td>2</td>
+<td><a target="_blank" rel="noopener external nofollow noreferrer" href="http://gityuan.com/2015/11/23/binder-aidl/">Binder系列9—如何使用AIDL</a></td>
+<td>App层自定义Binder服务</td>
+</tr>
+</tbody></table>
 <h4 id="3-2-Socket"><a href="#3-2-Socket" class="headerlink" title="3.2 Socket"></a>3.2 Socket</h4><p>Socket通信方式也是C&#x2F;S架构，比Binder简单很多。在Android系统中采用Socket通信方式的主要有：</p>
 <ul>
 <li>zygote：用于孵化进程，system_server创建进程是通过socket向zygote进程发起请求；</li>
@@ -407,7 +438,7 @@
 <p>等等还有很多，这里不一一列举，Socket方式更多的用于Android framework层与native层之间的通信。Socket通信方式相对于binder比较简单，这里省略。</p>
 <h4 id="3-3-Handler"><a href="#3-3-Handler" class="headerlink" title="3.3 Handler"></a>3.3 Handler</h4><p><strong>Binder&#x2F;Socket用于进程间通信，而Handler消息机制用于同进程的线程间通信</strong>，Handler消息机制是由一组MessageQueue、Message、Looper、Handler共同组成的，为了方便且称之为Handler消息机制。</p>
 <p>有人可能会疑惑，为何Binder&#x2F;Socket用于进程间通信，能否用于线程间通信呢？答案是肯定，对于两个具有独立地址空间的进程通信都可以，当然也能用于共享内存空间的两个线程间通信，这就好比杀鸡用牛刀。接着可能还有人会疑惑，那handler消息机制能否用于进程间通信？答案是不能，Handler只能用于共享内存地址空间的两个线程间通信，即同进程的两个线程间通信。很多时候，Handler是工作线程向UI主线程发送消息，即App应用中只有主线程能更新UI，其他工作线程往往是完成相应工作后，通过Handler告知主线程需要做出相应地UI更新操作，Handler分发相应的消息给UI主线程去完成，如下图：</p>
-<p><img src="/images/android-arch/handler_thread_commun.jpg" srcset="/img/loading.gif" lazyload alt="handler_communication"></p>
+<p><img src="http://gityuan.com/images/android-arch/handler_thread_commun.jpg" srcset="/img/loading.gif" lazyload alt="handler_communication"></p>
 <p>由于工作线程与主线程共享地址空间，即Handler实例对象mHandler位于线程间共享的内存堆上，工作线程与主线程都能直接使用该对象，只需要注意多线程的同步问题。工作线程通过mHandler向其成员变量MessageQueue中添加新Message，主线程一直处于loop()方法内，当收到新的Message时按照一定规则分发给相应的handleMessage()方法来处理。所以说，Handler消息机制用于同进程的线程间通信，其核心是线程间共享内存空间，而不同进程拥有不同的地址空间，也就不能用handler来实现进程间通信。</p>
 <p>上图只是Handler消息机制的一种处理流程，是不是只能工作线程向UI主线程发消息呢，其实不然，可以是UI线程向工作线程发送消息，也可以是多个工作线程之间通过handler发送消息。更多关于Handler消息机制文章：</p>
 <ul>
@@ -421,8 +452,8 @@
 <p><strong>建议阅读群体</strong>： 适合于正从事或者有兴趣研究Android系统的工程师或者技术爱好者，也适合Android App高级工程师；对于尚未入门或者刚入门的App工程师阅读可能会有点困难，建议先阅读更基础的资料，再来阅读本站博客。</p>
 <p>看到Android整个系统架构是如此庞大的, 该问如何学习Android系统, 以下是我自己的Android的学习和研究论，仅供参考<a target="_blank" rel="noopener external nofollow noreferrer" href="http://gityuan.com/2016/04/24/how-to-study-android/">如何自学Android</a>。</p>
 <p>从整理上来列举一下Android系统的核心知识点概览：</p>
-<p><img src="/images/android-arch/android_os.png" srcset="/img/loading.gif" lazyload alt="Android_os"></p>
-<h4 id="4-1-系统启动系列"><a href="#4-1-系统启动系列" class="headerlink" title="4.1 系统启动系列"></a>4.1 系统启动系列</h4><p><img src="/images/android-arch/android-booting.jpg" srcset="/img/loading.gif" lazyload alt="android-booting"></p>
+<p><img src="http://gityuan.com/images/android-arch/android_os.png" srcset="/img/loading.gif" lazyload alt="Android_os"></p>
+<h4 id="4-1-系统启动系列"><a href="#4-1-系统启动系列" class="headerlink" title="4.1 系统启动系列"></a>4.1 系统启动系列</h4><p><img src="http://gityuan.com/images/android-arch/android-booting.jpg" srcset="/img/loading.gif" lazyload alt="android-booting"></p>
 <p><a target="_blank" rel="noopener external nofollow noreferrer" href="http://gityuan.com/2016/02/01/android-booting/">Android系统启动-概述</a>:<br>Android系统中极其重要进程：init, zygote, system_server, servicemanager 进程:</p>
 <table>
 <thead>
@@ -806,7 +837,6 @@
 <li><a target="_blank" rel="noopener external nofollow noreferrer" href="http://gityuan.com/2016/07/23/android-io-arch">Android存储系统之架构篇</a></li>
 </ul>
 </li>
-<li>Linux驱动篇</li>
 <li>dalvik&#x2F;art<ul>
 <li><a target="_blank" rel="noopener external nofollow noreferrer" href="http://gityuan.com/2016/11/26/art-trace/">解读Java进程的Trace文件</a></li>
 </ul>
@@ -929,6 +959,7 @@
 </tbody></table>
 <h3 id="五、结束语"><a href="#五、结束语" class="headerlink" title="五、结束语"></a>五、结束语</h3><p>Android系统之博大精深，包括Linux内核、Native、虚拟机、Framework，通过系统调用连通内核与用户空间，通过JNI打通用户空间的Java层和Native层，通过Binder、Socket、Handler等打通跨进程、跨线程的信息交换。只有真正阅读并理解系统核心架构的设计，解决问题和设计方案才能做到心中无剑胜有剑，才能做到知其然知其所以然。当修炼到此，恭喜你对系统有了更高一个层次的理解，正如太极剑法，忘记了所有招式，也就练成了太极剑法。</p>
 <p>再回过头去看看那些API，看到的将不再是一行行代码、一个个接口的调用，而是各种信息的传递与交互工作，而是背后成千上万个小蝌蚪的动态执行流。记得《侠客行》里面的龙木二岛主终其一生也无法参透太玄经，石破天却短短数日练成绝世神功，究其根源是龙木二岛主以静态视角去解读太玄经，而石破天把墙壁的图案想象成无数游动的蝌蚪，最终成就绝世神功。一言以蔽之，程序代码是死的，系统运转是活的，要以动态视角去理解系统架构。</p>
+<p><strong>Gityuan 匠心打造</strong></p>
 
             </div>
             <hr>
@@ -963,9 +994,9 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2017/02/15/git/2017-02-15-Git%E6%8C%87%E4%BB%A4%E6%95%B4%E7%90%86/">
+                      <a href="/android/">
                         <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">Git指令整理</span>
+                        <span class="hidden-mobile">Android 操作系统架构开篇</span>
                         <span class="visible-mobile">上一篇</span>
                       </a>
                     
