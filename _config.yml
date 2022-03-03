@@ -103,7 +103,9 @@ theme: fluid
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
-  type: ''
+  # - type: ''
+  - type: GooglePush # 谷歌提交
+
 
 
 feed:
