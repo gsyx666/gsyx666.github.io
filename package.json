@@ -14,6 +14,7 @@
   "dependencies": {
     "hexo": "^6.0.0",
     "hexo-abbrlink": "^2.2.1",
+    "hexo-auto-category": "^0.2.1",
     "hexo-blog-encrypt": "^3.1.6",
     "hexo-douban-card": "^1.2.6",
     "hexo-filter-nofollow": "^2.0.2",
@@ -27,6 +28,7 @@
     "hexo-renderer-ejs": "^2.0.0",
     "hexo-renderer-marked": "^5.0.0",
     "hexo-renderer-stylus": "^2.0.0",
+    "hexo-seo-autopush": "^2.0.5",
     "hexo-server": "^3.0.0",
     "hexo-tag-common": "0.0.5",
     "hexo-theme-fluid": "^1.8.14",
