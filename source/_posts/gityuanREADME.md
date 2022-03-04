@@ -1,12 +1,12 @@
 ---
-title:  "gityuan"
+title: gityuan
 author: gityuan
 permalink: /android/
-date:   2016-04-01 11:49:40
 tags:
-    - 转载
+  - 转载
 categories: Android
-
+abbrlink: 3599
+date: 2016-04-01 11:49:40
 ---
 
 [github](https://github.com/yuanhuihui/yuanhuihui.github.io)

@@ -1,14 +1,18 @@
 ---
-
-title:      "What happens when..."
-subtitle:   "What happens when you type google.com into your browser's address box and press enter?"
-date:       2021-10-21
-author:     "Alex Gaynor"
+title: What happens when...
+subtitle: >-
+  What happens when you type google.com into your browser's address box and
+  press enter?
+author: Alex Gaynor
 catalog: true
 hidden: true
-header-style: text 
+header-style: text
 tag:
   - 转载
+categories:
+  - bin
+abbrlink: 29855
+date: 2021-10-21 00:00:00
 ---
 
 > `What happens when...`_(原文)

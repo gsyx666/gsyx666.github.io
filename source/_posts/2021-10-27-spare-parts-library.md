@@ -1,13 +1,14 @@
 ---
-title:      "备件库是什么"
-subtitle:   "What is the spare parts library"
-date:       2021-10-27 14:43:01
-author:     "晓色暮云"
+title: 备件库是什么
+subtitle: What is the spare parts library
+author: 晓色暮云
 header-img: img/in-post/spare-parts-library-1-1.jpg
 tags:
   - Shopping
   - 转载
 categories: Digital Life
+abbrlink: 36229
+date: 2021-10-27 14:43:01
 ---
 
 > 本文转载自 [备件库是什么：如何科学选购备件库商](https://www.coolapk.com/feed/20415119?shareKey=MmQyZDJlNDhiMzg1NjE3ODhiOGE~) - 酷安@[晓色暮云](http://www.coolapk.com/u/1117667)

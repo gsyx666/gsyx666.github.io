@@ -1,2 +1,3 @@
 User-agent: *
 Allow: /
+Sitemap: https://https://gsyx.vercel.app/sitemap.xml

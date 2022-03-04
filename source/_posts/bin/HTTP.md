@@ -1,10 +1,13 @@
 ---
-title:      HTTP
-date:       
+title: HTTP
 header-img: img/post/hui.jpg
 tags:
-    - HTTP
-    - 转载
+  - HTTP
+  - 转载
+categories:
+  - bin
+abbrlink: 35945
+date:
 ---
 > 本文转载自：https://github.com/CyC2018/CS-Notes/blob/master/notes/HTTP.md
 

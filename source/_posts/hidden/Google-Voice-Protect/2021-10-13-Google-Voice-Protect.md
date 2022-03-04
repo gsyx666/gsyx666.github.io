@@ -1,13 +1,16 @@
 ---
-title:    Google Voice 如何保号
-date:       2021-10-13
-author:     BY Lete乐特
+title: Google Voice 如何保号
+author: BY Lete乐特
 hide: true
 header-img: img/post/hui.jpg
-
 tags:
-    - Google Voice
-    - 转载
+  - Google Voice
+  - 转载
+categories:
+  - hidden
+  - Google-Voice-Protect
+abbrlink: 31314
+date: 2021-10-13 00:00:00
 ---
 > 更新时间 2021-10-30
 

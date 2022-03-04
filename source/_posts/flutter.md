@@ -1,9 +1,9 @@
 ---
-title:  "Flutter 跨平台演进及架构开篇"
-date:   2019-06-01 22:22:22
+title: Flutter 跨平台演进及架构开篇
 tags: Flutter
 categories: Android
-
+abbrlink: 46116
+date: 2019-06-01 22:22:22
 ---
 
 > **版权声明：** 转载自http://gityuan.com

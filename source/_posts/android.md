@@ -1,14 +1,13 @@
 ---
-
-title:  "Android 操作系统架构开篇"
+title: Android 操作系统架构开篇
 author: gityuan
 permalink: /android/
-date:   2016-04-01 11:49:40
-catalog:  true
+catalog: true
 tags:
-    - 转载
+  - 转载
 categories: Android
-
+abbrlink: 33673
+date: 2016-04-01 11:49:40
 ---
 
 > **版权声明：** 转载自http://gityuan.com
