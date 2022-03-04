@@ -14,7 +14,7 @@ timezone: ''
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: https://gsyx.vercel.app/
+url: https://gsyx666.github.io
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:
@@ -133,9 +133,9 @@ feed:
 sitemap:
   path: 
     - sitemap.xml
-    - sitemap.txt
+  #  - sitemap.txt
   template: ./sitemap_template.xml
-  template_txt: ./sitemap_template.txt
+  #template_txt: ./sitemap_template.txt
   rel: false
   tags: true
   categories: true
