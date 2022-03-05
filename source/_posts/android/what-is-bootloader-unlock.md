@@ -34,7 +34,7 @@ categories:
 
 具体来说，BootLoader 是如何实现这两大功能的呢？以高通设备为例，我们看一下 BootLoader 的启动流程：
 
-![](/img/in-post/BootLoader/BootLoader1.jpg)
+![](/img/what-is-bootloader-unlock/BootLoader1.jpg)
 
 当我们按下电源键启动手机的时候，CPU 上电之后开始运行；它最开始运行的代码是 CPU 芯片厂商提供的，写死在某个只读存储上，这段代码一旦出厂便不可更改，我们通常称之为 BootROM 或者 PBL (Primary Boot Loader)；PBL 的主要功能是上电自检并启动下一个组件 SBL(Secondary Boot Loader），现在被叫做 XBL (eXtended Boot Loader)。这个 SBL 主要是初始化一些硬件环境(如DDR, clocks 和 USB 等）和代码安全环境 (TrustZone)，当然，最重要的还是**验证并加载**下一个组件——ABL(Android Boot Loader，也叫 aboot)。与 PBL 不同，SBL 程序一般存放在 eMMC 上，这个地方是可以被修改的，因此它可以被刷写和升级。正因如此，SBL 还承载着最底层的恢复设备的重任；我们常说的高通 9008 模式（全称 Emergency Download Mode）就运行在这里。9008 模式，本质上就是强制刷写设备的 eMMC 存储，因此不论你上层操作系统或者应用软件被破坏成什么样，除非硬件损坏，基本上都可以救回来。
 
@@ -44,7 +44,7 @@ categories:
 
 ABL 启动 Linux Kernel 之后，内核最终会进入用户态执行 init，init 进而启动 ueventd, watchdogd, surfaceflinger 以及 zygote 等；zygote 启动之后 fork system_server 并启动各种 binder 服务，系统核心 binder 服务启动之后会启动 Launcher 桌面，这样整个系统就启动完毕了。联发科的设备 BootLoader 启动过程类似：
 
-![](/img/in-post/BootLoader/BootLoader2.jpg)从上述 BootLoader 启动过程，我们可以很清楚地知道，BootLoader 的恢复功能体现在 SBL 阶段的恢复模式以及 ABL 阶段的 fastboot 线刷模式。实际上，在我们手机底层软件出现问题之后，不论是自己救砖还是去售后，基本都是用的这两种模式。在搞清楚了 BootLoader 的恢复功能之后，那在安全性方面，它又是如何保障的呢？
+![](/img/what-is-bootloader-unlock/BootLoader2.jpg)从上述 BootLoader 启动过程，我们可以很清楚地知道，BootLoader 的恢复功能体现在 SBL 阶段的恢复模式以及 ABL 阶段的 fastboot 线刷模式。实际上，在我们手机底层软件出现问题之后，不论是自己救砖还是去售后，基本都是用的这两种模式。在搞清楚了 BootLoader 的恢复功能之后，那在安全性方面，它又是如何保障的呢？
 
 细心的童鞋可能会注意到，上面我们多次提到了**验证并加载**。BootLoader 的各个启动过程串起来就是一个启动链，这个启动链的各个阶段在进行过渡和跳转的时候是需要进行验证的。也就是说，上一阶段在启动下一阶段的时候，会验证下一阶段的代码是否可信；只有在验证通过的情况下，整个启动过程才会继续进行。这就好比接力赛跑，在上一个选手把接力棒传递到下一个选手之前，他得先搞清楚是不是把接力棒交到了正确的伙伴手里；在现实世界中，这是通过五官和记忆来判断的；在计算里面，这个验证的过程实际上就是比对**数字签名**。不熟悉数字签名的童鞋，可以参阅一下我[之前的文章][3]。
 
