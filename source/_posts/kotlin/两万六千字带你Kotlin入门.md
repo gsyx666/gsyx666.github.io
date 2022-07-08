@@ -1,12 +1,13 @@
 ---
-title:      "两万六千字带你 Kotlin 入门"
-date:       2022-3-8 
-author:     "leavesCZY"
+title: 两万六千字带你 Kotlin 入门
+date: 2022-3-8
+author: leavesCZY
 tags:
   - Kotlin
   - 转载
 categories:
-  - Kotlin
+  - kotlin
+abbrlink: 45499
 ---
 
 > 本文转载自 [两万六千字带你Kotlin入门](https://github.com/leavesCZY/AndroidGuide/blob/master/kotlin_core/%E4%B8%A4%E4%B8%87%E5%85%AD%E5%8D%83%E5%AD%97%E5%B8%A6%E4%BD%A0Kotlin%E5%85%A5%E9%97%A8.md) 
