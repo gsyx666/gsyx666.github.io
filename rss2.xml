@@ -15,14 +15,14 @@
     <atom:link href="https://gsyx666.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>盖世英雄, gsyx666, Android博客, Android源码</description>
-    <pubDate>Wed, 06 Jul 2022 11:02:43 GMT</pubDate>
+    <pubDate>Fri, 08 Jul 2022 12:30:56 GMT</pubDate>
     <generator>http://hexo.io/</generator>
     
     <item>
       <title>面向对象思想</title>
-      <link>https://gsyx666.github.io/2022/07/06/java/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E6%80%9D%E6%83%B3/</link>
-      <guid>https://gsyx666.github.io/2022/07/06/java/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E6%80%9D%E6%83%B3/</guid>
-      <pubDate>Wed, 06 Jul 2022 11:02:43 GMT</pubDate>
+      <link>https://gsyx666.github.io/2022/07/08/java/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E6%80%9D%E6%83%B3/</link>
+      <guid>https://gsyx666.github.io/2022/07/08/java/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E6%80%9D%E6%83%B3/</guid>
+      <pubDate>Fri, 08 Jul 2022 12:30:56 GMT</pubDate>
       
         
         
@@ -42,43 +42,15 @@
       <category domain="https://gsyx666.github.io/tags/Java/">Java</category>
       
       
-      <comments>https://gsyx666.github.io/2022/07/06/java/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E6%80%9D%E6%83%B3/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>Java 基础</title>
-      <link>https://gsyx666.github.io/2022/07/06/java/cs-notes-java-%E5%9F%BA%E7%A1%80/</link>
-      <guid>https://gsyx666.github.io/2022/07/06/java/cs-notes-java-%E5%9F%BA%E7%A1%80/</guid>
-      <pubDate>Wed, 06 Jul 2022 11:02:43 GMT</pubDate>
-      
-        
-        
-          
-          
-      <description>&lt;blockquote&gt;
-&lt;p&gt;本文转载自：&lt;a</description>
-          
-        
-      
-      
-      
-      
-      
-      <category domain="https://gsyx666.github.io/tags/%E8%BD%AC%E8%BD%BD/">转载</category>
-      
-      <category domain="https://gsyx666.github.io/tags/Java/">Java</category>
-      
-      
-      <comments>https://gsyx666.github.io/2022/07/06/java/cs-notes-java-%E5%9F%BA%E7%A1%80/#disqus_thread</comments>
+      <comments>https://gsyx666.github.io/2022/07/08/java/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E6%80%9D%E6%83%B3/#disqus_thread</comments>
       
     </item>
     
     <item>
       <title>Java 容器</title>
-      <link>https://gsyx666.github.io/2022/07/06/java/cs-notes-java-%E5%AE%B9%E5%99%A8/</link>
-      <guid>https://gsyx666.github.io/2022/07/06/java/cs-notes-java-%E5%AE%B9%E5%99%A8/</guid>
-      <pubDate>Wed, 06 Jul 2022 11:02:43 GMT</pubDate>
+      <link>https://gsyx666.github.io/2022/07/08/java/cs-notes-java-%E5%AE%B9%E5%99%A8/</link>
+      <guid>https://gsyx666.github.io/2022/07/08/java/cs-notes-java-%E5%AE%B9%E5%99%A8/</guid>
+      <pubDate>Fri, 08 Jul 2022 12:30:56 GMT</pubDate>
       
         
         
@@ -98,15 +70,15 @@
       <category domain="https://gsyx666.github.io/tags/Java/">Java</category>
       
       
-      <comments>https://gsyx666.github.io/2022/07/06/java/cs-notes-java-%E5%AE%B9%E5%99%A8/#disqus_thread</comments>
+      <comments>https://gsyx666.github.io/2022/07/08/java/cs-notes-java-%E5%AE%B9%E5%99%A8/#disqus_thread</comments>
       
     </item>
     
     <item>
       <title>Java 虚拟机</title>
-      <link>https://gsyx666.github.io/2022/07/06/java/cs-notes-java-%E8%99%9A%E6%8B%9F%E6%9C%BA/</link>
-      <guid>https://gsyx666.github.io/2022/07/06/java/cs-notes-java-%E8%99%9A%E6%8B%9F%E6%9C%BA/</guid>
-      <pubDate>Wed, 06 Jul 2022 11:02:43 GMT</pubDate>
+      <link>https://gsyx666.github.io/2022/07/08/java/cs-notes-java-%E8%99%9A%E6%8B%9F%E6%9C%BA/</link>
+      <guid>https://gsyx666.github.io/2022/07/08/java/cs-notes-java-%E8%99%9A%E6%8B%9F%E6%9C%BA/</guid>
+      <pubDate>Fri, 08 Jul 2022 12:30:56 GMT</pubDate>
       
         
         
@@ -126,15 +98,15 @@
       <category domain="https://gsyx666.github.io/tags/Java/">Java</category>
       
       
-      <comments>https://gsyx666.github.io/2022/07/06/java/cs-notes-java-%E8%99%9A%E6%8B%9F%E6%9C%BA/#disqus_thread</comments>
+      <comments>https://gsyx666.github.io/2022/07/08/java/cs-notes-java-%E8%99%9A%E6%8B%9F%E6%9C%BA/#disqus_thread</comments>
       
     </item>
     
     <item>
       <title>Java 并发</title>
-      <link>https://gsyx666.github.io/2022/07/06/java/cs-notes-java-%E5%B9%B6%E5%8F%91/</link>
-      <guid>https://gsyx666.github.io/2022/07/06/java/cs-notes-java-%E5%B9%B6%E5%8F%91/</guid>
-      <pubDate>Wed, 06 Jul 2022 11:02:43 GMT</pubDate>
+      <link>https://gsyx666.github.io/2022/07/08/java/cs-notes-java-%E5%B9%B6%E5%8F%91/</link>
+      <guid>https://gsyx666.github.io/2022/07/08/java/cs-notes-java-%E5%B9%B6%E5%8F%91/</guid>
+      <pubDate>Fri, 08 Jul 2022 12:30:56 GMT</pubDate>
       
         
         
@@ -154,15 +126,15 @@
       <category domain="https://gsyx666.github.io/tags/Java/">Java</category>
       
       
-      <comments>https://gsyx666.github.io/2022/07/06/java/cs-notes-java-%E5%B9%B6%E5%8F%91/#disqus_thread</comments>
+      <comments>https://gsyx666.github.io/2022/07/08/java/cs-notes-java-%E5%B9%B6%E5%8F%91/#disqus_thread</comments>
       
     </item>
     
     <item>
       <title>Hello World</title>
-      <link>https://gsyx666.github.io/2022/07/06/hello-world/</link>
-      <guid>https://gsyx666.github.io/2022/07/06/hello-world/</guid>
-      <pubDate>Wed, 06 Jul 2022 11:02:43 GMT</pubDate>
+      <link>https://gsyx666.github.io/2022/07/08/hello-world/</link>
+      <guid>https://gsyx666.github.io/2022/07/08/hello-world/</guid>
+      <pubDate>Fri, 08 Jul 2022 12:30:56 GMT</pubDate>
       
       <description>&lt;p&gt;正文的一部分作为摘要&lt;/p&gt;</description>
       
@@ -171,15 +143,15 @@
       
       
       
-      <comments>https://gsyx666.github.io/2022/07/06/hello-world/#disqus_thread</comments>
+      <comments>https://gsyx666.github.io/2022/07/08/hello-world/#disqus_thread</comments>
       
     </item>
     
     <item>
       <title>git</title>
-      <link>https://gsyx666.github.io/2022/07/06/git/cs-notes-git/</link>
-      <guid>https://gsyx666.github.io/2022/07/06/git/cs-notes-git/</guid>
-      <pubDate>Wed, 06 Jul 2022 11:02:43 GMT</pubDate>
+      <link>https://gsyx666.github.io/2022/07/08/git/cs-notes-git/</link>
+      <guid>https://gsyx666.github.io/2022/07/08/git/cs-notes-git/</guid>
+      <pubDate>Fri, 08 Jul 2022 12:30:56 GMT</pubDate>
       
         
         
@@ -199,15 +171,48 @@
       <category domain="https://gsyx666.github.io/tags/git/">git</category>
       
       
-      <comments>https://gsyx666.github.io/2022/07/06/git/cs-notes-git/#disqus_thread</comments>
+      <comments>https://gsyx666.github.io/2022/07/08/git/cs-notes-git/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://gsyx666.github.io/2022/07/08/android/what-is-root/</link>
+      <guid>https://gsyx666.github.io/2022/07/08/android/what-is-root/</guid>
+      <pubDate>Fri, 08 Jul 2022 12:30:56 GMT</pubDate>
+      
+      <description>&lt;hr&gt;
+&lt;p&gt;title:      “何为 root？”&lt;br&gt;subtitle:   “what-is-root”&lt;br&gt;date:       2021-10-20 15:46:01&lt;br&gt;author:     “weishu”&lt;br&gt;index_img: img&amp;#x2F;what-is-bootloader-unlock&amp;#x2F;0.jpg&lt;br&gt;banner_img: img&amp;#x2F;what-is-bootloader-unlock&amp;#x2F;0.jpg&lt;br&gt;tags:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Android&lt;/li&gt;
+&lt;li&gt;Root&lt;/li&gt;
+&lt;li&gt;转载&lt;br&gt;categories:&lt;/li&gt;
+&lt;li&gt;Android&lt;br&gt;​—&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;本文转载自 &lt;a href=&quot;https://weishu.me/2021/09/13/what-is-root/&quot;&gt;维术-何为 root？&lt;/a&gt; &lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;对于搞机党或者开发人员来说，root 一定是一个不陌生的名词。在 [当我们谈论解锁 BootLoader 时，我们在谈论什么？] 一文中我们了解到，解锁 Bootloader 实际上能做到的是&lt;strong&gt;让手机可以运行第三方的操作系统&lt;/strong&gt;，而通常来说，我们给手机解锁 Bootloader 就是为了获取 Root 权限。那么，**何为 root?**，解锁 Bootloader 和 root 到底有什么联系和区别？&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;In Unix-like computer OSes (such as Linux), root is the conventional name of the user who has all rights or permissions (to all files and programs) in all modes (single- or multi-user).&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;维基百科说，在类 Unix 系统中，root 是在&lt;strong&gt;所有模式&lt;/strong&gt;（单用户或多用户）下对&lt;strong&gt;所有文件和程序&lt;/strong&gt;拥有&lt;strong&gt;所有权利或许可&lt;/strong&gt;的用户的名称。&lt;/p&gt;
+&lt;p&gt;现代操作系统（本文主要讨论 Android 系统，下同）一般都是多用户的，那个名为 root 的用户所拥有的权限就是 root 权限；而 root 权限中有三个「所有」，可以简单这么理解：&lt;strong&gt;root 意味着最高权限&lt;/strong&gt;；不过，这么描述不够具象，接下来就带大家了解一下 root 的方方面面。&lt;/p&gt;</description>
+      
+      
+      
+      
+      
+      
+      <comments>https://gsyx666.github.io/2022/07/08/android/what-is-root/#disqus_thread</comments>
       
     </item>
     
     <item>
       <title>Java IO</title>
-      <link>https://gsyx666.github.io/2022/07/06/java/cs-notes-java-io/</link>
-      <guid>https://gsyx666.github.io/2022/07/06/java/cs-notes-java-io/</guid>
-      <pubDate>Wed, 06 Jul 2022 11:02:43 GMT</pubDate>
+      <link>https://gsyx666.github.io/2022/07/08/java/cs-notes-java-io/</link>
+      <guid>https://gsyx666.github.io/2022/07/08/java/cs-notes-java-io/</guid>
+      <pubDate>Fri, 08 Jul 2022 12:30:56 GMT</pubDate>
       
         
         
@@ -227,15 +232,15 @@
       <category domain="https://gsyx666.github.io/tags/Java/">Java</category>
       
       
-      <comments>https://gsyx666.github.io/2022/07/06/java/cs-notes-java-io/#disqus_thread</comments>
+      <comments>https://gsyx666.github.io/2022/07/08/java/cs-notes-java-io/#disqus_thread</comments>
       
     </item>
     
     <item>
       <title>HTTP</title>
-      <link>https://gsyx666.github.io/2022/07/06/bin/HTTP/</link>
-      <guid>https://gsyx666.github.io/2022/07/06/bin/HTTP/</guid>
-      <pubDate>Wed, 06 Jul 2022 11:02:43 GMT</pubDate>
+      <link>https://gsyx666.github.io/2022/07/08/bin/HTTP/</link>
+      <guid>https://gsyx666.github.io/2022/07/08/bin/HTTP/</guid>
+      <pubDate>Fri, 08 Jul 2022 12:30:56 GMT</pubDate>
       
         
         
@@ -257,7 +262,63 @@
       <category domain="https://gsyx666.github.io/tags/HTTP/">HTTP</category>
       
       
-      <comments>https://gsyx666.github.io/2022/07/06/bin/HTTP/#disqus_thread</comments>
+      <comments>https://gsyx666.github.io/2022/07/08/bin/HTTP/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>Java 基础</title>
+      <link>https://gsyx666.github.io/2022/07/08/java/cs-notes-java-%E5%9F%BA%E7%A1%80/</link>
+      <guid>https://gsyx666.github.io/2022/07/08/java/cs-notes-java-%E5%9F%BA%E7%A1%80/</guid>
+      <pubDate>Fri, 08 Jul 2022 12:30:56 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description>&lt;blockquote&gt;
+&lt;p&gt;本文转载自：&lt;a</description>
+          
+        
+      
+      
+      
+      
+      
+      <category domain="https://gsyx666.github.io/tags/%E8%BD%AC%E8%BD%BD/">转载</category>
+      
+      <category domain="https://gsyx666.github.io/tags/Java/">Java</category>
+      
+      
+      <comments>https://gsyx666.github.io/2022/07/08/java/cs-notes-java-%E5%9F%BA%E7%A1%80/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>我的一周-2022-07-08-周五</title>
+      <link>https://gsyx666.github.io/2022/07/08/weekly/%E6%88%91%E7%9A%84%E4%B8%80%E5%91%A8-2022-07-08-%E5%91%A8%E4%BA%94/</link>
+      <guid>https://gsyx666.github.io/2022/07/08/weekly/%E6%88%91%E7%9A%84%E4%B8%80%E5%91%A8-2022-07-08-%E5%91%A8%E4%BA%94/</guid>
+      <pubDate>Fri, 08 Jul 2022 00:00:00 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description>&lt;h2 id=&quot;看什么&quot;&gt;&lt;a href=&quot;#看什么&quot; class=&quot;headerlink&quot; title=&quot;看什么&quot;&gt;&lt;/a&gt;看什么&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;蔡明做 #虚拟主播 &lt;a</description>
+          
+        
+      
+      
+      
+      
+      <category domain="https://gsyx666.github.io/categories/Weekly/">Weekly</category>
+      
+      
+      <category domain="https://gsyx666.github.io/tags/Weekly/">Weekly</category>
+      
+      
+      <comments>https://gsyx666.github.io/2022/07/08/weekly/%E6%88%91%E7%9A%84%E4%B8%80%E5%91%A8-2022-07-08-%E5%91%A8%E4%BA%94/#disqus_thread</comments>
       
     </item>
     
@@ -279,7 +340,7 @@
       
       
       
-      <category domain="https://gsyx666.github.io/categories/Kotlin/">Kotlin</category>
+      <category domain="https://gsyx666.github.io/categories/kotlin/">kotlin</category>
       
       
       <category domain="https://gsyx666.github.io/tags/%E8%BD%AC%E8%BD%BD/">转载</category>
@@ -372,7 +433,7 @@
       
       
       
-      <category domain="https://gsyx666.github.io/categories/Android/">Android</category>
+      <category domain="https://gsyx666.github.io/categories/android/">android</category>
       
       
       <category domain="https://gsyx666.github.io/tags/%E8%BD%AC%E8%BD%BD/">转载</category>
@@ -525,68 +586,6 @@
       
       
       <comments>https://gsyx666.github.io/2020/03/18/2020-03-18-GG%E8%84%B1%E5%A3%B3%E8%84%9A%E6%9C%AC/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>Flutter 跨平台演进及架构开篇</title>
-      <link>https://gsyx666.github.io/2019/06/01/flutter/</link>
-      <guid>https://gsyx666.github.io/2019/06/01/flutter/</guid>
-      <pubDate>Sat, 01 Jun 2019 22:22:22 GMT</pubDate>
-      
-        
-        
-          
-          
-      <description>&lt;blockquote&gt;
-&lt;p&gt;&lt;strong&gt;版权声明：&lt;/strong&gt; 转载自&lt;a href=&quot;http://gityuan.com/&quot;&gt;http://gityuan.com&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&quot;一、移动跨平台技术演进&quot;&gt;&lt;a</description>
-          
-        
-      
-      
-      
-      
-      <category domain="https://gsyx666.github.io/categories/Android/">Android</category>
-      
-      
-      <category domain="https://gsyx666.github.io/tags/Flutter/">Flutter</category>
-      
-      
-      <comments>https://gsyx666.github.io/2019/06/01/flutter/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>使用 .gitignore 忽略 Git 仓库中的文件</title>
-      <link>https://gsyx666.github.io/2017/02/22/git/2017-02-22-%E4%BD%BF%E7%94%A8-.gitignore-%E5%BF%BD%E7%95%A5-git-%E4%BB%93%E5%BA%93%E4%B8%AD%E7%9A%84%E6%96%87%E4%BB%B6/</link>
-      <guid>https://gsyx666.github.io/2017/02/22/git/2017-02-22-%E4%BD%BF%E7%94%A8-.gitignore-%E5%BF%BD%E7%95%A5-git-%E4%BB%93%E5%BA%93%E4%B8%AD%E7%9A%84%E6%96%87%E4%BB%B6/</guid>
-      <pubDate>Wed, 22 Feb 2017 00:00:00 GMT</pubDate>
-      
-        
-        
-          
-          
-      <description>&lt;blockquote&gt;
-&lt;p&gt;本文转载自 &lt;a</description>
-          
-        
-      
-      
-      
-      
-      <category domain="https://gsyx666.github.io/categories/git/">git</category>
-      
-      
-      <category domain="https://gsyx666.github.io/tags/%E8%BD%AC%E8%BD%BD/">转载</category>
-      
-      <category domain="https://gsyx666.github.io/tags/Git/">Git</category>
-      
-      <category domain="https://gsyx666.github.io/tags/Github/">Github</category>
-      
-      
-      <comments>https://gsyx666.github.io/2017/02/22/git/2017-02-22-%E4%BD%BF%E7%94%A8-.gitignore-%E5%BF%BD%E7%95%A5-git-%E4%BB%93%E5%BA%93%E4%B8%AD%E7%9A%84%E6%96%87%E4%BB%B6/#disqus_thread</comments>
       
     </item>
     
