@@ -5,7 +5,7 @@
 
 
 
-<head><!-- hexo injector head_begin start --><link href="https://fastly.jsdelivr.net/npm/hexo-tag-common@0.2.0/css/index.css" rel="stylesheet"/><!-- hexo injector head_begin end -->
+<head>
   <meta charset="UTF-8">
   <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon.png">
   <link rel="icon" href="/img/favicon.png">
@@ -25,7 +25,7 @@
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://ww3.sinaimg.cn/large/006tNbRwgy1fcr9tu6vdjj30t30ez0y8.jpg">
 <meta property="article:published_time" content="2017-02-16T00:00:00.000Z">
-<meta property="article:modified_time" content="2022-07-08T12:30:56.048Z">
+<meta property="article:modified_time" content="2022-08-14T01:57:30.004Z">
 <meta property="article:author" content="gsyx">
 <meta property="article:tag" content="转载">
 <meta property="article:tag" content="Git">
@@ -85,9 +85,7 @@
 
 
   
-<meta name="generator" content="Hexo 6.2.0"><link rel="alternate" href="/atom.xml" title="gsyx" type="application/atom+xml">
-<link rel="alternate" href="/rss2.xml" title="gsyx" type="application/rss+xml">
-</head>
+<meta name="generator" content="Hexo 5.4.2"></head>
 
 
 <body>
@@ -187,7 +185,7 @@
         
         
           <li class="nav-item" id="search-btn">
-            <a class="nav-link" target="_self" href="javascript:;" rel="external nofollow noreferrer" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
+            <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
               &nbsp;<i class="iconfont icon-search"></i>&nbsp;
             </a>
           </li>
@@ -195,7 +193,7 @@
         
         
           <li class="nav-item" id="color-toggle-btn">
-            <a class="nav-link" target="_self" href="javascript:;" rel="external nofollow noreferrer" aria-label="Color Toggle">&nbsp;<i
+            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">&nbsp;<i
                 class="iconfont icon-dark" id="color-toggle-icon"></i>&nbsp;</a>
           </li>
         
@@ -298,7 +296,7 @@
               <div class="markdown-body">
                 
                 <blockquote>
-<p>本文转载自 <a target="_blank" rel="noopener external nofollow noreferrer" href="http://qiubaiying.vip/2017/02/16/Git-%E4%BB%A3%E7%A0%81%E5%9B%9E%E6%BB%9A/">邱柏荧</a> 的博客</p>
+<p>本文转载自 <a target="_blank" rel="noopener" href="http://qiubaiying.vip/2017/02/16/Git-%E4%BB%A3%E7%A0%81%E5%9B%9E%E6%BB%9A/">邱柏荧</a> 的博客</p>
 </blockquote>
 <blockquote>
 <p>并不适合阅读的个人文档。</p>
@@ -309,10 +307,10 @@
 <p><strong>reset</strong> 为 <strong>重置到这次提交</strong>，将内容重置到指定的版本。<code>git reset</code> 命令后面是需要加2种参数的：<code>–-hard</code> 和 <code>–-soft</code>。这条命令默认情况下是 <code>-–soft</code>。</p>
 <p>执行上述命令时，这该条commit号之 后（时间作为参考点）的所有commit的修改都会退回到git缓冲区中。使用<code>git status</code> 命令可以在缓冲区中看到这些修改。而如果加上<code>-–hard</code>参数，则缓冲区中不会存储这些修改，git会直接丢弃这部分内容。可以使用 <code>git push origin HEAD --force</code> 强制将分区内容推送到远程服务器。</p>
 <h4 id="代码回退"><a href="#代码回退" class="headerlink" title="代码回退"></a>代码回退</h4><p>默认参数 <code>-soft</code>,所有commit的修改都会退回到git缓冲区<br>参数<code>--hard</code>，所有commit的修改直接丢弃</p>
-<pre><code class="hljs">$ git reset --hard HEAD^ 		回退到上个版本
-$ git reset --hard commit_id	退到/进到 指定commit_id
+<pre><code class="hljs">$ git reset --hard HEAD^         回退到上个版本
+$ git reset --hard commit_id    退到/进到 指定commit_id
 </code></pre>
-<p>推送到远程	</p>
+<p>推送到远程    </p>
 <pre><code class="hljs">$ git push origin HEAD --force
 </code></pre>
 <h4 id="可以吃的后悔药-gt-版本穿梭"><a href="#可以吃的后悔药-gt-版本穿梭" class="headerlink" title="可以吃的后悔药-&gt;版本穿梭"></a>可以吃的后悔药-&gt;版本穿梭</h4><p>当你回滚之后，又后悔了，想恢复到新的版本怎么办？</p>
@@ -400,7 +398,7 @@ b45959e HEAD@&#123;2&#125;: revert: Revert &quot;add img&quot;
           
             
             
-              <a target="_blank" href="https://creativecommons.org/licenses/by/4.0/" rel="external nofollow noreferrer">
+              <a target="_blank" href="https://creativecommons.org/licenses/by/4.0/">
               <span class="hint--top hint--rounded" aria-label="BY - 署名">
                 <i class="iconfont icon-by"></i>
               </span>
@@ -668,5 +666,5 @@ b45959e HEAD@&#123;2&#125;: revert: Revert &quot;add img&quot;
   <noscript>
     <div class="noscript-warning">博客在允许 JavaScript 运行的环境下浏览效果更佳</div>
   </noscript>
-<!-- hexo injector body_end start --><script src="https://fastly.jsdelivr.net/npm/hexo-tag-common@0.2.0/js/index.js"></script><!-- hexo injector body_end end --></body>
+</body>
 </html>

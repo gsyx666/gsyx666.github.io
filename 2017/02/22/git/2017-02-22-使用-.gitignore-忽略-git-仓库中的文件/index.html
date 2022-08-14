@@ -5,7 +5,7 @@
 
 
 
-<head><!-- hexo injector head_begin start --><link href="https://fastly.jsdelivr.net/npm/hexo-tag-common@0.2.0/css/index.css" rel="stylesheet"/><!-- hexo injector head_begin end -->
+<head>
   <meta charset="UTF-8">
   <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon.png">
   <link rel="icon" href="/img/favicon.png">
@@ -24,7 +24,7 @@
 <meta property="og:description" content="本文转载自 邱柏荧 的博客   使用 .gitignore 文件忽略指定文件  .gitignore在Git中，很多时候你只想将代码提交到仓库，而不是将当前文件目录下的文件全部提交到Git仓库中，例如在MacOS系统下面的.DS_Store文件，或者是Xocde的操作记录，又或者是pod库的中一大串的源代码。这种情况下使用.gitignore就能够在Git提交时自动忽略掉这些文件。 忽略的格式">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2017-02-22T00:00:00.000Z">
-<meta property="article:modified_time" content="2022-07-08T12:30:56.048Z">
+<meta property="article:modified_time" content="2022-08-14T01:57:30.004Z">
 <meta property="article:author" content="gsyx">
 <meta property="article:tag" content="转载">
 <meta property="article:tag" content="Git">
@@ -84,9 +84,7 @@
 
 
   
-<meta name="generator" content="Hexo 6.2.0"><link rel="alternate" href="/atom.xml" title="gsyx" type="application/atom+xml">
-<link rel="alternate" href="/rss2.xml" title="gsyx" type="application/rss+xml">
-</head>
+<meta name="generator" content="Hexo 5.4.2"></head>
 
 
 <body>
@@ -186,7 +184,7 @@
         
         
           <li class="nav-item" id="search-btn">
-            <a class="nav-link" target="_self" href="javascript:;" rel="external nofollow noreferrer" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
+            <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
               &nbsp;<i class="iconfont icon-search"></i>&nbsp;
             </a>
           </li>
@@ -194,7 +192,7 @@
         
         
           <li class="nav-item" id="color-toggle-btn">
-            <a class="nav-link" target="_self" href="javascript:;" rel="external nofollow noreferrer" aria-label="Color Toggle">&nbsp;<i
+            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">&nbsp;<i
                 class="iconfont icon-dark" id="color-toggle-icon"></i>&nbsp;</a>
           </li>
         
@@ -297,7 +295,7 @@
               <div class="markdown-body">
                 
                 <blockquote>
-<p>本文转载自 <a target="_blank" rel="noopener external nofollow noreferrer" href="http://qiubaiying.vip/2017/02/22/%E4%BD%BF%E7%94%A8-.gitignore-%E5%BF%BD%E7%95%A5-git-%E4%BB%93%E5%BA%93%E4%B8%AD%E7%9A%84%E6%96%87%E4%BB%B6/">邱柏荧</a> 的博客</p>
+<p>本文转载自 <a target="_blank" rel="noopener" href="http://qiubaiying.vip/2017/02/22/%E4%BD%BF%E7%94%A8-.gitignore-%E5%BF%BD%E7%95%A5-git-%E4%BB%93%E5%BA%93%E4%B8%AD%E7%9A%84%E6%96%87%E4%BB%B6/">邱柏荧</a> 的博客</p>
 </blockquote>
 <blockquote>
 <p>使用 <code>.gitignore</code> 文件忽略指定文件</p>
@@ -311,7 +309,7 @@
 <li><code>build/</code> : 忽略 <code>build/</code> 目录下的所有文件</li>
 <li><code>doc/*.txt</code> : 会忽略 <code>doc/notes.txt</code> 但不包括 <code>doc/server/arch.txt</code></li>
 </ul>
-<h2 id="创建方法"><a href="#创建方法" class="headerlink" title="创建方法"></a>创建方法</h2><h4 id="从-github-上获取"><a href="#从-github-上获取" class="headerlink" title="从 github 上获取"></a>从 <a target="_blank" rel="noopener external nofollow noreferrer" href="https://github.com/github/gitignore.git">github</a> 上获取</h4><p>github上整理了一些常用需要的项目中需要忽略的文件配置，根据需要进行获取</p>
+<h2 id="创建方法"><a href="#创建方法" class="headerlink" title="创建方法"></a>创建方法</h2><h4 id="从-github-上获取"><a href="#从-github-上获取" class="headerlink" title="从 github 上获取"></a>从 <a target="_blank" rel="noopener" href="https://github.com/github/gitignore.git">github</a> 上获取</h4><p>github上整理了一些常用需要的项目中需要忽略的文件配置，根据需要进行获取</p>
 <pre><code class="hljs">https://github.com/github/gitignore.git
 </code></pre>
 <p>与 Xcode 相关的三个文件</p>
@@ -325,7 +323,7 @@
 <p>将这些文件重写命名为 <code>.gittignore</code></p>
 <pre><code class="hljs">$ mv Swift.gitignore .gittignore
 </code></pre>
-<h4 id="通过-gitignore-io-创建（推荐）"><a href="#通过-gitignore-io-创建（推荐）" class="headerlink" title="通过 gitignore.io 创建（推荐）"></a>通过 <a target="_blank" rel="noopener external nofollow noreferrer" href="https://www.gitignore.io/">gitignore.io</a> 创建（推荐）</h4><h6 id="先自定义终端命令："><a href="#先自定义终端命令：" class="headerlink" title="先自定义终端命令："></a>先自定义终端命令：</h6><p>macOS下默认是<code>\#!/bin/bash</code>：</p>
+<h4 id="通过-gitignore-io-创建（推荐）"><a href="#通过-gitignore-io-创建（推荐）" class="headerlink" title="通过 gitignore.io 创建（推荐）"></a>通过 <a target="_blank" rel="noopener" href="https://www.gitignore.io/">gitignore.io</a> 创建（推荐）</h4><h6 id="先自定义终端命令："><a href="#先自定义终端命令：" class="headerlink" title="先自定义终端命令："></a>先自定义终端命令：</h6><p>macOS下默认是<code>\#!/bin/bash</code>：</p>
 <pre><code class="hljs">$ echo &quot;function gi() &#123; curl -L -s https://www.gitignore.io/api/\$@ ;&#125;&quot; &gt;&gt; ~/.bash_profile &amp;&amp; source ~/.bash_profile
 </code></pre>
 <p>如果是 <code>#!/bin/zsh</code></p>
@@ -407,7 +405,7 @@
           
             
             
-              <a target="_blank" href="https://creativecommons.org/licenses/by/4.0/" rel="external nofollow noreferrer">
+              <a target="_blank" href="https://creativecommons.org/licenses/by/4.0/">
               <span class="hint--top hint--rounded" aria-label="BY - 署名">
                 <i class="iconfont icon-by"></i>
               </span>
@@ -675,5 +673,5 @@
   <noscript>
     <div class="noscript-warning">博客在允许 JavaScript 运行的环境下浏览效果更佳</div>
   </noscript>
-<!-- hexo injector body_end start --><script src="https://fastly.jsdelivr.net/npm/hexo-tag-common@0.2.0/js/index.js"></script><!-- hexo injector body_end end --></body>
+</body>
 </html>

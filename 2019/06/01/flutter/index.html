@@ -5,7 +5,7 @@
 
 
 
-<head><!-- hexo injector head_begin start --><link href="https://fastly.jsdelivr.net/npm/hexo-tag-common@0.2.0/css/index.css" rel="stylesheet"/><!-- hexo injector head_begin end -->
+<head>
   <meta charset="UTF-8">
   <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon.png">
   <link rel="icon" href="/img/favicon.png">
@@ -43,7 +43,7 @@
 <meta property="og:image" content="http://gityuan.com/img/flutter-arch/18_gpu_pipeline.png">
 <meta property="og:image" content="http://gityuan.com/img/flutter-arch/19_platform_channels.png">
 <meta property="article:published_time" content="2019-06-01T22:22:22.000Z">
-<meta property="article:modified_time" content="2022-07-08T12:30:56.048Z">
+<meta property="article:modified_time" content="2022-08-14T01:57:30.004Z">
 <meta property="article:author" content="gsyx">
 <meta property="article:tag" content="Flutter">
 <meta name="twitter:card" content="summary_large_image">
@@ -102,9 +102,7 @@
 
 
   
-<meta name="generator" content="Hexo 6.2.0"><link rel="alternate" href="/atom.xml" title="gsyx" type="application/atom+xml">
-<link rel="alternate" href="/rss2.xml" title="gsyx" type="application/rss+xml">
-</head>
+<meta name="generator" content="Hexo 5.4.2"></head>
 
 
 <body>
@@ -204,7 +202,7 @@
         
         
           <li class="nav-item" id="search-btn">
-            <a class="nav-link" target="_self" href="javascript:;" rel="external nofollow noreferrer" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
+            <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
               &nbsp;<i class="iconfont icon-search"></i>&nbsp;
             </a>
           </li>
@@ -212,7 +210,7 @@
         
         
           <li class="nav-item" id="color-toggle-btn">
-            <a class="nav-link" target="_self" href="javascript:;" rel="external nofollow noreferrer" aria-label="Color Toggle">&nbsp;<i
+            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">&nbsp;<i
                 class="iconfont icon-dark" id="color-toggle-icon"></i>&nbsp;</a>
           </li>
         
@@ -271,7 +269,7 @@
         
         
           <!-- compatible with older versions-->
-          95 分钟
+          94 分钟
         
       </span>
     
@@ -315,11 +313,11 @@
               <div class="markdown-body">
                 
                 <blockquote>
-<p><strong>版权声明：</strong> 转载自<a target="_blank" rel="noopener external nofollow noreferrer" href="http://gityuan.com/">http://gityuan.com</a></p>
+<p><strong>版权声明：</strong> 转载自<a target="_blank" rel="noopener" href="http://gityuan.com/">http://gityuan.com</a></p>
 </blockquote>
 <h2 id="一、移动跨平台技术演进"><a href="#一、移动跨平台技术演进" class="headerlink" title="一、移动跨平台技术演进"></a>一、移动跨平台技术演进</h2><h4 id="1-引言"><a href="#1-引言" class="headerlink" title="1. 引言"></a>1. 引言</h4><p>移动互联网发展十余年，伴随着 Android、iOS 等智能手机的不断普及，移动端已逐步取代 PC 端，成为兵家必争之地。正所谓“得移动端者得天下”，移动端已成为互联网领域最大的流量分发入口，一大批互联网公司正是在这大趋势下崛起。</p>
 <h4 id="2-为什么需要跨平台技术"><a href="#2-为什么需要跨平台技术" class="headerlink" title="2. 为什么需要跨平台技术"></a>2. 为什么需要跨平台技术</h4><p>伴随着移动互联网的高速发展，公司间竞争越来越激烈，如何将好想法快速落地、快速试错，成为备受关注的问题。提升研发效率、缩短研发周期，保障产品快速试错并能快速迭代新功能，让新产品新功能以最快的速度同时抵达 Android、iOS 等多端用户。</p>
-<p>众所周知，Android 应用采用 Java 或 Kotlin 编写，iOS 应用采用 Objective-C 或 Swift 编写，Web 端采用 HTML &#x2F;CSS&#x2F;JavaScript 编写。当需要开发支持多端的应用，每一端都需要独立研发、测试，一直到上线，以及后续的维护工作，工作量成倍增涨，势必延长研发周期。</p>
+<p>众所周知，Android 应用采用 Java 或 Kotlin 编写，iOS 应用采用 Objective-C 或 Swift 编写，Web 端采用 HTML /CSS/JavaScript 编写。当需要开发支持多端的应用，每一端都需要独立研发、测试，一直到上线，以及后续的维护工作，工作量成倍增涨，势必延长研发周期。</p>
 <p>为了解决多端独立开发的问题，跨平台技术便应运而生，各大互联网公司为此都投入大量人力，于是出现了各种跨平台技术框架，<strong>面对移动领域的跨平台技术方案的层出不穷，又该如何做技术选型呢？</strong></p>
 <h4 id="3-移动端技术选型"><a href="#3-移动端技术选型" class="headerlink" title="3. 移动端技术选型"></a>3. 移动端技术选型</h4><p>作为移动端的跨端技术方案，所关注无外乎以下这4个方面：研发效率、动态性、多端一致性、性能体验。</p>
 <p><img src="http://gityuan.com/img/flutter-arch/1.png" srcset="/img/loading.gif" lazyload></p>
@@ -342,7 +340,7 @@
 <p><strong>面对现有的如此多跨平台方案，为何当下最火的跨平台技术是Flutter，有哪些优势呢？</strong></p>
 <p>RN、Weex均使用JavaScript作为编程语言，JavaScript作为前端开发语言，在跨平台开发中可谓大放异彩，利用web技术不仅能开发出网站，也可以开发手机端web应用和移动端应用程序，似有一统三界(Android、iOS、Web)的趋势，这就是大家常说的“大前端”时代。这些技术方案流畅度不太好，平台一致性较差，至今还没能大面积取代原生开发。</p>
 <p>Flutter是以Dart语言编写，开发体验更接近客户端，从大家使用反馈来看也是如此，Flutter开发环境这一套的流程对于前端开发来说并不太友好。Flutter的定位同样是多端一体化，但是以客户端为首，先磨平Android和iOS双端开发体验，再逐步向Web端渗透，从Flutter规划的Roadmap也能看出，Flutter for web目前仍处于预览版，Flutter客户端方向都已经如火如荼上线了不少应用。</p>
-<p>在此之前，大家常说“大前端”，对于Flutter技术，在笔者看来称之为“大移动端”更贴切，Flutter的UI框架优先支持客户端(Android&#x2F;iOS)应用的同时，然后再适配Web端。移动互联网时代，不少公司都制定“移动优先”的战略，甚至只开发移动端，没有Web端。移动互联网的时代造就“大移动端”，Flutter作为一款能做到媲美原生的高性能跨平台技术方案，或许一统天下。</p>
+<p>在此之前，大家常说“大前端”，对于Flutter技术，在笔者看来称之为“大移动端”更贴切，Flutter的UI框架优先支持客户端(Android/iOS)应用的同时，然后再适配Web端。移动互联网时代，不少公司都制定“移动优先”的战略，甚至只开发移动端，没有Web端。移动互联网的时代造就“大移动端”，Flutter作为一款能做到媲美原生的高性能跨平台技术方案，或许一统天下。</p>
 <p>在跨平台技术领域，只要挑战在，技术就不会停滞，伴随着技术不断演进与革新，终将走向美好。</p>
 <h4 id="6-Flutter技术优势"><a href="#6-Flutter技术优势" class="headerlink" title="6. Flutter技术优势"></a>6. Flutter技术优势</h4><p>Flutter是彻底的跨平台方案，既没有采用webView，也没有采用JS桥接原生控件，而是自行实现一套UI框架，在引擎底层通过Skia渲染到屏幕。对于UI之外所需要使用的移动设备自身提供的服务，比如相机、定位、屏幕触摸等，则采用Platform Channels跟原生系统通信的方式来实现。</p>
 <p>对于Flutter优势，回到前面讲到移动端技术选型的4要素，研发效率、动态性、多端一致性、性能体验，分别对应下面这一组词语。</p>
@@ -364,11 +362,11 @@
 <li>Flutter框架，APP通过调用Dart Framework层，再直接调用到skia来渲染界面，并没有经过原生Framework过程，可见其渲染性能并不会弱于Native技术，这是一个性能上限很高的跨平台技术。</li>
 </ul>
 <p>当然，不得不说目前的Flutter确实不够尽善尽美，会存在一些不够尽善尽美之处，比如生态不够健全，包体积问题，但其该方案的上限比较高，想象空间比较大，相信更多开发者参与进来，经过更多打磨，未来会做得更好。</p>
-<h4 id="7-业界发展近况"><a href="#7-业界发展近况" class="headerlink" title="7. 业界发展近况"></a>7. 业界发展近况</h4><p>2017年5月Google I&#x2F;O大会正式对外公布Flutter，到2018年12月发布Flutter1.0，引发全球大量的开发者和企业开始研究Flutter。StackOverflow 2019年的全球开发者文件调查中，Flutter被评选为最受开发者欢迎的框架之一，超过了TensorFlow和Node.js。</p>
+<h4 id="7-业界发展近况"><a href="#7-业界发展近况" class="headerlink" title="7. 业界发展近况"></a>7. 业界发展近况</h4><p>2017年5月Google I/O大会正式对外公布Flutter，到2018年12月发布Flutter1.0，引发全球大量的开发者和企业开始研究Flutter。StackOverflow 2019年的全球开发者文件调查中，Flutter被评选为最受开发者欢迎的框架之一，超过了TensorFlow和Node.js。</p>
 <p><img src="http://gityuan.com/img/flutter-arch/7_flutter_rank.png" srcset="/img/loading.gif" lazyload></p>
 <p>到目前，全球越来越多的公司已经在大家耳熟能详的知名APP中使用Flutter技术并落地，尤其国内知名互联网公司对Flutter投入度很大，社区也是非常活跃。</p>
 <p><img src="http://gityuan.com/img/flutter-arch/8_flutter_company.png" srcset="/img/loading.gif" lazyload></p>
-<h4 id="8-Flutter未来趋势"><a href="#8-Flutter未来趋势" class="headerlink" title="8. Flutter未来趋势"></a>8. Flutter未来趋势</h4><p>目前Flutter主要在移动端Android&#x2F;iOS双端跨端，Flutter 的愿景是成为一个多端运行的 UI 框架，能够支持不仅仅是移动端，还包括Web、桌面、甚至嵌入式设备。在2019 Google I&#x2F;O 开发者大会上推出的使用 Flutter 开发 Web 应用的框架，同年9月发布Flutter 1.9，并将Flutter web合入Flutter主仓库。</p>
+<h4 id="8-Flutter未来趋势"><a href="#8-Flutter未来趋势" class="headerlink" title="8. Flutter未来趋势"></a>8. Flutter未来趋势</h4><p>目前Flutter主要在移动端Android/iOS双端跨端，Flutter 的愿景是成为一个多端运行的 UI 框架，能够支持不仅仅是移动端，还包括Web、桌面、甚至嵌入式设备。在2019 Google I/O 开发者大会上推出的使用 Flutter 开发 Web 应用的框架，同年9月发布Flutter 1.9，并将Flutter web合入Flutter主仓库。</p>
 <p><img src="http://gityuan.com/img/flutter-arch/9_flutter_multi_arch.png" srcset="/img/loading.gif" lazyload></p>
 <p>从架构图看，Flutter采用同一个Dart Framework层来统一Flutter C++引擎和Web引擎，最终可以运行在Android，iOS，Browser上，从Flutter引擎代码不难看出Flutter也是支持Fuchsia操作系统。</p>
 <p>Fuchsia是Google内部正在开发的一款新的操作系统，采用Flutter作为系统默认的UI框架，也就是说Flutter天然支持Fuchsia，这无疑让Flutter在众多的跨平台方案更有优势。</p>
@@ -383,11 +381,11 @@
 <li>Flutter Framework层：用Dart编写，封装整个Flutter架构的核心功能，包括Widget、动画、绘制、手势等功能，有Material（Android风格UI）和Cupertino（iOS风格）的UI界面， 可构建Widget控件以及实现UI布局。</li>
 <li>Flutter Engine层：用C++编写，用于高质量移动应用的轻量级运行时环境，实现了Flutter的核心库，包括Dart虚拟机、动画和图形、文字渲染、通信通道、事件通知、插件架构等。引擎渲染采用的是2D图形渲染库Skia，虚拟机采用的是面向对象语言Dart VM，并将它们托管到Flutter的嵌入层。shell实现了平台相关的代码，比如跟屏幕键盘IME和系统应用生命周期事件的交互。不同平台有不同的shell，比如Android和iOS的shell。</li>
 </ul>
-<h4 id="2-Flutter编译产物"><a href="#2-Flutter编译产物" class="headerlink" title="2. Flutter编译产物"></a>2. Flutter编译产物</h4><p>看完Flutter内部架构，或许你好奇，Flutter不用Android&#x2F;iOS的本地语言技术开发，Dart编写完的代码如何让不同系统可以识别，最终编译后得到的产物是什么呢？</p>
+<h4 id="2-Flutter编译产物"><a href="#2-Flutter编译产物" class="headerlink" title="2. Flutter编译产物"></a>2. Flutter编译产物</h4><p>看完Flutter内部架构，或许你好奇，Flutter不用Android/iOS的本地语言技术开发，Dart编写完的代码如何让不同系统可以识别，最终编译后得到的产物是什么呢？</p>
 <p><img src="http://gityuan.com/img/flutter-arch/12_flutter_artifact.png" srcset="/img/loading.gif" lazyload></p>
 <p>Flutter产物分为Dart业务代码和Engine代码各自生成的产物，图中的Dart Code包含开发者编写的业务代码，Engine Code是引擎代码，如果并没有定制化引擎，则无需重新编译引擎代码。</p>
 <p>一份Dart代码，可编译生成双端产物，实现跨平台的能力。经过编译工具处理后可生成双端产物，图中便是release模式的编译产物，Android产物是由vm、isolate各自的指令段和数据段以及flutter.jar组成的app.apk，iOS产物是由App.framework和Flutter.framework组成的Runner.app。</p>
-<p>这个过程涉及frontend_server、gen_snapshot、xcrun、ninja编译工具。frontend_server前端编译器会进行词法分析、语法分析以及相关全局转换等工作，将dart代码转换为AST(抽象语法树)，并生成app.dill格式的dart kernel。gen_snapshot经过CHA、内联等一系列执行流的优化，根据中间代码生成优化后的FlowGraph对象，再转换为具体相应系统架构（arm&#x2F;arm64等）的二进制指令。</p>
+<p>这个过程涉及frontend_server、gen_snapshot、xcrun、ninja编译工具。frontend_server前端编译器会进行词法分析、语法分析以及相关全局转换等工作，将dart代码转换为AST(抽象语法树)，并生成app.dill格式的dart kernel。gen_snapshot经过CHA、内联等一系列执行流的优化，根据中间代码生成优化后的FlowGraph对象，再转换为具体相应系统架构（arm/arm64等）的二进制指令。</p>
 <h4 id="3-Flutter引擎启动"><a href="#3-Flutter引擎启动" class="headerlink" title="3. Flutter引擎启动"></a>3. Flutter引擎启动</h4><p>既然了解了Flutter的编译产物，那你或许又好奇，Flutter这台引擎如何发动的，怎么跟Native衔接呢？</p>
 <p><img src="http://gityuan.com/img/flutter-arch/13_flutter_engine_startup.png" srcset="/img/loading.gif" lazyload></p>
 <p>这里以Android为例，熟悉Android的开发者，应该都了解APP启动过程，会执行Application和Activity的onCreate()方法，FlutterApplication和FlutterActivity的onCreate()方法正是连接Native和Flutter的枢纽。</p>
@@ -396,7 +394,7 @@
 <li>FlutterActivity.java的onCreate过程，通过FlutterJNI的AttachJNI()方法来初始化引擎Engine、Dart虚拟机、Isolate、taskRunner等对象。再经过层层处理最终调用main.dart中main()方法，执行runApp(Widget app)来处理整个Dart业务代码。</li>
 </ul>
 <p>Flutter引擎启动中会创建有4个TaskRunner以及创建虚拟机，分别来看看它们的工作原理。</p>
-<h4 id="4-TaskRunner工作原理"><a href="#4-TaskRunner工作原理" class="headerlink" title="4. TaskRunner工作原理"></a>4. TaskRunner工作原理</h4><p>Flutter引擎启动过程，会创建UI&#x2F;GPU&#x2F;IO这3个线程，会为这些线程依次创建MessageLoop对象，启动后处于epoll_wait等待状态。对于Flutter的消息机制跟Android原生的消息机制有很多相似之处，都有消息(或者任务)、消息队列(或任务队列)以及Looper；有一点不同的是Android有一个Handler类，用于发送消息以及执行回调方法，相对应Flutter中有着相近功能的便是TaskRunner。</p>
+<h4 id="4-TaskRunner工作原理"><a href="#4-TaskRunner工作原理" class="headerlink" title="4. TaskRunner工作原理"></a>4. TaskRunner工作原理</h4><p>Flutter引擎启动过程，会创建UI/GPU/IO这3个线程，会为这些线程依次创建MessageLoop对象，启动后处于epoll_wait等待状态。对于Flutter的消息机制跟Android原生的消息机制有很多相似之处，都有消息(或者任务)、消息队列(或任务队列)以及Looper；有一点不同的是Android有一个Handler类，用于发送消息以及执行回调方法，相对应Flutter中有着相近功能的便是TaskRunner。</p>
 <p><img src="http://gityuan.com/img/flutter-arch/14_task_loop.png" srcset="/img/loading.gif" lazyload></p>
 <p>上图是从源码中提炼而来的任务处理流程，比官方流程图更容易理解一些复杂流程的时序问题，后续会专门讲解个中原由。Flutter的任务队列处理机制跟Android的消息队列处理相通，只不过Flutter分为Task和MicroTask两种类型，引擎和Dart虚拟机的事件以及Future都属于Task，Dart层执行scheduleMicrotask()所产生的属于Microtask。</p>
 <p>每次Flutter引擎在消费任务时调用FlushTasks()方法，遍历整个延迟任务队列delayed_tasks_，将已到期的任务加入task队列，然后开始处理任务。</p>
@@ -421,7 +419,7 @@
 <li>vm isolate是一个伪isolate，里面包含不可变对象，比如null，true，false；</li>
 <li>isolate堆能引用vm isolate堆中的对象，但vm isolate不能引用isolate堆；</li>
 <li>isolate彼此之间不能相互引用；</li>
-<li>每个isolate都有一个执行dart代码的Mutator thread，一个处理虚拟机内部任务(比如GC, JIT等)的helper thread；<br>可见，isolate是拥有内存堆和控制线程，虚拟机中可以有很多isolate，但彼此之间内存不共享，无法直接访问，只能通过dart特有的Port端口通信；isolate除了拥有一个mutator控制线程，还有一些其他辅助线程，比如后台JIT编译线程、GC清理&#x2F;并发标记线程；</li>
+<li>每个isolate都有一个执行dart代码的Mutator thread，一个处理虚拟机内部任务(比如GC, JIT等)的helper thread；<br>可见，isolate是拥有内存堆和控制线程，虚拟机中可以有很多isolate，但彼此之间内存不共享，无法直接访问，只能通过dart特有的Port端口通信；isolate除了拥有一个mutator控制线程，还有一些其他辅助线程，比如后台JIT编译线程、GC清理/并发标记线程；</li>
 </ul>
 <h4 id="6-Widget架构概览"><a href="#6-Widget架构概览" class="headerlink" title="6. Widget架构概览"></a>6. Widget架构概览</h4><p>Flutter引擎启动后执行Dart业务，是通过runApp(Widget app)方法，那Widget又是什么呢？</p>
 <p><img src="http://gityuan.com/img/flutter-arch/16_widget_arch.png" srcset="/img/loading.gif" lazyload></p>
@@ -453,7 +451,7 @@
 <p>GPU线程通过skia向GPU硬件绘制一帧的数据，GPU将帧信息保存到FrameBuffer里面，然后视频控制器会根据VSync信号从FrameBuffer取帧数据传递给显示器，从而显示出最终的画面。</p>
 <h4 id="8-Platform-Channels"><a href="#8-Platform-Channels" class="headerlink" title="8. Platform Channels"></a>8. Platform Channels</h4><p>Flutter框架提供了UI的控件支持，对于APP除了UI还有其他依赖于Native平台的支持，比如调用Camera的功能，该怎么办呢？为此，Flutter通过提供Platform Channel的功能，使得Dart代码具备与Native交互的能力。</p>
 <p><img src="http://gityuan.com/img/flutter-arch/19_platform_channels.png" srcset="/img/loading.gif" lazyload></p>
-<p>Platform Channel用于Flutter与Native之间的消息传递，整个过程的消息与响应是异步执行，不会阻塞用户界面。Flutter引擎框架已完成桥接的通道，这样开发者只需在Native层编写定制的Android&#x2F;iOS代码，即可在Dart代码中直接调用，这也就是Flutter Plugin插件的一种形式。</p>
+<p>Platform Channel用于Flutter与Native之间的消息传递，整个过程的消息与响应是异步执行，不会阻塞用户界面。Flutter引擎框架已完成桥接的通道，这样开发者只需在Native层编写定制的Android/iOS代码，即可在Dart代码中直接调用，这也就是Flutter Plugin插件的一种形式。</p>
 <h2 id="三、Flutter源码解读"><a href="#三、Flutter源码解读" class="headerlink" title="三、Flutter源码解读"></a>三、Flutter源码解读</h2><p>笔者(Gityuan)之前一直从事于Android操作系统底层研发工作，今年刚接触Flutter，Flutter作为一门全新的跨平台技术框架，不断深究会发现这是一个小型系统，涉及到的技术很广：</p>
 <ul>
 <li>编译技术如何将dart代码转换为AST(抽象语法树)，如何汇编转换为机器码，打包产物是什么？</li>
@@ -464,23 +462,23 @@
 <li>Flutter如何通过plugin支持移动设备提供的服务？</li>
 </ul>
 <p>这些疑问在前面都逐一简要解答，如果仅仅是用Flutter做业务开发，并不需要掌握这么深度技术，不过，知其然知其所以然，能让你游刃有余。</p>
-<p>本文同步在我的公号<a target="_blank" rel="noopener external nofollow noreferrer" href="https://mp.weixin.qq.com/s/UZQU-PWM5JEb3dYtZKT6Cw">《跨平台技术演进及Flutter未来》</a>，另外为大家创建了Flutter微信交流群，想加入可添加Gityuan微信好友，备注flutter即可，如发现任何文章有问题欢迎大家直接跟我反馈。</p>
+<p>本文同步在我的公号<a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/UZQU-PWM5JEb3dYtZKT6Cw">《跨平台技术演进及Flutter未来》</a>，另外为大家创建了Flutter微信交流群，想加入可添加Gityuan微信好友，备注flutter即可，如发现任何文章有问题欢迎大家直接跟我反馈。</p>
 <h4 id="启动篇"><a href="#启动篇" class="headerlink" title="启动篇"></a>启动篇</h4><ul>
-<li><a target="_blank" rel="noopener external nofollow noreferrer" href="http://gityuan.com/2019/06/22/flutter_booting/">深入理解Flutter引擎启动</a></li>
-<li><a target="_blank" rel="noopener external nofollow noreferrer" href="http://gityuan.com/2019/06/23/dart-vm/">深入理解Dart虚拟机启动</a></li>
-<li><a target="_blank" rel="noopener external nofollow noreferrer" href="http://gityuan.com/2019/06/29/flutter_run_app/">深入理解Flutter应用启动</a></li>
+<li><a target="_blank" rel="noopener" href="http://gityuan.com/2019/06/22/flutter_booting/">深入理解Flutter引擎启动</a></li>
+<li><a target="_blank" rel="noopener" href="http://gityuan.com/2019/06/23/dart-vm/">深入理解Dart虚拟机启动</a></li>
+<li><a target="_blank" rel="noopener" href="http://gityuan.com/2019/06/29/flutter_run_app/">深入理解Flutter应用启动</a></li>
 </ul>
 <h4 id="通信篇"><a href="#通信篇" class="headerlink" title="通信篇"></a>通信篇</h4><ul>
-<li><a target="_blank" rel="noopener external nofollow noreferrer" href="http://gityuan.com/2019/07/20/flutter_message_loop/">深入理解Flutter消息机制</a></li>
-<li><a target="_blank" rel="noopener external nofollow noreferrer" href="http://gityuan.com/2019/08/10/flutter_channel/">深入理解Flutter的Platform Channel机制</a></li>
-<li><a target="_blank" rel="noopener external nofollow noreferrer" href="http://gityuan.com/2019/07/21/flutter_future/">深入理解Flutter异步Future机制</a></li>
-<li><a target="_blank" rel="noopener external nofollow noreferrer" href="http://gityuan.com/2019/07/27/flutter-isolate/">深入理解Flutter的Isolate创建过程</a></li>
+<li><a target="_blank" rel="noopener" href="http://gityuan.com/2019/07/20/flutter_message_loop/">深入理解Flutter消息机制</a></li>
+<li><a target="_blank" rel="noopener" href="http://gityuan.com/2019/08/10/flutter_channel/">深入理解Flutter的Platform Channel机制</a></li>
+<li><a target="_blank" rel="noopener" href="http://gityuan.com/2019/07/21/flutter_future/">深入理解Flutter异步Future机制</a></li>
+<li><a target="_blank" rel="noopener" href="http://gityuan.com/2019/07/27/flutter-isolate/">深入理解Flutter的Isolate创建过程</a></li>
 </ul>
 <h4 id="渲染篇"><a href="#渲染篇" class="headerlink" title="渲染篇"></a>渲染篇</h4><ul>
-<li><a target="_blank" rel="noopener external nofollow noreferrer" href="http://gityuan.com/2019/06/15/flutter_ui_draw/">Flutter渲染机制—UI线程</a></li>
-<li><a target="_blank" rel="noopener external nofollow noreferrer" href="http://gityuan.com/2019/06/16/flutter_gpu_draw/">Flutter渲染机制—GPU线程</a></li>
-<li><a target="_blank" rel="noopener external nofollow noreferrer" href="http://gityuan.com/2019/07/06/flutter_set_state/">深入理解setState更新机制</a></li>
-<li><a target="_blank" rel="noopener external nofollow noreferrer" href="http://gityuan.com/2019/07/13/flutter_animator/">深入理解Flutter动画原理</a></li>
+<li><a target="_blank" rel="noopener" href="http://gityuan.com/2019/06/15/flutter_ui_draw/">Flutter渲染机制—UI线程</a></li>
+<li><a target="_blank" rel="noopener" href="http://gityuan.com/2019/06/16/flutter_gpu_draw/">Flutter渲染机制—GPU线程</a></li>
+<li><a target="_blank" rel="noopener" href="http://gityuan.com/2019/07/06/flutter_set_state/">深入理解setState更新机制</a></li>
+<li><a target="_blank" rel="noopener" href="http://gityuan.com/2019/07/13/flutter_animator/">深入理解Flutter动画原理</a></li>
 </ul>
 <p>后续笔者将持续研究与梳理Flutter内部机制的文章。</p>
 <h2 id="四、结束语"><a href="#四、结束语" class="headerlink" title="四、结束语"></a>四、结束语</h2><p>本文分为三部分全方位逐级深入的分析Flutter技术，先讲述跨平台技术的过去与未来，再解读Flutter架构设计原理，最后剖析Flutter内部源码，后续将持续更新更多剖析技术深度细节以及实战经验，以彻底揭秘更多Flutter技术。</p>
@@ -555,7 +553,7 @@
           
             
             
-              <a target="_blank" href="https://creativecommons.org/licenses/by/4.0/" rel="external nofollow noreferrer">
+              <a target="_blank" href="https://creativecommons.org/licenses/by/4.0/">
               <span class="hint--top hint--rounded" aria-label="BY - 署名">
                 <i class="iconfont icon-by"></i>
               </span>
@@ -823,5 +821,5 @@
   <noscript>
     <div class="noscript-warning">博客在允许 JavaScript 运行的环境下浏览效果更佳</div>
   </noscript>
-<!-- hexo injector body_end start --><script src="https://fastly.jsdelivr.net/npm/hexo-tag-common@0.2.0/js/index.js"></script><!-- hexo injector body_end end --></body>
+</body>
 </html>
