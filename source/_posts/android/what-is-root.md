@@ -1,4 +1,8 @@
 ---
+categories:
+  - android
+---
+---
 title:      "何为 root？"
 subtitle:   "what-is-root"
 date:       2021-10-20 15:46:01
