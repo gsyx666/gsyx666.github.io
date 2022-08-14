@@ -1,7 +1,7 @@
 ---
 layout:     postno
 title:      git
-date:       
+date: 2022-07-08 00:00:00
 header-img: img/post/hui.jpg
 catalog: true
 tags:
