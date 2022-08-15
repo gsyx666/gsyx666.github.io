@@ -38,7 +38,6 @@ Google提供的5层架构图很经典，但为了更进一步透视Android系统
 
 ![process_status](/images/android-arch/android-boot.jpg)
 
-
 **图解：**
 Android系统启动过程由上图从下往上的一个过程是由Boot Loader引导开机，然后依次进入 -> `Kernel` -> `Native` -> `Framework` -> `App`，接来下简要说说每个过程：
 
@@ -48,12 +47,14 @@ Android系统启动过程由上图从下往上的一个过程是由Boot Loader�
 - Boot Loader：这是启动Android系统之前的引导程序，主要是检查RAM，初始化硬件参数等功能。
 
 #### 2.1 Linux内核层
+
 Android平台的基础是Linux内核，比如ART虚拟机最终调用底层Linux内核来执行功能。Linux内核的安全机制为Android提供相应的保障，也允许设备制造商为内核开发硬件驱动程序。
 
 - 启动Kernel的swapper进程(pid=0)：该进程又称为idle进程, 系统初始化过程Kernel由无到有开创的第一个进程, 用于初始化进程管理、内存管理，加载Display,Camera Driver，Binder Driver等相关工作；
 - 启动kthreadd进程（pid=2）：是Linux系统的内核进程，会创建内核工作线程kworkder，软中断线程ksoftirqd，thermal等内核守护进程。`kthreadd进程是所有内核进程的鼻祖`。
 
 #### 2.2 硬件抽象层 (HAL)
+
 硬件抽象层 (HAL) 提供标准接口，HAL包含多个库模块，其中每个模块都为特定类型的硬件组件实现一组接口，比如WIFI/蓝牙模块，当框架API请求访问设备硬件时，Android系统将为该硬件加载相应的库模块。
 
 #### 2.3 Android Runtime & 系统库
@@ -66,7 +67,6 @@ Android平台的基础是Linux内核，比如ART虚拟机最终调用底层Linux
 - init进程还启动`servicemanager`(binder服务管家)、`bootanim`(开机动画)等重要服务
 - init进程孵化出Zygote进程，Zygote进程是Android系统的第一个Java进程(即虚拟机进程)，`Zygote是所有Java进程的父进程`，Zygote进程本身是由init进程孵化而来的。
 
-
 #### 2.4 Framework层
 
 - Zygote进程，是由init进程通过解析init.rc文件后fork生成的，Zygote进程主要包含：
@@ -76,7 +76,6 @@ Android平台的基础是Linux内核，比如ART虚拟机最终调用底层Linux
   - 提前加载资源preloadResouces
 - System Server进程，是由Zygote进程fork而来，`System Server是Zygote孵化的第一个进程`，System Server负责启动和管理整个Java framework，包含ActivityManager，WindowManager，PackageManager，PowerManager等服务。
 - Media Server进程，是由init进程fork而来，负责启动和管理整个C++ framework，包含AudioFlinger，Camera Service等服务。
-
 
 #### 2.5 App层
 
@@ -89,12 +88,11 @@ Android平台的基础是Linux内核，比如ART虚拟机最终调用底层Linux
 - Native与Kernel之间有一层系统调用(SysCall)层，见[Linux系统调用(Syscall)原理](http://gityuan.com/2016/05/21/syscall/);
 - Java层与Native(C/C++)层之间的纽带JNI，见[Android JNI原理分析](http://gityuan.com/2016/05/28/android-jni/)。
 
-###  三、通信方式
+### 三、通信方式
 
 无论是Android系统，还是各种Linux衍生系统，各个组件、模块往往运行在各种不同的进程和线程内，这里就必然涉及进程/线程之间的通信。对于IPC(Inter-Process Communication, 进程间通信)，Linux现有管道、消息队列、共享内存、套接字、信号量、信号这些IPC机制，Android额外还有Binder IPC机制，Android OS中的Zygote进程的IPC采用的是Socket机制，在上层system server、media server以及上层App之间更多的是采用Binder IPC方式来完成跨进程间的通信。对于Android上层架构中，很多时候是在同一个进程的线程之间需要相互通信，例如同一个进程的主线程与工作线程之间的通信，往往采用的Handler消息机制。
 
 想深入理解Android内核层架构，必须先深入理解Linux现有的IPC机制；对于Android上层架构，则最常用的通信方式是Binder、Socket、Handler，当然也有少量其他的IPC方式，比如杀进程Process.killProcess()采用的是signal方式。下面说说Binder、Socket、Handler：
-
 
 #### 3.1 Binder
 
@@ -110,19 +108,19 @@ Binder通信采用c/s架构，从组件视角来说，包含Client、Server、Se
 
 **Binder原理篇**
 
-|序号|文章名|概述|
-|---|---|---|
-|0|[Binder系列—开篇](http://gityuan.com/2015/10/31/binder-prepare/)|Binder概述|
-|1|[Binder系列3—启动Service Manager](http://gityuan.com/2015/11/07/binder-start-sm/)|ServiceManager守护进程 注册和查询服务|
-|2|[Binder系列4—获取Service Manager](http://gityuan.com/2015/11/08/binder-get-sm/)|获取代理对象BpServiceManager|
-|3|[Binder系列5—注册服务(addService)](http://gityuan.com/2015/11/14/binder-add-service/)|注册Media服务|
-|4|[Binder系列6—获取服务(getService)](http://gityuan.com/2015/11/15/binder-get-service/)|获取Media代理，以及DeathRecipient|
-|5|[Binder系列7—framework层分析](http://gityuan.com/2015/11/21/binder-framework/)|framework层服务注册和查询，Binder注册|
-|6|[理解Binder线程池的管理](http://gityuan.com/2016/10/29/binder-thread-pool/)|Binder的startThreadPool过程|
-|7|[彻底理解Android Binder通信架构](http://gityuan.com/2016/09/04/binder-start-service/)|startService为主线|
-|8|[Binder系列10—总结](http://gityuan.com/2015/11/28/binder-summary/)|Binder的简单总结|
-|9|[Binder IPC的权限控制](http://gityuan.com/2016/03/05/binder-clearCallingIdentity/)|clearCallingIdentity/restoreCallingIdentity|
-|10|[Binder死亡通知机制之linkToDeath](http://gityuan.com/2016/10/03/binder_linktodeath/)|Binder死亡通知机制|
+| 序号  | 文章名                                                                             | 概述                                          |
+| --- | ------------------------------------------------------------------------------- | ------------------------------------------- |
+| 0   | [Binder系列—开篇](http://gityuan.com/2015/10/31/binder-prepare/)                    | Binder概述                                    |
+| 1   | [Binder系列3—启动Service Manager](http://gityuan.com/2015/11/07/binder-start-sm/)   | ServiceManager守护进程 注册和查询服务                  |
+| 2   | [Binder系列4—获取Service Manager](http://gityuan.com/2015/11/08/binder-get-sm/)     | 获取代理对象BpServiceManager                      |
+| 3   | [Binder系列5—注册服务(addService)](http://gityuan.com/2015/11/14/binder-add-service/) | 注册Media服务                                   |
+| 4   | [Binder系列6—获取服务(getService)](http://gityuan.com/2015/11/15/binder-get-service/) | 获取Media代理，以及DeathRecipient                  |
+| 5   | [Binder系列7—framework层分析](http://gityuan.com/2015/11/21/binder-framework/)       | framework层服务注册和查询，Binder注册                  |
+| 6   | [理解Binder线程池的管理](http://gityuan.com/2016/10/29/binder-thread-pool/)             | Binder的startThreadPool过程                    |
+| 7   | [彻底理解Android Binder通信架构](http://gityuan.com/2016/09/04/binder-start-service/)   | startService为主线                             |
+| 8   | [Binder系列10—总结](http://gityuan.com/2015/11/28/binder-summary/)                  | Binder的简单总结                                 |
+| 9   | [Binder IPC的权限控制](http://gityuan.com/2016/03/05/binder-clearCallingIdentity/)   | clearCallingIdentity/restoreCallingIdentity |
+| 10  | [Binder死亡通知机制之linkToDeath](http://gityuan.com/2016/10/03/binder_linktodeath/)   | Binder死亡通知机制                                |
 
 **Binder驱动篇:**
 
@@ -167,7 +165,7 @@ Socket通信方式也是C/S架构，比Binder简单很多。在Android系统中�
 
 要理解framework层源码，掌握这3种基本的进程/线程间通信方式是非常有必要，当然Linux还有不少其他的IPC机制，比如共享内存、信号、信号量，在源码中也有体现，如果想全面彻底地掌握Android系统，还是需要对每一种IPC机制都有所了解。
 
-###  四、核心提纲
+### 四、核心提纲
 
 博主对于Android从系统底层一路到上层都有自己的理解和沉淀，通过前面对系统启动的介绍，相信大家对Android系统有了一个整体观。接下来需抓核心、理思路，争取各个击破。后续将持续更新和完善整个大纲，不限于进程、内存、IO、系统服务架构以及分析实战等文章。
 
@@ -188,97 +186,100 @@ Socket通信方式也是C/S架构，比Binder简单很多。在Android系统中�
 [Android系统启动-概述](http://gityuan.com/2016/02/01/android-booting/):
 Android系统中极其重要进程：init, zygote, system_server, servicemanager 进程:
 
-|序号|进程启动|概述|
-|---|---|---|
-|1|[init进程](http://gityuan.com/2016/02/05/android-init/)|Linux系统中用户空间的第一个进程, Init.main|
-|2|[zygote进程](http://gityuan.com/2016/02/13/android-zygote/)|所有Ａpp进程的父进程, ZygoteInit.main|
-|3|[system_server进程(上篇)](http://gityuan.com/2016/02/14/android-system-server/)|系统各大服务的载体, forkSystemServer过程|
-|4|[system_server进程(下篇)](http://gityuan.com/2016/02/20/android-system-server-2/)|系统各大服务的载体, SystemServer.main|
-|5|[servicemanager进程](http://gityuan.com/2015/11/07/binder-start-sm/)|binder服务的大管家, 守护进程循环运行在binder_loop|
-|6|[app进程](http://gityuan.com/2016/03/26/app-process-create/)|通过Process.start启动App进程, ActivityThread.main|
-
+| 序号  | 进程启动                                                                          | 概述                                          |
+| --- | ----------------------------------------------------------------------------- | ------------------------------------------- |
+| 1   | [init进程](http://gityuan.com/2016/02/05/android-init/)                         | Linux系统中用户空间的第一个进程, Init.main               |
+| 2   | [zygote进程](http://gityuan.com/2016/02/13/android-zygote/)                     | 所有Ａpp进程的父进程, ZygoteInit.main                |
+| 3   | [system_server进程(上篇)](http://gityuan.com/2016/02/14/android-system-server/)   | 系统各大服务的载体, forkSystemServer过程               |
+| 4   | [system_server进程(下篇)](http://gityuan.com/2016/02/20/android-system-server-2/) | 系统各大服务的载体, SystemServer.main                |
+| 5   | [servicemanager进程](http://gityuan.com/2015/11/07/binder-start-sm/)            | binder服务的大管家, 守护进程循环运行在binder_loop          |
+| 6   | [app进程](http://gityuan.com/2016/03/26/app-process-create/)                    | 通过Process.start启动App进程, ActivityThread.main |
 
 再来看看守护进程(也就是进程名一般以d为后缀，比如logd，此处d是指daemon的简称), 下面介绍部分守护进程：
 
-  - [debuggerd](http://gityuan.com/2016/06/15/android-debuggerd/)
-  - [installd](http://gityuan.com/2016/11/13/android-installd)
-  - [lmkd](http://gityuan.com/2016/09/17/android-lowmemorykiller/)
-  - [logd](http://gityuan.com/2018/01/27/android-log/)
+- [debuggerd](http://gityuan.com/2016/06/15/android-debuggerd/)
+- [installd](http://gityuan.com/2016/11/13/android-installd)
+- [lmkd](http://gityuan.com/2016/09/17/android-lowmemorykiller/)
+- [logd](http://gityuan.com/2018/01/27/android-log/)
 
 #### 4.2 系统稳定性系列
 
  [Android系统稳定性](http://gityuan.com/2016/06/19/stability_summary/)主要是异常崩溃(crash)和执行超时(timeout),:
 
-|序号|文章名|概述|
-|---|---|---|
-|1|[理解Android ANR的触发原理](http://gityuan.com/2016/07/02/android-anr/)|触发ANR的场景以及机理|
-|2|[Input系统—ANR原理分析](http://gityuan.com/2017/01/01/input-anr/)|input触发ANR的原理|
-|3|[理解Android ANR的信息收集过程](http://gityuan.com/2016/12/02/app-not-response/)|AMS.appNotResponding过程分析,收集traces|
-|4|[解读Java进程的Trace文件](http://gityuan.com/2016/11/26/art-trace/)|kill -3 信息收集过程|
-|5|[Native进程之Trace原理](http://gityuan.com/2016/11/27/native-traces/)|debuggerd -b 信息收集过程|
-|6|[WatchDog工作原理](http://gityuan.com/2016/06/21/watchdog/)|WatchDog触发机制|
-|7|[理解Java   Crash处理流程](http://gityuan.com/2016/06/24/app-crash/)|AMS.handleApplicationCrash过程分析|
-|8|[理解Native Crash处理流程](http://gityuan.com/2016/06/25/android-native-crash/)|debuggerd守护进程|
-|9|[global reference限制策略](http://gityuan.com/2019/01/19/global_ref/)|global reference|
+| 序号  | 文章名                                                                       | 概述                                |
+| --- | ------------------------------------------------------------------------- | --------------------------------- |
+| 1   | [理解Android ANR的触发原理](http://gityuan.com/2016/07/02/android-anr/)          | 触发ANR的场景以及机理                      |
+| 2   | [Input系统—ANR原理分析](http://gityuan.com/2017/01/01/input-anr/)               | input触发ANR的原理                     |
+| 3   | [理解Android ANR的信息收集过程](http://gityuan.com/2016/12/02/app-not-response/)   | AMS.appNotResponding过程分析,收集traces |
+| 4   | [解读Java进程的Trace文件](http://gityuan.com/2016/11/26/art-trace/)              | kill -3 信息收集过程                    |
+| 5   | [Native进程之Trace原理](http://gityuan.com/2016/11/27/native-traces/)          | debuggerd -b 信息收集过程               |
+| 6   | [WatchDog工作原理](http://gityuan.com/2016/06/21/watchdog/)                   | WatchDog触发机制                      |
+| 7   | [理解Java   Crash处理流程](http://gityuan.com/2016/06/24/app-crash/)            | AMS.handleApplicationCrash过程分析    |
+| 8   | [理解Native Crash处理流程](http://gityuan.com/2016/06/25/android-native-crash/) | debuggerd守护进程                     |
+| 9   | [global reference限制策略](http://gityuan.com/2019/01/19/global_ref/)         | global reference                  |
 
 #### 4.3 Android进程系列
+
 进程/线程是操作系统的魂，各种服务、组件、子系统都是依附于具体的进程实体。深入理解进程机制对于掌握Android系统整体架构和运转机制是非常有必要的，是系统工程师的基本功，下面列举进程相关的文章：
 
-|序号|文章名|概述|
-|---|---|---|
-|1|[理解Android进程创建流程](http://gityuan.com/2016/03/26/app-process-create/)|Process.start过程分析|
-|2|[理解杀进程的实现原理](http://gityuan.com/2016/04/16/kill-signal/)|Process.killProcess过程分析|
-|3|[Android四大组件与进程启动的关系](http://gityuan.com/2016/10/09/app-process-create-2/)|AMS.startProcessLocked过程分析组件与进程|
-|4|[Android进程绝杀技--forceStop](http://gityuan.com/2016/10/22/force-stop/)|force-stop过程分析彻底移除组件与杀进程|
-|5|[理解Android线程创建流程](http://gityuan.com/2016/09/24/android-thread/)|3种不同线程的创建过程|
-|6|[彻底理解Android Binder通信架构](http://gityuan.com/2016/09/04/binder-start-service/)|以start-service为线,阐述进程间通信机理|
-|7|[理解Binder线程池的管理](http://gityuan.com/2016/10/29/binder-thread-pool/)|Zygote fork的进程都默认开启binder线程池|
-|8|[Android进程生命周期与ADJ](http://gityuan.com/2015/10/01/process-lifecycle/)|进程adj, processState以及lmk|
-|9|[Android LowMemoryKiller原理分析](http://gityuan.com/2016/09/17/android-lowmemorykiller/)|lmk原理分析|
-|10|[进程优先级](http://gityuan.com/2015/10/01/process-priority/)|进程nice,thread priority以及scheduler|
-|11|[Android进程调度之adj算法](http://gityuan.com/2016/08/07/android-adj/)|updateOomAdjLocked过程|
-|12|[Android进程整理](http://gityuan.com/2015/12/19/android-process-category/)|整理系统的所有进程/线程|
-|13|[解读Android进程优先级ADJ算法](http://gityuan.com/2018/05/19/android-process-adj/)|Android进程ADJ优先级|
+| 序号  | 文章名                                                                                   | 概述                                |
+| --- | ------------------------------------------------------------------------------------- | --------------------------------- |
+| 1   | [理解Android进程创建流程](http://gityuan.com/2016/03/26/app-process-create/)                  | Process.start过程分析                 |
+| 2   | [理解杀进程的实现原理](http://gityuan.com/2016/04/16/kill-signal/)                              | Process.killProcess过程分析           |
+| 3   | [Android四大组件与进程启动的关系](http://gityuan.com/2016/10/09/app-process-create-2/)            | AMS.startProcessLocked过程分析组件与进程   |
+| 4   | [Android进程绝杀技--forceStop](http://gityuan.com/2016/10/22/force-stop/)                  | force-stop过程分析彻底移除组件与杀进程          |
+| 5   | [理解Android线程创建流程](http://gityuan.com/2016/09/24/android-thread/)                      | 3种不同线程的创建过程                       |
+| 6   | [彻底理解Android Binder通信架构](http://gityuan.com/2016/09/04/binder-start-service/)         | 以start-service为线,阐述进程间通信机理        |
+| 7   | [理解Binder线程池的管理](http://gityuan.com/2016/10/29/binder-thread-pool/)                   | Zygote fork的进程都默认开启binder线程池      |
+| 8   | [Android进程生命周期与ADJ](http://gityuan.com/2015/10/01/process-lifecycle/)                 | 进程adj, processState以及lmk          |
+| 9   | [Android LowMemoryKiller原理分析](http://gityuan.com/2016/09/17/android-lowmemorykiller/) | lmk原理分析                           |
+| 10  | [进程优先级](http://gityuan.com/2015/10/01/process-priority/)                              | 进程nice,thread priority以及scheduler |
+| 11  | [Android进程调度之adj算法](http://gityuan.com/2016/08/07/android-adj/)                       | updateOomAdjLocked过程              |
+| 12  | [Android进程整理](http://gityuan.com/2015/12/19/android-process-category/)                | 整理系统的所有进程/线程                      |
+| 13  | [解读Android进程优先级ADJ算法](http://gityuan.com/2018/05/19/android-process-adj/)             | Android进程ADJ优先级                   |
 
 #### 4.4 四大组件系列
+
 对于App来说，Android应用的四大组件Activity，Service，Broadcast Receiver， Content Provider最为核心，接下分别展开介绍：
 
-|序号|文章名|类别|
-|---|---|---|
-|1|[startActivity启动过程分析](http://gityuan.com/2016/03/12/start-activity/)|Activity|
-|2|[简述Activity生命周期](http://gityuan.com/2016/03/18/start-activity-cycle/)|Activity|
-|3|[startService启动过程分析](http://gityuan.com/2016/03/06/start-service/)|Service|
-|4|[bindService启动过程分析](http://gityuan.com/2016/05/01/bind-service/)|Service|
-|5|[以Binder视角来看Service启动](http://gityuan.com/2016/09/04/binder-start-service/)|Service|
-|6|[Android Broadcast广播机制分析](http://gityuan.com/2016/06/04/broadcast-receiver/)|Broadcast|
-|7|[理解ContentProvider原理](http://gityuan.com/2016/07/30/content-provider/)|ContentProvider|
-|8|[ContentProvider引用计数](http://gityuan.com/2016/05/03/content_provider_release/)|ContentProvider|
-|9|[Activity与Service生命周期](http://gityuan.com/2015/05/31/android-lifecycle/)|Activity&&Service|
-|10|[简述Activity与Window关系](http://gityuan.com/2017/04/16/activity-with-window/)|Activity&&Window|
-|11|[四大组件之综述](http://gityuan.com/2017/05/19/ams-abstract/)|AMS|
-|12|[四大组件之ServiceRecord](http://gityuan.com/2017/05/25/service_record/)|Service|
-|13|[四大组件之BroadcastRecord](http://gityuan.com/2017/06/03/broadcast_record/)|Broadcast|
-|14|[四大组件之ContentProviderRecord](http://gityuan.com/2017/06/04/content_provider_record/)|ContentProvider|
-|15|[理解Android Context](http://gityuan.com/2017/04/09/android_context/)|Context|
-|16|[理解Application创建过程](http://gityuan.com/2017/04/02/android-application/)|Application|
-|17|[unbindService流程分析](http://gityuan.com/2016/05/02/unbind-service/)|Service|
-|18|[四大组件之ActivityRecord](http://gityuan.com/2017/06/11/activity_record/)|Activity|
-|19|[AMS总结(一)](http://gityuan.com/2017/06/25/ams_summary_1/)|AMS|
+| 序号  | 文章名                                                                                  | 类别                |
+| --- | ------------------------------------------------------------------------------------ | ----------------- |
+| 1   | [startActivity启动过程分析](http://gityuan.com/2016/03/12/start-activity/)                 | Activity          |
+| 2   | [简述Activity生命周期](http://gityuan.com/2016/03/18/start-activity-cycle/)                | Activity          |
+| 3   | [startService启动过程分析](http://gityuan.com/2016/03/06/start-service/)                   | Service           |
+| 4   | [bindService启动过程分析](http://gityuan.com/2016/05/01/bind-service/)                     | Service           |
+| 5   | [以Binder视角来看Service启动](http://gityuan.com/2016/09/04/binder-start-service/)          | Service           |
+| 6   | [Android Broadcast广播机制分析](http://gityuan.com/2016/06/04/broadcast-receiver/)         | Broadcast         |
+| 7   | [理解ContentProvider原理](http://gityuan.com/2016/07/30/content-provider/)               | ContentProvider   |
+| 8   | [ContentProvider引用计数](http://gityuan.com/2016/05/03/content_provider_release/)       | ContentProvider   |
+| 9   | [Activity与Service生命周期](http://gityuan.com/2015/05/31/android-lifecycle/)             | Activity&&Service |
+| 10  | [简述Activity与Window关系](http://gityuan.com/2017/04/16/activity-with-window/)           | Activity&&Window  |
+| 11  | [四大组件之综述](http://gityuan.com/2017/05/19/ams-abstract/)                               | AMS               |
+| 12  | [四大组件之ServiceRecord](http://gityuan.com/2017/05/25/service_record/)                  | Service           |
+| 13  | [四大组件之BroadcastRecord](http://gityuan.com/2017/06/03/broadcast_record/)              | Broadcast         |
+| 14  | [四大组件之ContentProviderRecord](http://gityuan.com/2017/06/04/content_provider_record/) | ContentProvider   |
+| 15  | [理解Android Context](http://gityuan.com/2017/04/09/android_context/)                  | Context           |
+| 16  | [理解Application创建过程](http://gityuan.com/2017/04/02/android-application/)              | Application       |
+| 17  | [unbindService流程分析](http://gityuan.com/2016/05/02/unbind-service/)                   | Service           |
+| 18  | [四大组件之ActivityRecord](http://gityuan.com/2017/06/11/activity_record/)                | Activity          |
+| 19  | [AMS总结(一)](http://gityuan.com/2017/06/25/ams_summary_1/)                             | AMS               |
 
 #### 4.5 图形系统系列
+
 图形也是整个系统非常复杂且重要的一个系列，涉及WindowManager,SurfaceFlinger服务。
 
-|序号|文章名|类别|
-|---|---|---|
-|1|[WindowManager启动篇](http://gityuan.com/2017/01/08/windowmanger/)|Window|
-|2|[WMS之启动窗口篇](http://gityuan.com/2017/01/15/wms_starting_window/)|Window|
-|3|[以Window视角来看startActivity](http://gityuan.com/2017/01/22/start-activity-wms/)|Window|
-|4|[Android图形系统概述](http://gityuan.com/2017/02/05/graphic_arch/)|SurfaceFlinger|
-|5|[SurfaceFlinger启动篇](http://gityuan.com/2017/02/11/surface_flinger/)|SurfaceFlinger|
-|6|[SurfaceFlinger绘图篇](http://gityuan.com/2017/02/18/surface_flinger_2/)|SurfaceFlinger|
-|7|[Choreographer原理](http://gityuan.com/2017/02/25/choreographer/)|Choreographer|
+| 序号  | 文章名                                                                           | 类别             |
+| --- | ----------------------------------------------------------------------------- | -------------- |
+| 1   | [WindowManager启动篇](http://gityuan.com/2017/01/08/windowmanger/)               | Window         |
+| 2   | [WMS之启动窗口篇](http://gityuan.com/2017/01/15/wms_starting_window/)               | Window         |
+| 3   | [以Window视角来看startActivity](http://gityuan.com/2017/01/22/start-activity-wms/) | Window         |
+| 4   | [Android图形系统概述](http://gityuan.com/2017/02/05/graphic_arch/)                  | SurfaceFlinger |
+| 5   | [SurfaceFlinger启动篇](http://gityuan.com/2017/02/11/surface_flinger/)           | SurfaceFlinger |
+| 6   | [SurfaceFlinger绘图篇](http://gityuan.com/2017/02/18/surface_flinger_2/)         | SurfaceFlinger |
+| 7   | [Choreographer原理](http://gityuan.com/2017/02/25/choreographer/)               | Choreographer  |
 
 #### 4.6 系统服务篇
+
 再则就是在整个架构中有大量的服务，都是基于[Binder](http://gityuan.com/2015/10/31/binder-prepare/)来交互的，[Android系统服务的注册过程](http://gityuan.com/2016/10/01/system_service_common/)也是在此之上的构建的。计划针对部分核心服务来重点分析：
 
 - AMS服务
@@ -310,46 +311,48 @@ Android系统中极其重要进程：init, zygote, system_server, servicemanager
 #### 4.7 内存&&存储篇
 
 - 内存篇
-    - [Android LowMemoryKiller原理分析](http://gityuan.com/2016/09/17/android-lowmemorykiller/)
-    - [Linux内存管理](http://gityuan.com/2015/10/30/kernel-memory/)
-    - [Android内存分析命令](http://gityuan.com/2016/01/02/memory-analysis-command/)
+  - [Android LowMemoryKiller原理分析](http://gityuan.com/2016/09/17/android-lowmemorykiller/)
+  - [Linux内存管理](http://gityuan.com/2015/10/30/kernel-memory/)
+  - [Android内存分析命令](http://gityuan.com/2016/01/02/memory-analysis-command/)
 - 存储篇
-    - [Android存储系统之源码篇](http://gityuan.com/2016/07/17/android-io/)
-    - [Android存储系统之架构篇](http://gityuan.com/2016/07/23/android-io-arch)
+  - [Android存储系统之源码篇](http://gityuan.com/2016/07/17/android-io/)
+  - [Android存储系统之架构篇](http://gityuan.com/2016/07/23/android-io-arch)
 - Linux驱动篇
 - dalvik/art
-    - [解读Java进程的Trace文件](http://gityuan.com/2016/11/26/art-trace/)
+  - [解读Java进程的Trace文件](http://gityuan.com/2016/11/26/art-trace/)
 
 #### 4.8 工具篇
+
 再来说说Android相关的一些常用命令和工具以及调试手段.
 
-|序号|文章名|类别|
-|---|---|---|
-|1|[理解Android编译命令](http://gityuan.com/2016/03/19/android-build/)|build|
-|2|[理解Android.bp](http://gityuan.com/2018/06/02/android-bp/)|build|
-|2|[性能工具Systrace](http://gityuan.com/2016/01/17/systrace/)|systrace|
-|3|[Android内存分析命令](http://gityuan.com/2016/01/02/memory-analysis-command/)|Memory|
-|4|[ps进程命令](http://gityuan.com/2015/10/11/ps-command/)|Process|
-|5|[Am命令用法](http://gityuan.com/2016/02/27/am-command/)|Am|
-|6|[Pm命令用法](http://gityuan.com/2016/02/28/pm-command/)|Pm|
-|7|[调试系列1：bugreport源码篇](http://gityuan.com/2016/06/10/bugreport/)|bugreport|
-|8|[调试系列2：bugreport实战篇](http://gityuan.com/2016/06/11/bugreport-2/)|bugreport|
-|9|[dumpsys命令用法](http://gityuan.com/2016/05/14/dumpsys-command/)|dumpsys|
-|10|[Android logd日志原理](http://gityuan.com/2018/01/27/android-log/)|logd|
-|11|[介绍gdb调试工具](http://gityuan.com/2017/09/09/gdb/)|gdb|
-|12|[介绍addr2line调试命令](http://gityuan.com/2017/09/02/addr2line/)|addr2line|
+| 序号  | 文章名                                                                     | 类别        |
+| --- | ----------------------------------------------------------------------- | --------- |
+| 1   | [理解Android编译命令](http://gityuan.com/2016/03/19/android-build/)           | build     |
+| 2   | [理解Android.bp](http://gityuan.com/2018/06/02/android-bp/)               | build     |
+| 2   | [性能工具Systrace](http://gityuan.com/2016/01/17/systrace/)                 | systrace  |
+| 3   | [Android内存分析命令](http://gityuan.com/2016/01/02/memory-analysis-command/) | Memory    |
+| 4   | [ps进程命令](http://gityuan.com/2015/10/11/ps-command/)                     | Process   |
+| 5   | [Am命令用法](http://gityuan.com/2016/02/27/am-command/)                     | Am        |
+| 6   | [Pm命令用法](http://gityuan.com/2016/02/28/pm-command/)                     | Pm        |
+| 7   | [调试系列1：bugreport源码篇](http://gityuan.com/2016/06/10/bugreport/)          | bugreport |
+| 8   | [调试系列2：bugreport实战篇](http://gityuan.com/2016/06/11/bugreport-2/)        | bugreport |
+| 9   | [dumpsys命令用法](http://gityuan.com/2016/05/14/dumpsys-command/)           | dumpsys   |
+| 10  | [Android logd日志原理](http://gityuan.com/2018/01/27/android-log/)          | logd      |
+| 11  | [介绍gdb调试工具](http://gityuan.com/2017/09/09/gdb/)                         | gdb       |
+| 12  | [介绍addr2line调试命令](http://gityuan.com/2017/09/02/addr2line/)             | addr2line |
 
 #### 4.9 实战篇
+
 下面列举处理过的部分较为典型的案例，供大家参考
 
-|序号|文章名|类别|
-|---|---|---|
-|1|[Binder Driver缺陷导致定屏的案例](http://gityuan.com/2018/05/12/binder-driver-bug/)|binder|
-|2|[深度解读ArrayMap优势与缺陷](http://gityuan.com/2019/01/13/arraymap/)|ArrayMap|
-|3|[数组越界导致系统重启的案例](http://gityuan.com/2018/02/10/reboot-locked-method/)|数组越界|
-|4|[一行Log引发多线程并发问题的案例](http://gityuan.com/2018/02/03/log-fc/)|多线程并发|
-|5|[跑monkey压力测试过程的冻屏案例](http://gityuan.com/2018/02/17/monkey-deadlock/)|monkey冻屏|
-|6|[深度剖析APP保活案例](http://gityuan.com/2018/02/24/process-keep-forever/)|保活|
+| 序号  | 文章名                                                                        | 类别       |
+| --- | -------------------------------------------------------------------------- | -------- |
+| 1   | [Binder Driver缺陷导致定屏的案例](http://gityuan.com/2018/05/12/binder-driver-bug/) | binder   |
+| 2   | [深度解读ArrayMap优势与缺陷](http://gityuan.com/2019/01/13/arraymap/)               | ArrayMap |
+| 3   | [数组越界导致系统重启的案例](http://gityuan.com/2018/02/10/reboot-locked-method/)       | 数组越界     |
+| 4   | [一行Log引发多线程并发问题的案例](http://gityuan.com/2018/02/03/log-fc/)                 | 多线程并发    |
+| 5   | [跑monkey压力测试过程的冻屏案例](http://gityuan.com/2018/02/17/monkey-deadlock/)       | monkey冻屏 |
+| 6   | [深度剖析APP保活案例](http://gityuan.com/2018/02/24/process-keep-forever/)         | 保活       |
 
 ### 五、结束语
 
