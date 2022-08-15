@@ -2,7 +2,7 @@
 layout:     postno
 title:      和时间赛跑
 date:       2020-09-28
-header-img: img/post/hui.jpg
+header-img: https://baike.baidu.com/pic/%E5%92%8C%E6%97%B6%E9%97%B4%E8%B5%9B%E8%B7%91/8724365/2348066217/
 catalog: true
 tags:
     - 美文
