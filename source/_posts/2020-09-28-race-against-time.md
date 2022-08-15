@@ -2,7 +2,7 @@
 layout:     postno
 title:      和时间赛跑
 date:       2020-09-28
-header-img: https://baike.baidu.com/pic/%E5%92%8C%E6%97%B6%E9%97%B4%E8%B5%9B%E8%B7%91/8724365/2348066217/
+header-img: https://bkimg.cdn.bcebos.com/pic/0d338744ebf81a4c0da837c5d52a6059252da620
 catalog: true
 tags:
     - 美文
