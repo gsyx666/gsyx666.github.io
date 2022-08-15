@@ -11,8 +11,7 @@ tags:
   - 转载
 categories:
   - Android
-​---
-
+---
 
 > 本文转载自 [维术-何为 root？](https://weishu.me/2021/09/13/what-is-root/) 
 
