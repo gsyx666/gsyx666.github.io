@@ -2,7 +2,7 @@
 title: 【我的一周】菜菜子Nanako
 subtitle: 蔡明做虚拟主播
 author: gsyx
-header-img: https://bkimg.cdn.bcebos.com/pic/9825bc315c6034a85edfafb9aa595e540923dd54d8fb
+banner_img: https://bkimg.cdn.bcebos.com/pic/9825bc315c6034a85edfafb9aa595e540923dd54d8fb
 tags:
   - Weekly
 categories:
