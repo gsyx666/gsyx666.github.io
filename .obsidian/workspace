@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "source/_posts/weekly/【我的一周】菜菜子Nanako.md",
+            "file": "source/_posts/resources/NFT精神史：罐头、青蛙和平凡人的15分钟英雄梦想.md",
             "mode": "source",
             "source": true
           }
@@ -77,7 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "source/_posts/weekly/【我的一周】菜菜子Nanako.md",
+                "file": "source/_posts/resources/NFT精神史：罐头、青蛙和平凡人的15分钟英雄梦想.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -94,7 +94,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "source/_posts/weekly/【我的一周】菜菜子Nanako.md",
+                "file": "source/_posts/resources/NFT精神史：罐头、青蛙和平凡人的15分钟英雄梦想.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -117,7 +117,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "source/_posts/weekly/【我的一周】菜菜子Nanako.md"
+                "file": "source/_posts/resources/NFT精神史：罐头、青蛙和平凡人的15分钟英雄梦想.md"
               }
             }
           }
@@ -130,8 +130,11 @@
   },
   "active": "493bade284fe3cf3",
   "lastOpenFiles": [
-    "source/_posts/2021-10-27-spare-parts-library.md",
+    "source/_posts/resources/2021-08-27-resources.md",
+    "source/_posts/resources/NFT精神史：罐头、青蛙和平凡人的15分钟英雄梦想.md",
+    "source/_posts/android/what-is-bootloader-unlock.md",
+    "source/_posts/area/2022-08-15-news.md",
     "source/_posts/weekly/【我的一周】菜菜子Nanako.md",
-    "source/_posts/area/2022-08-15-news.md"
+    "source/_posts/2021-10-27-spare-parts-library.md"
   ]
 }
