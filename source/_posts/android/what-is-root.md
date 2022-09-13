@@ -1,8 +1,7 @@
 ---
-title:      "何为 root？"
-subtitle:   "what-is-root"
-date:       2021-10-20 15:46:01
-author:     "weishu"
+title: 何为 root？
+subtitle: what-is-root
+author: weishu
 index_img: img/what-is-bootloader-unlock/0.jpg
 banner_img: img/what-is-bootloader-unlock/0.jpg
 tags:
@@ -10,7 +9,8 @@ tags:
   - Root
   - 转载
 categories:
-  - Android
+  - android
+date: 2021-10-20 15:46:01
 ---
 
 > 本文转载自 [维术-何为 root？](https://weishu.me/2021/09/13/what-is-root/) 
