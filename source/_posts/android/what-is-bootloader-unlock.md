@@ -9,7 +9,7 @@ tags:
   - BootLoader
   - 转载
 categories:
-  - android
+  - Android
 abbrlink: 13244
 date: 2021-10-20 20:53:15
 ---

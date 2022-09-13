@@ -9,7 +9,7 @@ tags:
   - Root
   - 转载
 categories:
-  - android
+  - Android
 date: 2021-10-20 15:46:01
 ---
 

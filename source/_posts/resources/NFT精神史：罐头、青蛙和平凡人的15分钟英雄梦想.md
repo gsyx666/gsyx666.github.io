@@ -3,12 +3,12 @@ title: NFT精神史：罐头、青蛙和平凡人的15分钟英雄梦想
 subtitle: NFT精神史：罐头、青蛙和平凡人的15分钟英雄梦想
 author: 史中
 banner_img_height: 70
-banner_img: >-
-  https://mmbiz.qpic.cn/mmbiz_png/dZODkqM6bj4eWjmpc7nQMYpLCzFZvgoY5RxTSbBiaK9Mbjvs1VFmCsu3dp39qynlf2mJC9VkiaATuJicMXlt11Scw
+banner_img: https://mmbiz.qpic.cn/mmbiz_png/dZODkqM6bj4eWjmpc7nQMYpLCzFZvgoY5RxTSbBiaK9Mbjvs1VFmCsu3dp39qynlf2mJC9VkiaATuJicMXlt11Scw
 tags:
   - 转载
+  - NFT
 categories:
-  - resources
+  - Resources
 date: 2022-09-11 00:00:00
 ---
 
