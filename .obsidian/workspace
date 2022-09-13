@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "source/_posts/Resources/2021-08-27-resources.md",
+            "file": "source/_posts/Resources/NFT精神史：罐头、青蛙和平凡人的15分钟英雄梦想.md",
             "mode": "source",
             "source": true
           }
@@ -77,7 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "source/_posts/Resources/2021-08-27-resources.md",
+                "file": "source/_posts/Resources/NFT精神史：罐头、青蛙和平凡人的15分钟英雄梦想.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -94,7 +94,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "source/_posts/Resources/2021-08-27-resources.md",
+                "file": "source/_posts/Resources/NFT精神史：罐头、青蛙和平凡人的15分钟英雄梦想.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -117,7 +117,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "source/_posts/Resources/2021-08-27-resources.md"
+                "file": "source/_posts/Resources/NFT精神史：罐头、青蛙和平凡人的15分钟英雄梦想.md"
               }
             }
           }
@@ -130,8 +130,8 @@
   },
   "active": "cc0e3c9beb73a70b",
   "lastOpenFiles": [
-    "source/_posts/Resources/NFT精神史：罐头、青蛙和平凡人的15分钟英雄梦想.md",
     "source/_posts/Resources/2021-08-27-resources.md",
+    "source/_posts/Resources/NFT精神史：罐头、青蛙和平凡人的15分钟英雄梦想.md",
     "source/_posts/Area/2022-08-15-news.md",
     "source/_posts/Android/what-is-root.md",
     "source/_posts/Android/what-is-bootloader-unlock.md",
