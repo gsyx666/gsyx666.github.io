@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "source/_posts/Area/News/2022-08-15-news.md",
+            "file": "source/_posts/Bin/security.md",
             "mode": "source",
             "source": true
           }
@@ -77,7 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "source/_posts/Area/News/2022-08-15-news.md",
+                "file": "source/_posts/Bin/security.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -94,7 +94,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "source/_posts/Area/News/2022-08-15-news.md",
+                "file": "source/_posts/Bin/security.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -117,7 +117,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "source/_posts/Area/News/2022-08-15-news.md"
+                "file": "source/_posts/Bin/security.md"
               }
             }
           }
@@ -131,15 +131,15 @@
   },
   "active": "cc0e3c9beb73a70b",
   "lastOpenFiles": [
+    "source/_posts/Bin/What-happens-when.md",
+    "source/_posts/Bin/security.md",
+    "source/_posts/Area/News/2022-08-15-news.md",
+    "source/_posts/Bin/HTTP.md",
+    "source/_posts/Bin/独立开发者赚钱经验分享.md",
+    "source/_posts/Area/Heal/未来医疗：AI 负责治病，医生负责关怀.md",
     "source/_posts/Git/2017-02-16-Git-代码回滚.md",
     "source/_posts/Git/2017-02-22-使用-.gitignore-忽略-git-仓库中的文件.md",
     "source/_posts/Git/cs-notes-git.md",
-    "source/_posts/Git/2017-02-15-Git指令整理.md",
-    "source/_posts/Area/News/2022-08-15-news.md",
-    "source/_posts/Area/Heal/未来医疗：AI 负责治病，医生负责关怀.md",
-    "source/_posts/Resources/NFT精神史：罐头、青蛙和平凡人的15分钟英雄梦想.md",
-    "source/_posts/Resources/2021-08-27-resources.md",
-    "source/_posts/Android/what-is-root.md",
-    "source/_posts/Android/what-is-bootloader-unlock.md"
+    "source/_posts/Git/2017-02-15-Git指令整理.md"
   ]
 }
