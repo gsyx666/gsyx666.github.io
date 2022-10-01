@@ -1,7 +1,8 @@
 ---
 title: Flutter 跨平台演进及架构开篇
 tags: Flutter
-categories: Android
+categories:
+  - Bin
 date: 2019-06-01 22:22:22
 ---
 

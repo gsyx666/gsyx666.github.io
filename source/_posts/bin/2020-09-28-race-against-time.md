@@ -1,13 +1,15 @@
 ---
-title:      和时间赛跑
-date:       2020-09-28
-header-img: https://bkimg.cdn.bcebos.com/pic/0d338744ebf81a4c0da837c5d52a6059252da620
+title: 和时间赛跑
+header-img: 'https://bkimg.cdn.bcebos.com/pic/0d338744ebf81a4c0da837c5d52a6059252da620'
 tags:
-    - 美文
-    - 转载
+  - 美文
+  - 转载
+categories:
+  - Bin
+date: 2020-09-28 00:00:00
 ---
 
-> 转载自课本，作者[林清玄](https://baike.baidu.com/item/%E6%9E%97%E6%B8%85%E7%8E%84/477374?fr=kg_general)  
+> 转载自[林清玄](https://baike.baidu.com/item/%E6%9E%97%E6%B8%85%E7%8E%84/477374?fr=kg_general)  
 
  　　读小学的时候，我的外祖母去世了。外祖母生前最疼爱我。我无法排除自己的忧伤，每天在学校的操场上一圈一圈地跑着，跑得累倒在地上，扑在草坪上痛哭。
 

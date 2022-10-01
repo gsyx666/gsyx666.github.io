@@ -4,8 +4,8 @@ author: gityuan
 permalink: /android/
 tags:
   - 转载
-categories: Android
-
+categories:
+  - Bin
 date: 2016-04-01 11:49:40
 ---
 

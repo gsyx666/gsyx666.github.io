@@ -1,13 +1,13 @@
 ---
-title: 备件库是什么
+title: 备件库是什么？
 subtitle: What is the spare parts library
 author: 晓色暮云
 header-img: img/in-post/spare-parts-library-1-1.jpg
 tags:
   - Shopping
   - 转载
-categories: Digital Life
-
+categories:
+  - Bin
 date: 2021-10-27 14:43:01
 ---
 
