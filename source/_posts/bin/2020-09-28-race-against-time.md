@@ -1,9 +1,7 @@
 ---
-layout:     postno
 title:      和时间赛跑
 date:       2020-09-28
 header-img: https://bkimg.cdn.bcebos.com/pic/0d338744ebf81a4c0da837c5d52a6059252da620
-catalog: true
 tags:
     - 美文
     - 转载

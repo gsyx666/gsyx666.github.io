@@ -1,11 +1,10 @@
 ---
 title: gityuan
 author: gityuan
-permalink: /android/
 tags:
   - 转载
 categories: Android
-abbrlink: 3599
+
 date: 2016-04-01 11:49:40
 ---
 
