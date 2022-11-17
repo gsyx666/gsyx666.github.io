@@ -1,0 +1,166 @@
+{
+  "main": {
+    "id": "0006a3f3ee7b3008",
+    "type": "split",
+    "children": [
+      {
+        "id": "e902c00c31019b22",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "cc0e3c9beb73a70b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "source/_posts/Bin/2021-10-27-spare-parts-library.md",
+                "mode": "source",
+                "source": true
+              }
+            }
+          },
+          {
+            "id": "9d7fd8222f49e3e5",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "source/_posts/Android/为何你的应用老是被破解，该如何有效的做签名校验？.md",
+                "mode": "source",
+                "source": true
+              }
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "447b462714b776b1",
+    "type": "split",
+    "children": [
+      {
+        "id": "b925b6e398e66a93",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "ee59ae21d058374a",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "0d27ec919d7fa84b",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "when",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "b7bbe55097cf9fc9",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "d4f4a64fe3e4b8d3",
+    "type": "split",
+    "children": [
+      {
+        "id": "30bc3afa9750b2bf",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "a4a47e4a7f1a8b84",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "source/_posts/Android/为何你的应用老是被破解，该如何有效的做签名校验？.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "773e4afb3f392df7",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "source/_posts/Android/为何你的应用老是被破解，该如何有效的做签名校验？.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "8f8e0f66d5d56f17",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "5cd88d4561674c59",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "source/_posts/Android/为何你的应用老是被破解，该如何有效的做签名校验？.md"
+              }
+            }
+          }
+        ],
+        "currentTab": 3
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "ee59ae21d058374a",
+  "lastOpenFiles": [
+    "source/_posts/Android/what-is-bootloader-unlock.md",
+    "source/_posts/Android/what-is-root.md",
+    "source/_posts/Android/为何你的应用老是被破解，该如何有效的做签名校验？.md",
+    "source/_posts/Bin/2021-10-27-spare-parts-library.md",
+    "source/_posts/Bin/2020-09-28-race-against-time.md",
+    "source/_posts/Python/action-python.md",
+    "source/_posts/Python/Python.md",
+    "source/_posts/Weekly/【我的一周】菜菜子Nanako.md",
+    "source/_posts/hello-world.md",
+    "source/_posts/Bin/gityuanREADME.md"
+  ]
+}
