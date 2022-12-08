@@ -2,6 +2,7 @@
 title: Hello World
 abbrlink: 16107
 # banner_img: /img/bg/example.jpg   # 对应存放在 /source/img/bg/example.jpg
+# permalink: 
 
 #categories:
   #- Diary
