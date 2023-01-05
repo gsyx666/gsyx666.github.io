@@ -1,12 +1,13 @@
 ---
-layout:     postno
-title:      git
-date: 2022-07-08 00:00:00
+title: git
 header-img: img/post/hui.jpg
 catalog: true
 tags:
-    - git
-    - 转载
+  - git
+  - 转载
+categories:
+  - Git
+date: 2022-07-08 00:00:00
 ---
 
 > 本文转载自 [https://github.com/CyC2018/CS-Notes/blob/master/notes/Git.md](https://github.com/CyC2018/CS-Notes/blob/master/notes/Git.md)
