@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "source/_posts/Git/version-control.md",
+                "file": "source/_posts/Area/News/2022-08-15-news.md",
                 "mode": "source",
                 "source": true
               }
@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "source/_posts/Area/the-invisible-magic-behind- the-internet.md",
+                "file": "备忘录.md",
                 "mode": "source",
                 "source": true
               }
@@ -43,8 +43,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -110,7 +109,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "source/_posts/Area/the-invisible-magic-behind- the-internet.md",
+                "file": "source/_posts/Area/News/2022-08-15-news.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +126,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "source/_posts/Area/the-invisible-magic-behind- the-internet.md",
+                "file": "source/_posts/Area/News/2022-08-15-news.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +149,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "source/_posts/Area/the-invisible-magic-behind- the-internet.md"
+                "file": "source/_posts/Area/News/2022-08-15-news.md"
               }
             }
           }
@@ -172,17 +171,17 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "8e8e3c254a1a60c9",
+  "active": "29e3b2e9f4a75981",
   "lastOpenFiles": [
+    "source/_posts/Area/hide.md",
+    "source/_posts/Area/News/2022-08-15-news.md",
+    "source/_posts/Git/version-control.md",
+    "备忘录.md",
     "source/_posts/Area/科学思维要点.md",
     "source/_posts/Area/the-invisible-magic-behind- the-internet.md",
-    "source/_posts/Git/version-control.md",
     "source/_posts/Git/cs-notes-git.md",
     "source/_posts/Rust/Rust-CheatSheet.md",
-    "备忘录.md",
-    "source/_posts/hide.md",
     "source/_posts/hello-world.md",
-    "source/_posts/Resources/NFT精神史：罐头、青蛙和平凡人的15分钟英雄梦想.md",
-    "source/_posts/Area/Heal/未来医疗：AI 负责治病，医生负责关怀.md"
+    "source/_posts/Resources/NFT精神史：罐头、青蛙和平凡人的15分钟英雄梦想.md"
   ]
 }
