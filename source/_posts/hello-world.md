@@ -1,5 +1,6 @@
 ---
 title: Hello World
+excerpt: 这是摘要
 abbrlink: 16107
 # banner_img: /img/bg/example.jpg   # 对应存放在 /source/img/bg/example.jpg
 # permalink: 

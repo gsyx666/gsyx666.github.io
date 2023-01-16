@@ -1,13 +1,14 @@
 ---
 title: Web Log
 author: gsyx
+permalink: web-log/
 tags:
   - Log
   - 原创
 categories:
   - Log
 date: '2023-01-14 21:41'
-updated: 2023-01-16 13:13:36 
+updated: '2023-01-16 13:13:36'
 ---
 
 ## 2023-01

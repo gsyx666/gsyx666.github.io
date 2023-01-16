@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "source/_posts/hello-world.md",
+                "file": "source/_posts/Web Log.md",
                 "mode": "source",
                 "source": true
               }
@@ -25,14 +25,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "source/_posts/Area/What Educated Citizens Should Know About Statistics and Probability.md",
+                "file": "source/_posts/hello-world.md",
                 "mode": "source",
                 "source": true
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -98,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "source/_posts/Area/What Educated Citizens Should Know About Statistics and Probability.md",
+                "file": "source/_posts/Web Log.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "source/_posts/Area/What Educated Citizens Should Know About Statistics and Probability.md",
+                "file": "source/_posts/Web Log.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "source/_posts/Area/What Educated Citizens Should Know About Statistics and Probability.md"
+                "file": "source/_posts/Web Log.md"
               }
             }
           }
@@ -160,17 +159,17 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "3c73341501d01b34",
+  "active": "13162584207bc101",
   "lastOpenFiles": [
-    "source/_posts/hello-world.md",
     "source/_posts/Area/What Educated Citizens Should Know About Statistics and Probability.md",
+    "source/_posts/Area/hide.md",
     "source/_posts/Web Log.md",
+    "source/_posts/hello-world.md",
     "Templates/DateTime.md",
     "source/_posts/Area/科学思维要点.md",
     "备忘录.md",
     "Templates/Log.md",
     "未命名.canvas",
-    "source/_posts/Linux/Linux.md",
-    "source/_posts/Programming/代码可读性.md"
+    "source/_posts/Linux/Linux.md"
   ]
 }

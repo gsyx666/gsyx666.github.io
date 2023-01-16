@@ -2,7 +2,7 @@
 title: hide
 author: gsyx
 hide: true
-permalink: hide.html
+permalink: hide/
 categories:
   - Area
 date: 2022-12-8 18:12:00
