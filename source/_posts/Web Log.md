@@ -7,8 +7,8 @@ tags:
   - 原创
 categories:
   - Log
-date: '2023-01-14 21:41'
-updated: '2023-01-16 13:13:36'
+date: "2023-01-14 21:41"
+updated: "2023-01-16 13:13:36"
 ---
 
 ## 2023-01
@@ -53,3 +53,11 @@ _by [什么是经济增长？为什么它如此重要？](https://ourworldindata
 - https://www.youtube.com/watch?v=rFV7wdEX-Mo 经济机器是怎样运行的 (时长30分钟) Ray Dalio
 - https://www.youtube.com/watch?v=PHe0bXAIuk0 How The Economic Machine Works by Ray Dalio
 - [【Principles By Ray Dalio】双语·30分钟了解经济机器的运行原理 How The Economic Machine Works](https://www.bilibili.com/video/BV1X4411U76y)
+
+
+### 2023-01-16
+
+> 是理性主义而非独断主义、心态是科学的而非科学至上的；心胸是开放而非轻浮的；政治上是进步的而非党同伐异的”。by《时髦的空话》https://lifeweek.com.cn/h5/article/detail.do?artId=158593
+
+> 人们越来越趋向于放弃、牺牲关于理解的工作，只关心怎么做预测。这其中可能有技术性原因。但我认为，复杂科学想做的是站在人的角度理解世界，只有这样，人们才能为自己的未来作选择。大卫·科莱考尔
+
