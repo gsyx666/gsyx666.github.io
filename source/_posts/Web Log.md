@@ -20,7 +20,11 @@ updated: "2023-01-16 13:13:36"
 
 ### 2023-01-15
 
-随着出生人数预计将缓慢下降，死亡人数将上升，全球人口增长率将继续下降。这是未来世界人口停止增长的时候。随着世界人口老龄化，预计未来几十年每年死亡人数将继续增加。by 
+随着世界人口老龄化，预计未来几十年每年死亡人数将继续增加。
+
+随着出生人数的缓慢下降和死亡人数的上升，全球人口增长率将继续下降。
+
+by 
 [How many people die and how many are born each year? - Our World in Data](https://ourworldindata.org/births-and-deaths)
 
 ---
