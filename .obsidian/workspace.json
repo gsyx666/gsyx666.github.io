@@ -25,14 +25,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "source/_posts/Programming/Computer-Science-Is-Not-About-Computers-Any-More-Than-Astronomy-Is-About Telescopes.md",
+                "file": "Templates/Log.md",
                 "mode": "source",
                 "source": true
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -98,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "source/_posts/Programming/Computer-Science-Is-Not-About-Computers-Any-More-Than-Astronomy-Is-About Telescopes.md",
+                "file": "source/_posts/Web Log.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "source/_posts/Programming/Computer-Science-Is-Not-About-Computers-Any-More-Than-Astronomy-Is-About Telescopes.md",
+                "file": "source/_posts/Web Log.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "source/_posts/Programming/Computer-Science-Is-Not-About-Computers-Any-More-Than-Astronomy-Is-About Telescopes.md"
+                "file": "source/_posts/Web Log.md"
               }
             }
           }
@@ -160,17 +159,17 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "7158e3c730a6dc41",
+  "active": "13162584207bc101",
   "lastOpenFiles": [
+    "Templates/Log.md",
+    "source/_posts/Web Log.md",
+    "source/_posts/Programming/Computer-Science-Is-Not-About-Computers-Any-More-Than-Astronomy-Is-About Telescopes.md",
     "source/_posts/Area/科学思维要点.md",
     "source/_posts/Area/电影编剧的秘密.md",
-    "source/_posts/Programming/Computer-Science-Is-Not-About-Computers-Any-More-Than-Astronomy-Is-About Telescopes.md",
-    "source/_posts/Web Log.md",
     "source/_posts/Area/hide.md",
     "source/_posts/Area/纳瓦尔宝典.md",
     "source/_posts/Area/News/2022-08-15-news.md",
     "source/_posts/Area/What Educated Citizens Should Know About Statistics and Probability.md",
-    "source/_posts/Area/如何成为“海盗”存档者？.md",
-    "source/_posts/Area/黑客与画家.md"
+    "source/_posts/Area/如何成为“海盗”存档者？.md"
   ]
 }
