@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "source/_posts/Web Log.md",
+                "file": "source/_posts/Area/电影编剧的秘密.md",
                 "mode": "source",
                 "source": true
               }
@@ -25,13 +25,14 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Templates/Log.md",
+                "file": "source/_posts/Web Log.md",
                 "mode": "source",
                 "source": true
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -159,17 +160,17 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "13162584207bc101",
+  "active": "7158e3c730a6dc41",
   "lastOpenFiles": [
     "Templates/Log.md",
+    "source/_posts/Area/电影编剧的秘密.md",
+    "source/_posts/Programming/Bash-CheatSheet.md",
+    "source/_posts/Programming/代码可读性.md",
     "source/_posts/Web Log.md",
     "source/_posts/Programming/Computer-Science-Is-Not-About-Computers-Any-More-Than-Astronomy-Is-About Telescopes.md",
     "source/_posts/Area/科学思维要点.md",
-    "source/_posts/Area/电影编剧的秘密.md",
     "source/_posts/Area/hide.md",
     "source/_posts/Area/纳瓦尔宝典.md",
-    "source/_posts/Area/News/2022-08-15-news.md",
-    "source/_posts/Area/What Educated Citizens Should Know About Statistics and Probability.md",
-    "source/_posts/Area/如何成为“海盗”存档者？.md"
+    "source/_posts/Area/News/2022-08-15-news.md"
   ]
 }
