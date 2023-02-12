@@ -8,18 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "13162584207bc101",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "source/_posts/Area/电影编剧的秘密.md",
-                "mode": "source",
-                "source": true
-              }
-            }
-          },
-          {
             "id": "7158e3c730a6dc41",
             "type": "leaf",
             "state": {
@@ -30,9 +18,33 @@
                 "source": true
               }
             }
+          },
+          {
+            "id": "ee117589eb378422",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "node_modules/_ws@8.12.0@ws/README.md",
+                "mode": "source",
+                "source": true
+              }
+            }
+          },
+          {
+            "id": "da0bc15a087a4272",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "source/_posts/Area/通识：学问的门类.md",
+                "mode": "source",
+                "source": true
+              }
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -61,7 +73,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "设计模式",
+                "query": "zlib",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -82,7 +94,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "d4f4a64fe3e4b8d3",
@@ -98,7 +111,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "source/_posts/Web Log.md",
+                "file": "source/_posts/Area/通识：学问的门类.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +128,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "source/_posts/Web Log.md",
+                "file": "source/_posts/Area/通识：学问的门类.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +151,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "source/_posts/Web Log.md"
+                "file": "source/_posts/Area/通识：学问的门类.md"
               }
             }
           }
@@ -147,8 +160,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -160,17 +172,17 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "7158e3c730a6dc41",
+  "active": "da0bc15a087a4272",
   "lastOpenFiles": [
-    "Templates/Log.md",
-    "source/_posts/Area/电影编剧的秘密.md",
-    "source/_posts/Programming/Bash-CheatSheet.md",
-    "source/_posts/Programming/代码可读性.md",
-    "source/_posts/Web Log.md",
-    "source/_posts/Programming/Computer-Science-Is-Not-About-Computers-Any-More-Than-Astronomy-Is-About Telescopes.md",
-    "source/_posts/Area/科学思维要点.md",
+    "source/_posts/Area/News/2022-08-15-news.md",
     "source/_posts/Area/hide.md",
-    "source/_posts/Area/纳瓦尔宝典.md",
-    "source/_posts/Area/News/2022-08-15-news.md"
+    "source/_posts/Area/通识：学问的门类.md",
+    "备忘录.md",
+    "source/_posts/Area/如何成为“海盗”存档者？.md",
+    "source/img/Liberal-Studies/1.jpeg",
+    "source/img/未命名.md",
+    "source/_posts/Area/电影编剧的秘密.md",
+    "source/_posts/Web Log.md",
+    "node_modules/_ws@8.12.0@ws/README.md"
   ]
 }
