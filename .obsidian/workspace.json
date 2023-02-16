@@ -20,6 +20,18 @@
             }
           },
           {
+            "id": "fb3dd6abde7fd19a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "source/_posts/Area/Electricity.md",
+                "mode": "source",
+                "source": true
+              }
+            }
+          },
+          {
             "id": "ee117589eb378422",
             "type": "leaf",
             "state": {
@@ -44,7 +56,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -94,8 +106,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "d4f4a64fe3e4b8d3",
@@ -111,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "source/_posts/Area/通识：学问的门类.md",
+                "file": "source/_posts/Area/Electricity.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -128,7 +139,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "source/_posts/Area/通识：学问的门类.md",
+                "file": "source/_posts/Area/Electricity.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -151,7 +162,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "source/_posts/Area/通识：学问的门类.md"
+                "file": "source/_posts/Area/Electricity.md"
               }
             }
           }
@@ -160,7 +171,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -172,17 +184,17 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "da0bc15a087a4272",
+  "active": "fb3dd6abde7fd19a",
   "lastOpenFiles": [
+    "source/_posts/Area/通识：学问的门类.md",
+    "source/_posts/Area/Electricity.md",
+    "source/_posts/Web Log.md",
     "source/_posts/Area/News/2022-08-15-news.md",
     "source/_posts/Area/hide.md",
-    "source/_posts/Area/通识：学问的门类.md",
     "备忘录.md",
     "source/_posts/Area/如何成为“海盗”存档者？.md",
     "source/img/Liberal-Studies/1.jpeg",
     "source/img/未命名.md",
-    "source/_posts/Area/电影编剧的秘密.md",
-    "source/_posts/Web Log.md",
-    "node_modules/_ws@8.12.0@ws/README.md"
+    "source/_posts/Area/电影编剧的秘密.md"
   ]
 }
