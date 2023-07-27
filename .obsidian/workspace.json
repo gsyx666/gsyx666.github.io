@@ -8,7 +8,7 @@
         "type": "tabs",
         "children": [
           {
-            "id": "7158e3c730a6dc41",
+            "id": "05ef50b9340714e9",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -69,8 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "d4f4a64fe3e4b8d3",
@@ -135,7 +134,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 299.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -147,11 +147,13 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "7158e3c730a6dc41",
+  "active": "05ef50b9340714e9",
   "lastOpenFiles": [
+    "source/_posts/Area/张无常两篇.md",
+    "source/_posts/Area/Electricity.md",
+    "未命名.md",
     "source/_posts/Web Log.md",
     "备忘录.md",
-    "source/_posts/Area/Electricity.md",
     "source/_posts/Area/通识：学问的门类.md",
     "source/_posts/Area/电影编剧的秘密.md",
     "source/img/Electricity/1.png",
