@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "source/_posts/Area/Electricity.md",
+                "file": "source/_posts/Electricity/Elements and atoms.md",
                 "mode": "source",
                 "source": true
               }
@@ -31,8 +31,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -106,7 +105,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "source/_posts/Area/What Is a Printed Circuit Board (PCB).md",
+                "file": "source/_posts/Electricity/Elements and atoms.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -123,7 +122,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "source/_posts/Area/What Is a Printed Circuit Board (PCB).md",
+                "file": "source/_posts/Electricity/Elements and atoms.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -146,7 +145,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "source/_posts/Area/What Is a Printed Circuit Board (PCB).md"
+                "file": "source/_posts/Electricity/Elements and atoms.md"
               }
             }
           }
@@ -168,11 +167,13 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "0d72911971e42a03",
+  "active": "05ef50b9340714e9",
   "lastOpenFiles": [
-    "source/_posts/Area/What Educated Citizens Should Know About Statistics and Probability.md",
     "source/_posts/Area/What Is a Printed Circuit Board (PCB).md",
+    "source/_posts/Area/What Educated Citizens Should Know About Statistics and Probability.md",
     "source/_posts/Area/Electricity.md",
+    "source/_posts/Electricity/Elements and atoms.md",
+    "source/_posts/Electricity",
     "source/_posts/Web Log.md",
     "Templates/Log.md",
     "source/_posts/Philosophy/如何理解哲学——维特根斯坦的哲学观.md",

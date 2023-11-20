@@ -1,0 +1,640 @@
+---
+title: Elements and atoms
+excerpt: Elements and atoms
+author: Sal Khan
+tags:
+  - Electricity
+categories:
+  - Electricity
+date: 2023-11-20 22:29:11 
+---
+
+
+_本文翻译自 [Elements and atoms (video) | Khan Academy](https://en.khanacademy.org/science/biology/chemistry--of-life/elements-and-atoms/v/elements-and-atoms)__
+
+## chinese
+
+- 0:00 几千年来，我们人类就知道、
+- 只要看看我们周围的环境
+- 0:05 存在着不同的物质。
+- 0:06 而这些不同的物质往往
+- 0:08 具有不同的性质。
+- 0:10 它们不仅具有不同的性质、
+- 0:11 一种物质可能会以某种方式反射光线、
+- 0:13 或不反射光，或具有某种颜色，或在某种温度下
+- 0:16 在一定温度下，可能是液体或气体，也可能是固体。
+- 0:20但我们也开始观察它们如何
+- 0:22 在某些情况下它们之间会发生什么反应。
+- 0:25 这是其中一些物质的图片。
+- 0:27 这里是碳。
+- 0:29 这是石墨的形态。
+- 0:31 这里是铅。
+- 0:33 这里是金。
+- 0:36所有我展示过的图片，这里--
+- 我都是从这个网站上找到的 就在那边
+- 0:41 所有这些都是固体形式的。
+- 0:43但我们也知道，看起来有
+- 0:45 某些类型的空气和某些类型的空气颗粒。
+- 0:49根据不同类型的空气粒子
+- 0:51 你所看到的是碳还是氧或氮、
+- 0:55 那似乎有不同类型的特性。
+- 0:57或者还有其他东西可以是液态的。
+- 0:59或者即使你把温度升得足够高
+- 1:01 这些东西。
+- 1:02 如果把温度升得足够高
+- 1:04 在金或铅上 你可以得到一种液体
+- 1:06或者，如果你燃烧这些碳，
+- 1:10你可以让它变成气态。
+- 1:12 你可以把它释放到大气中。
+- 1:13 你可以破坏它的结构。
+- 1:14所以，这些都是我们，算是人类
+- 1:18 人类已经观察了数千年。
+- 1:21但这自然会引出一个问题
+- 1:22 这曾经是一个哲学问题。
+- 1:24 但现在我们可以更好地回答这个问题。
+- 1:26这个问题就是，如果你继续分解这些碳
+- 1:31 分成越来越小的块，有没有
+- 1:33这种物质中的某个最小的块，某个最小的单位、
+- 1:38 这种物质还具有碳的特性吗？
+- 1:43 如果你能以某种方式将其进一步分解
+- 1:44 再进一步，你就会
+- 1:46 失去碳的特性。
+- 1:48 答案是肯定的。
+- 1:50因此，为了掌握术语、
+- 1:52 我们把这些不同的物质
+- 1:54 这些具有特定性质的纯净物质
+- 1:58 在特定温度下会发生特定反应
+- 1:59 我们称它们为元素。
+ - 2:05 碳是一种元素。
+- 2:06 铅是一种元素。
+- 2:07 金是一种元素。
+- 2:08 你可以说水是一种元素。
+- 2:10 在历史上，人们把水
+- 2:13 是一种元素。
+- 2:14 但现在我们知道，水是由更多的基本元素组成的。
+- 2:18 水是由氧和氢组成的。
+- 2:21 所有元素都列在这里
+- 2:25 在元素周期表中。
+- 2:27C 代表碳--我只是把那些
+- 2:30 与人类息息相关的元素，但随着时间的推移，你会
+- 2:33 你可能会熟悉所有这些元素。
+- 2:35 这是氧气。
+- 2:36 这是氮气。
+- 2:38 这是硅。
+- 2:40Au 是金。
+- 2:42 这是铅。
+- 2:43 这些元素中最基本的单位就是原子。
+- 2:52所以，如果你继续往里钻，继续
+- 2:55越来越小的块、
+- 2:56 最终，你会得到一个碳原子。
+- 2:59在这里做同样的事情，最终你
+- 3:01找到一个金原子。
+- 3:02你做了同样的事情在这里，最终、
+- 3:04 你会得到一些 - 这个小、
+- 3:05小，缺乏 一个更好的词，粒子，
+- 3:08你会称之为铅原子。
+- 3:09你就不能再把它分解了
+- 3:11 你就不能再把它分解，而仍然称它为铅了、
+- 3:13 它仍然具有铅的特性。
+- 3:17为了给你一个概念--这确实是
+- 我难以想象的是
+- 3:21 原子小得不可思议，真的
+- 3:24 难以想象的小。
+- 3:26比如碳。
+- 3:27 我的头发也是碳做的。
+- 3:29 事實上，我的大部分都是碳元素。
+- 3:33 事实上，所有生物的大部分都是由碳构成的。
+- 3:36 所以，如果你把我的头发--所以我的头发是碳、
+- 3:40 我的头发大部分是碳。
+- 3:42所以，如果你把我的头发 -- 就在这里、
+- 3:43 我的头发不是黄色的，但与黑色形成鲜明对比
+- 3: 46与黑色形成鲜明对比
+- 3:46我的头发是黑色的，但如果我这样做，
+- 3:48 你在屏幕上就看不到了。
+- 3:50但是如果你把我的头发拿过来，我
+- 3:51 然后我问你，我的头发有多少个碳原子宽？
+- 3:55所以，如果你截取我头发的横截面，而不是
+- 3:57 我头发的长度和宽度、
+- 4:00 然后问：这有多少个碳原子宽？
+- 4:03 你可能会猜，哦，你知道的、
+- 4:04萨尔已经告诉我了，它们非常小。
+- - 4:07所以那里可能有1000个碳原子，或者10000个、
+- 4:10或100,000。
+- 4:10我会说，不。
+- 4:12有一百万个碳原子、
+- 4:14或者你可以把100万个碳原子
+- 4:17橫跨一般人頭髮的寬度。
+- 4:21这显然是个近似值。
+- 4:22 并不完全是一百万个。
+- 4:23但这让你感觉到一个原子有多小。
+- 4:26你知道，从你的头上拔一根头发、
+- 4:28想象一下，把一百万个东西
+- 4:31互相挨着，穿过头发。
+- 4:34 不是头发的长度，而是头发的宽度。
+- 4:37 甚至很难看到一根头发的宽度、
+- 4:39 会有一百万个碳原子、
+- 4:41 只是沿着它走。
+- 4:43这本身就很酷、
+- 4:46我们确实知道有这样一个最基本的结构
+- 4:50 碳元素最基本的构成元素。
+- 4:54但更有意思的是，这些基本组成元素
+- 4:57块是相互关联的。
+- 4:58碳原子是由更基本的
+- 5:02部分。
+- - 5:02 金原子由更多的基本粒子组成。
+- 5:07而根据 -- 它们实际上
+- 5:09 由这些基本粒子的排列来定义。
+- 5:12 如果改变基本粒子的数量
+- 5:15你就可以改变元素的性质，改变它的反应，或者改变它的化学性质。
+- 5:18 它的反应，甚至可以改变元素本身。
+- 5:22 为了更好地理解这一点、
+- 5:25 让我们来谈谈这些基本元素。
+- 5:28所以我们有质子。
+- 5:33而质子实际上是定义--元素中质子的数量。
+- 5:36 原子核中质子的数量、
+- 5:38 我稍后会讲到原子核
+- 5:40 这就是元素的定义。
+- 5:43所以这就是元素的定义。
+- 5:45当你看这里的元素周期表时、
+- 5:47 它们实际上是按原子序数排列的。
+- 5:50而原子序数，从字面上看、
+- 5:52 只是元素中质子的数量。
+- 5:55所以根据定义，氢有一个质子、
+- 5:58 氦有两个质子，碳有六个质子。
+- 6:03 碳不可能有七个质子。
+- 6:05 如果有，那就是氮。
+- 6:07 它就不再是碳了。
+- 6:09 氧气有八个质子。
+-  6:10如果以某种方式在那里再添加一个质子、
+- 6:12 它就不再是氧了。
+- 6:14 它将是氟。
+- 6:16所以它定义了元素。
+- 6:20 而原子序数、质子数
+- 6:22 质子数--记住，那是
+- 6:25 写在最上面的数字、
+- 6: 27这里，元素周期表中的每个元素
+- 质子数等于原子序数。
+- 6:36 他们把这个数字写在这里、
+- 6:38因为这是元素的决定性特征。
+- 6:42 原子的其他两种成分
+- 我想我们可以这样称呼它
+- 6:47 电子和中子。
+- 6:55 你可以开始在脑海中建立一个模型
+- 6:57 在你的头脑中--这个模型，随着我们学习化学、
+- 7:01 会变得更加抽象和难以概念化
+- 7:03 概念化。
+- 7:04但有一种思考方式是、
+- 7:06 你们有质子和中子
+- 7:08 它们位于原子的中心。
+- 7:09它们是原子核。
+- - 7:11例如，我们知道碳有六个质子。
+- 7:15所以一、二、三、四、五、六。
+- 7:19碳-12是碳的一种、
+- 7:22也有六个中子。
+- 7:24 你可以有不同版本的碳。
+- 7:26 有不同数量的中子。
+- 7:27因此，中子可以改变，电子也可以改变、
+- 7:30 你仍然可以拥有相同的元素。
+- 7:31 质子不能变。
+- 7:33如果你改变了质子，你就得到了不同的元素。
+- 7:36我来画一个碳-12原子核，一、二、三、四、
+- 7:41五、六。
+- 7:43所以这里就是碳-12的原子核。
+- 7:46 有时，它会这样写。
+- 7:48有时，他们会写上质子数、
+- 7:52 还有。
+- 7:53 之所以我们把它写成碳-12
+- 7:56 我数了六个中子
+- 7:58 这就是总数，你可以
+- 8:00 可以把它看成是------的总数。
+- 8:04今后我们会有一点细微差别
+- 是质子和中子的总数。
+- 8:08 核内质子和中子的总数。
+- 8:11 根据定义，碳的原子序数为 6、
+- 8:15但我们可以在这里重写，以便
+- 8:16 我们可以提醒自己。
+- 8:18所以在碳原子的中心，我们有这个原子核。
+- - 8:21 碳-12 有六个质子和六个中子。
+- 8:25 另一种碳，碳-14、
+- 8:26仍然有六个质子，但它
+- 8:29 会有八个中子。
+- 8:31所以中子的数量是可以改变的。
+- 8:32但这是碳-12，就在这里。
+- 8:34如果碳-12是中性的--我会在 "中性 "这个词上做一点细微的解释。
+- 8:38 如果它是中性的，我稍后也会对这个词做一点解释、
+- 8:41 它也会有六个电子。
+- 8:43所以让我画出这六个电子，一、二、三、
+- 8:47 四、五、六。
+- 8:49 还有一种方法--这也许是第一阶的方法
+- 8:52 思考电子
+- 8:54 电子和原子核之间的关系
+- 8:57 你可以想象电子正在
+- 围绕着原子核嗡嗡作响。
+- 9:02 一种模式是，你可以把它们想象成
+- 9:04 把它们想象成围绕原子核运行。
+- 9:06但这并不完全正确。
+- 9:08它们并不像行星那样绕核运行、
+- 9:10环绕太阳运行。
+- 9:11但这是一个很好的起点。
+- 9:13另一种方式是，它们围绕着原子核跳跃、
+- 9:16 或者说，它们围绕着原子核嗡嗡作响。
+- - 9:18 这只是因为现实在这个层面上
+- 9:20 在这个层面上变得非常奇怪。
+- 9:22实际上，我们必须进入量子物理学
+- 9:24 才能真正理解电子在做什么。
+- 9:26但你脑中的第一个心智模型
+- 9:29 在这个原子的中心，这个碳-12 原子、
+- 9:32 你有这个原子核，就在那边。
+- 9:37 这些电子围绕着原子核跳跃。
+- 9:40 而这些电子之所以不只是
+- 9:43 离开原子核。
+- 9:45它们被束缚在原子核上、
+- 9:47 它们构成原子的一部分，是因为
+- 9:49质子带有正电荷
+- 9:54 而电子带有负电荷。
+- 9:57 这是这些基本粒子的特性之一。
+- 当你开始思考：
+- 电荷到底是什么？
+- 10:04 除了标签？
+- 10:05 这就开始变得有点深奥了。
+- 10:07但有一点我们知道，当
+- 10:08我们谈论电磁力时
+- 10:10不同的电荷会相互吸引。
+- 所以最好的思考方式
+- 10:14质子和电子，因为它们
+- 10:17 带有不同的电荷，它们会相互吸引。
+- - 10:19中子是中性的。
+- 10:21所以它们只是坐在原子核内部。
+- 10:25它们确实在某种程度上影响着某些元素的某些原子的性质、
+- 10:30 对于某些元素的某些原子来说。
+- 10:33但是电子之所以不会自己飞走
+- 10:36 因为它们被
+- 10:37 被吸引向原子核。
+- 10:42 而且它们的速度也高得惊人。
+- 10:45 实际上，我们很难 -- 我们又开始接触了、
+- 10:48物理学中一个非常奇怪的部分
+- 10:51 一旦我们开始讨论电子到底在做什么。
+- 10:54但我想你可以说，它已经足够了、
+- 10:56它跳来跳去，不想就这么掉下去
+- 10:59我想这也是一种思考方式。
+- 11:04所以我提到，碳-12就在这里、
+- 11:08 以质子数定义。
+- 11:09 氧气有八个质子。
+- 11:12但同样，电子可以与其他电子相互作用。
+- 11:16或者它们可以被其他原子带走。
+- 11:19这实际上形成了我们对化学的许多理解。
+- 11:23 它基于一个原子有多少个电子、
+- 11:26 或某种元素有多少电子。
+- 11:27 以及这些电子是如何配置的。
+- 11:29 以及其他元素的电子是如何配置的。
+- 11:33 也可能是同一种元素的其他原子。
+- 11:36 我们可以开始预测一种元素的原子
+- 11:41可能会与同一种元素的另一个原子发生反应。
+- 11:43 或一种元素的原子如何反应、
+- 11:46 或如何结合，或不结合、
+- 11:48 或被另一种元素的原子吸引或排斥。
+- 11:51 另一种元素的原子。
+- 11:52举个例子--我们将来会学到更多这方面的知识
+- 11:55未来我们会学到更多这方面的知识--另一个原子有可能在某个地方、
+- 12:00 从碳元素中夺走一个电子、
+- 12:03 只是因为，不管是什么原因。
+- 12:05 我们将讨论某些元素，某些元素的中性原子
+- 12:09 某些元素的中性原子
+- 12:12 对电子的亲和力大于其他元素。
+- 12:14所以，也许其中的一个原子会从一个碳原子上掠走一个电子、
+- 12:17然后这个碳就会拥有
+- 12:19 电子比质子少。
+- 12:21所以它会有五个电子和六个质子。
+- 12:25 然后，它就会带有净正电荷。
+- 12:28所以，在这个碳-12中，我做的第一个版本、
+- 12:30 我有六个质子，六个电子。
+- 12:33 电荷抵消了。
+- 12:34 如果我失去了一个电子，那么我就只有五个这样的电子了。
+- 12:37 然后我就会有一个净正电荷。
+- 12:39 在整个化学播放列表中，我们还将讨论更多的问题。
+- 12:41 在整个化学播放列表中，我们还会讲到更多。
+- 12:42但希望你能明白
+- 12:44 这已经开始变得很酷了。
+- 12:46一旦我们已经能够真正了解到这一点、
+- 原子。
+- 12:52 更妙的是，这个基本构件
+- 12:55 是由更多的基本构件组成的。
+- 12:58 而这些东西都可以互换
+- 13:00 左右，改变原子的属性、
+- 13:03 甚至从一种元素的原子
+- 13:03 甚至从一种元素的原子变成另一种元素的原子。
+
+
+## english
+
+
+
+- 0:00We humans have known, for thousands of years,
+- 0:03just looking at our environment around us,
+- 0:05that there are different substances.
+- 0:06And these different substances tend
+- 0:08to have different properties.
+- 0:10And not only do they have different properties,
+- 0:11one might reflect light in a certain way,
+- 0:13or not reflect light, or be a certain color, or at
+- 0:16a certain temperature, be liquid or gas, or be a solid.
+- 0:20But we also start to observe how they
+- 0:22react with each other in certain circumstances.
+- 0:25And here's pictures of some of these substances.
+- 0:27This right here is carbon.
+- 0:29And this is in its graphite form.
+- 0:31This right here is lead.
+- 0:33This right here is gold.
+- 0:36And all of the ones that I've shown pictures of, here--
+- 0:38and I got them all from this website, right over there--
+- 0:41all of these are in their solid form.
+- 0:43But we also know that it looks like there's
+- 0:45certain types of air, and certain types of air particles.
+- 0:49And depending on what type of air particles
+- 0:51you're looking at, whether it is carbon or oxygen or nitrogen,
+- 0:55that seems to have different types of properties.
+- 0:57Or there are other things that can be liquid.
+- 0:59Or even if you raise the temperature high enough
+- 1:01on these things.
+- 1:02You could, if you raise the temperature high enough
+- 1:04on gold or lead, you could get a liquid.
+- 1:06Or if you, kind of, if you burn this carbon,
+- 1:10you can get it to a gaseous state.
+- 1:12You can release it into the atmosphere.
+- 1:13You can break its structure.
+- 1:14So these are things that we've all, kind of, that humanity
+- 1:18has observed for thousands of years.
+- 1:21But it leads to a natural question
+- 1:22that used to be a philosophical question.
+- 1:24But now we can answer it a little bit better.
+- 1:26And that question is, if you keep breaking down this carbon,
+- 1:31into smaller and smaller chunks, is there
+- 1:33some smallest chunk, some smallest unit, of this stuff,
+- 1:38of this substance, that still has the properties of carbon?
+- 1:43And if you were to, somehow, break
+- 1:44that even further, somehow, you would
+- 1:46lose the properties of the carbon.
+- 1:48And the answer is, there is.
+- 1:50And so just to get our terminology,
+- 1:52we call these different substances--
+- 1:54these pure substances that have these specific properties
+- 1:58at certain temperatures and react
+- 1:59in certain ways-- we call them elements.
+- 2:05Carbon is an element.
+- 2:06Lead is an element.
+- 2:07Gold is an element.
+- 2:08You might say that water is an element.
+- 2:10And in history, people have referred to water
+- 2:13as an element.
+- 2:14But now we know that water is made up of more basic elements.
+- 2:18It's made of oxygen and of hydrogen.
+- 2:21And all of our elements are listed here
+- 2:25in the Periodic Table of Elements.
+- 2:27C stands for carbon-- I'm just going through the ones that
+- 2:30are very relevant to humanity, but over time, you'll
+- 2:33probably familiarize yourself with all of these.
+- 2:35This is oxygen.
+- 2:36This is nitrogen.
+- 2:38This is silicon.
+- 2:40Au is gold.
+- 2:42This is lead.
+- 2:43And that most basic unit, of any of these elements, is the atom.
+- 2:52So if you were to keep digging in, and keep
+- 2:55taking smaller and smaller chunks of this,
+- 2:56eventually, you would get to a carbon atom.
+- 2:59Do the same thing over here, eventually you
+- 3:01would get to a gold atom.
+- 3:02You did the same thing over here, eventually,
+- 3:04you would get some-- this little,
+- 3:05small, for lack of a better word, particle,
+- 3:08that you would call a lead atom.
+- 3:09And you wouldn't be able to break that down
+- 3:11anymore and still call that lead,
+- 3:13for it to still have the properties of lead.
+- 3:17And just to give you an idea-- this is really something
+- 3:19that I have trouble imagining-- is
+- 3:21that atoms are unbelievably small, really
+- 3:24unimaginably small.
+- 3:26So for example, carbon.
+- 3:27My hair is also made out of carbon.
+- 3:29In fact, most of me is made out of carbon.
+- 3:33In fact, most of all living things are made out of carbon.
+- 3:36And so if you took my hair-- and so my hair is carbon,
+- 3:40my hair is mostly carbon.
+- 3:42So if you took my hair-- right over here,
+- 3:43my hair isn't yellow, but it contrasts nicely
+- 3:46with the black.
+- 3:46My hair is black, but if I did that,
+- 3:48you wouldn't be able to see it on the screen.
+- 3:50But if you took my hair, here, and I
+- 3:51were to ask you, how many carbon atoms wide is my hair?
+- 3:55So, if you took a cross section of my hair, not
+- 3:57the length, the width of my hair,
+- 4:00and said, how many carbon atoms wide is that?
+- 4:03And you might guess, oh, you know,
+- 4:04Sal already told me they're very small.
+- 4:07So maybe there's 1,000 carbon atoms there, or 10,000,
+- 4:10or 100,000.
+- 4:10I would say, no.
+- 4:12There are 1 million carbon atoms,
+- 4:14or you could string 1 million carbon atoms
+- 4:17across the width of the average human hair.
+- 4:21That's obviously an approximation.
+- 4:22It's not exactly 1 million.
+- 4:23But that gives you a sense of how small an atom is.
+- 4:26You know, pluck a hair out of your head,
+- 4:28and just imagine putting a million things
+- 4:31next to each other, across the hair.
+- 4:34Not the length of the hair, the width of the hair.
+- 4:37It's even hard to see the width of a hair,
+- 4:39and there would be a million carbon atoms,
+- 4:41just going along it.
+- 4:43Now it would be pretty cool, in and of itself,
+- 4:46that we do know that there is this most basic building
+- 4:50block of carbon, this most basic building block of any element.
+- 4:54But what's even neater is that, those basic building
+- 4:57blocks are related to each other.
+- 4:58That a carbon atom is made up of even more fundamental
+- 5:02particles.
+- 5:02A gold atom is made up even more fundamental particles.
+- 5:07And depending-- and they're actually
+- 5:09defined by the arrangement of those fundamental particles.
+- 5:12And if you were to change the number of fundamental particles
+- 5:15you have, you could change the properties of the element, how
+- 5:18it would react, or you could even change the element itself.
+- 5:22And just to understand it a little bit better,
+- 5:25let's talk about those fundamental elements.
+- 5:28So you have the proton.
+- 5:33And the proton is actually the defining-- the number
+- 5:36of protons in the nucleus of an atom,
+- 5:38and I'll talk about the nucleus in a second-- that
+- 5:40is what defines the element.
+- 5:43So this is what defines an element.
+- 5:45When you look at the periodic table right here,
+- 5:47they're actually written in order of atomic number.
+- 5:50And the atomic number is, literally,
+- 5:52just the number of protons in the element.
+- 5:55So by definition, hydrogen has one proton,
+- 5:58helium has two protons, carbon has six protons.
+- 6:03You cannot have carbon with seven protons.
+- 6:05If you did, it would be nitrogen.
+- 6:07It would not be carbon anymore.
+- 6:09Oxygen has eight protons.
+- 6:10If, somehow, you were to add another proton to there,
+- 6:12it wouldn't be oxygen anymore.
+- 6:14It would be fluorine.
+- 6:16So it defines the element.
+- 6:20And the atomic number, the number
+- 6:22of protons-- and remember, that's
+- 6:25the number that's written right at the top,
+- 6:27here, for each of these elements in the periodic table--
+- 6:30the number of protons is equal to the atomic number.
+- 6:36And they put that number up here,
+- 6:38because that is the defining characteristic of an element.
+- 6:42The other two constituents of an atom-- I
+- 6:46guess we could call it that way--
+- 6:47are the electron and the neutron.
+- 6:55And the model you can start to build
+- 6:57in your head-- and this model, as we go through chemistry,
+- 7:01it'll get a little bit more abstract and really hard
+- 7:03to conceptualize.
+- 7:04But one way to think about it is,
+- 7:06you have the protons and the neutrons that
+- 7:08are at the center of the atom.
+- 7:09They're the nucleus of the atom.
+- 7:11So for example, carbon, we know, has six protons.
+- 7:15So one, two, three, four, five, six.
+- 7:19Carbon-12, which is a version of carbon,
+- 7:22will also have six neutrons.
+- 7:24You can have versions of carbon that
+- 7:26have a different number of neutrons.
+- 7:27So the neutrons can change, the electrons can change,
+- 7:30you can still have the same element.
+- 7:31The protons can't change.
+- 7:33You change the protons, you've got a different element.
+- 7:36So let me draw a carbon-12 nucleus, one, two, three, four,
+- 7:41five, six.
+- 7:43So this right here is the nucleus of carbon-12.
+- 7:46And sometimes, it'll be written like this.
+- 7:48And sometimes, they'll actually write the number of protons,
+- 7:52as well.
+- 7:53And the reason why we write it carbon-12--
+- 7:56you know, I counted out six neutrons--
+- 7:58is that, this is the total, you could
+- 8:00view this as the total number of-- one way to view it.
+- 8:04And we'll get a little bit nuance
+- 8:05in the future-- is that this is the total number of protons
+- 8:08and neutrons inside of its nucleus.
+- 8:11And this carbon, by definition, has an atomic number of six,
+- 8:15but we can rewrite it here, just so
+- 8:16that we can remind ourselves.
+- 8:18So at the center of a carbon atom, we have this nucleus.
+- 8:21And carbon-12 will have six protons and six neutrons.
+- 8:25Another version of carbon, carbon-14,
+- 8:26will still have six protons, but then it
+- 8:29would have eight neutrons.
+- 8:31So the number of neutrons can change.
+- 8:32But this is carbon-12, right over here.
+- 8:34And if carbon-12 is neutral-- and I'll give a little nuance
+- 8:38on this word in a second as well-- if it is neutral,
+- 8:41it'll also have six electrons.
+- 8:43So let me draw those six electrons, one, two, three,
+- 8:47four, five, six.
+- 8:49And one way-- and this is maybe the first-order way
+- 8:52of thinking about the relationship
+- 8:54between the electrons and the nucleus--
+- 8:57is that you can imagine the electrons are, kind of, moving
+- 9:00around, buzzing around this nucleus.
+- 9:02One model is, you could, kind of,
+- 9:04thinking of them as orbiting around the nucleus.
+- 9:06But that's not quite right.
+- 9:08They don't orbit the way that a planet, say,
+- 9:10orbits around the sun.
+- 9:11But that's a good starting point.
+- 9:13Another way is, they're kind of jumping around the nucleus,
+- 9:16or they're buzzing around the nucleus.
+- 9:18And that's just because reality just
+- 9:20gets very strange at this level.
+- 9:22And we'll actually have to go into quantum physics
+- 9:24to really understand what the electron is doing.
+- 9:26But a first mental model in your head
+- 9:29is at the center of this atom, this carbon-12 atom,
+- 9:32you have this nucleus, right over there.
+- 9:37And these electrons are jumping around this nucleus.
+- 9:40And the reason why these electrons don't just
+- 9:43go off, away from this nucleus.
+- 9:45Why they're kind of bound to this nucleus,
+- 9:47and they form part of this atom, is
+- 9:49that protons have a positive charge
+- 9:54and electrons have a negative charge.
+- 9:57And it's one of these properties of these fundamental particles.
+- 10:01And when you start thinking about,
+- 10:03well, what is a charge, fundamentally,
+- 10:04other than a label?
+- 10:05And it starts to get kind of deep.
+- 10:07But the one thing that we know, when
+- 10:08we talk about electromagnetic force,
+- 10:10is that unlike charges attract each other.
+- 10:13So the best way to think about it
+- 10:14is, protons and electrons, because they
+- 10:17have different charges, they attract each other.
+- 10:19Neutrons are neutral.
+- 10:21So they're really just sitting here inside of the nucleus.
+- 10:25And they do affect the properties, on some level,
+- 10:30for some atoms of certain elements.
+- 10:33But the reason why we have the electrons not just flying off
+- 10:36on their own is because, they are
+- 10:37attracted towards the nucleus.
+- 10:42And they also have an unbelievably high velocity.
+- 10:45It's actually hard for-- and we start touching, once again,
+- 10:48on a very strange part of physics
+- 10:51once we start talking about what an electron actually is doing.
+- 10:54But it has enough, I guess you could say,
+- 10:56it's jumping around enough that it doesn't want to just fall
+- 10:59into the nucleus, I guess is one way of thinking about it.
+- 11:04And so I mentioned, carbon-12 right over here,
+- 11:08defined by the number of protons.
+- 11:09Oxygen would be defined by having eight protons.
+- 11:12But once again, electrons can interact with other electrons.
+- 11:16Or they can be taken away by other atoms.
+- 11:19And that actually forms a lot of our understanding of chemistry.
+- 11:23It's based on how many electrons an atom has,
+- 11:26or a certain element has.
+- 11:27And how those electrons are configured.
+- 11:29And how the electrons of other elements are configured.
+- 11:33Or maybe, other atoms of that same element.
+- 11:36We can start to predict how an atom of one element
+- 11:41could react with another atom of that same element.
+- 11:43Or an atom of one element, how it could react,
+- 11:46or how it could bond, or not bond,
+- 11:48or be attracted, or repel, another atom
+- 11:51of another element.
+- 11:52So for example-- and we'll learn a lot more about this
+- 11:55in the future-- it is possible for another atom, someplace,
+- 12:00to swipe away an electron from a carbon,
+- 12:03just because, for whatever reason.
+- 12:05And we'll talk about certain elements, certain neutral atoms
+- 12:09of certain elements, have a larger
+- 12:12affinity for electrons than others.
+- 12:14So maybe one of those swipes an electron away from a carbon,
+- 12:17and then this carbon will be having
+- 12:19less electrons than protons.
+- 12:21So then it would have five electrons and six protons.
+- 12:25And then it would have a net positive charge.
+- 12:28So, in this carbon-12, the first version I did,
+- 12:30I had six protons, six electrons.
+- 12:33The charges canceled out.
+- 12:34If I lose an electron, then I only have five of these.
+- 12:37And then I would have a net positive charge.
+- 12:39And we're going to talk a lot more about all
+- 12:41of this throughout the chemistry playlist.
+- 12:42But hopefully, you have an appreciation
+- 12:44that this is already starting to get really cool.
+- 12:46Once we can already get to this really,
+- 12:48fundamental building block, called the atom.
+- 12:52And what's even neater is that this fundamental building block
+- 12:55is built of even more fundamental building blocks.
+- 12:58And these things can all be swapped
+- 13:00around, to change the properties of an atom,
+- 13:03or to even go from an atom of one element
+- •Current transcript segment:13:05to an atom of another element.
