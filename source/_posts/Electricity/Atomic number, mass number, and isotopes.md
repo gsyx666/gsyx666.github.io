@@ -1,0 +1,411 @@
+---
+title: Atomic number, mass number, and isotopes
+excerpt: Atomic number, mass number, and isotopes
+author: Jay
+tags:
+  - Electricity
+categories:
+  - Electricity
+date: 2023-11-21 22:29:36 
+---
+
+
+_本文翻译自 [Atomic number, mass number, and isotopes (video) | Khan Academy](https://en.khanacademy.org/science/chemistry/atomic-structure-and-properties/introduction-to-the-atom/v/atomic-number-mass-number-and-isotopes) __
+
+## chinese
+
+- 当前文字记录片段：0:01 因此，原子序数的符号是 Z
+- 0:05 它指的是原子核中质子的数量。
+- 0:09 你可以在元素周期表中找到原子序数。
+- 0:11在本视频中，我们将讨论氢。
+- 0:14对于氢来说，氢的原子序数是 1。
+- 0:17所以就在这里，所以有一个质子
+- 0:19 氢原子核中有一个质子。
+- 0:22 在中性原子中，质子数
+- 0:26 等于电子数、
+- 0:29因为在中性原子中
+- 0:31 没有总电荷，质子的正电荷
+- 0:32 质子的正电荷与电子的负电荷完全平衡
+- 0:35 与电子的负电荷完全平衡。
+- 0:39所以让我们来画一个氢原子。
+- 0:42 我们知道氢的原子序数是 1、
+- 0:45 所以原子核中有一个质子。
+- 0:47所以原子核中有一个质子，我们现在讨论的是
+- 0:50 关于中性氢原子，所以有一个电子。
+- 0:53 我要画出这一个电子
+- 0:55 在原子核外的某个地方，我要
+- 0:57 使用过于简化的玻尔模型。
+- 1:00所以这实际上并不是原子的样子、
+- 1:02但这是一个非常简单的视图，可以帮助你入门。
+- 1:05这是氢原子的一个版本。
+- - 1:10 这是氢的一种同位素。
+- 1:13所以这叫做氕。
+- 1:15让我写在这里。
+- 1:16所以这就是氕，让我们来谈谈同位素。
+- 1:19同位素，同位素是一种元素的原子。
+- 1:22所以我们这里说的是氢。
+- 1:25原子核中的中子数目不同。
+- 1:30我们来谈谈氢的下一种同位素。
+- 1:33这就是所谓的氘。
+- 1:35让我继续写氘。
+- 1:38 氘是氢，所以它的原子核中必须有一个质子
+- 1:43 核内必须有一个质子，核外必须有一个电子。
+- 1:47 核外必须有一个电子。
+- 1:50 同位素是一种元素的原子，它们的中子数不同
+- 1:53 中子数不同的原子，氕的中子数为零。
+- 1:56 原子核中的中子数为零。
+- 1:59 氘有一个。
+- 2:00所以让我继续画出氘的一个中子。
+- 2:03 我在这里用蓝色，所以中子将是蓝色的。
+- 2:07所以氘有一个中子，由于中子有质量，所以氘的质量更大、
+- 2:11 氘的质量大于氕。
+- - 2:14所以同位素的质量不同，是因为它们的
+- 2:17 中子数不同。
+- 2:19 但请注意，它们的原子序数相同、
+- 2:21 它们在原子核中的质子数相同。
+- 2:24 对，原子核中只有一个质子。
+- 2:26这一点很重要，因为如果你改变了
+- 2:28 质子的数量就会改变元素、
+- 2:29 而这不是我们要做的。
+- 2:32 我们讨论的是单一元素的原子。
+- 2:34 氘还是氢，它是一种同位素。
+- 2:38最后，我们的最后一种同位素是氚。
+- 2:41 氚的原子核内有一个质子、
+- 2:45 核外有一个电子。
+- 2:48 在这里，它必须与
+- 2:51中子的数量不同，所以氚有两个中子。
+- 2:55让我继续画出这两个
+- 2:57 这里的中子。
+- 2:59 这些就是氢的同位素。
+- 3:03 我们如何区分不同的同位素？
+- 3:07好吧，我们要写一些小符号
+- 3:10 来表示这些同位素。
+- 3:13所以我们在这里画的符号
+- 3:15 氕的符号是元素符号、
+- 3:18 当然就是氢，然后在下面
+- 3:21 我们将写上原子序数。
+- - 3:24所以下标是原子序数，也就是1、
+- 3:27 因为原子核中有一个质子、
+- 3:30 然后，对于上标，我们要
+- 3:33 写入质量数。
+- 3:35让我往下移一下，这样我们就能看到
+- 3:38 质量数的定义。
+- 3:40 质量数是质子和中子的合计数。
+- 3:42 原子核中质子和中子的总数、
+- 3:45 所以是质子和中子，用 A 表示。
+- 3:51所以A是质量数，等于
+- 3:53 质子数，也就是原子序数。
+- 3:56 我们用 Z 来表示、
+- 3:58 加上中子数。
+- 4:01所以A等于Z加N。
+- 4:05至于氕，让我们来看看氕。
+- 4:08所以原子核中只有一个质子
+- 4:12和零个中子，所以一加零
+- 4:15质量数为1。
+- 4:18为了便于区分，我在这里用红色表示质量数。
+- 4:21 好的，所以质量数是红色的，让我用
+- 4:25 不同颜色的原子序数。
+- 4:31这里用品红色。
+- - 4:33所以下标是原子序数
+- 4:36 那就是 Z，而上标
+- 4:39 是质量数，即 A。
+- 4:43所以这个符号代表氕的同位素。
+- 4:47我们来画一个氘的符号。
+- 4:50所以它是氢，所以我们把H放在这里。
+- 4:52原子核中仍有一个质子、
+- 4:56 对，原子核中有一个质子、
+- 4:58 所以原子序数是 1。
+- 5:00 质量数是上标、
+- 5:02 它是质子和中子的总和。
+- 5:05我们看一下原子核。
+- 5:07有一个质子和一个中子。
+- 5:08所以一加一等于二。
+- 5:12所以我们在这里用 "2 "作为上标。
+- 5:14最后，氚还是氢。
+- 5:17所以我们把氢放在这里。
+- 5:20原子核中有一个质子、
+- 5:24 原子序数为 1，所以我们在这里放一个 1。
+- 5:26然后质子和中子的总数
+- 5:29 中子的总数是三个。
+- 5:32所以，一个质子加上两个中子就是三个。
+-  5:37这是氚的符号。
+- 5:39这里是氢的同位素
+- 5:42 使用这些符号可以让我们
+- 5:44 以区分它们。
+- 5:47让我们利用所学知识
+- 5:49 再做几道练习题。
+- 5:53让我们来看看碳的符号。
+- 5:56在这里，碳的下标是 6，上标是 12。
+- 6:02 如果我们想知道有多少个质子、
+- 6:05 电子和中子的数量。
+- 6:08所以我们先来想想质子。
+- 6:10我们知道下标是
+- 6:12 原子序数和原子序数
+- 6:14 等于质子数。
+- 6:16所以这个碳原子中有六个质子。
+- 6:21 如果这是一个中性的碳原子，那么电子数
+- 6:23电子的数量必须等于质子的数量。
+- 6:27所以，如果有六个质子，那么
+- 6:29 也必须有六个电子。
+- 6:32 最后，我们如何计算中子的数量呢？
+- 6:36好吧，让我们继续写下我们讨论过的公式。
+- 6:40 质量数等于原子序数加上中子数。
+- 6:43 原子序数加上中子数。
+- 6:47所以质量数就在这里，是12。
+- 6:53所以我们可以输入12。
+- 6:55 原子序数是6，就在这里。
+- 6:59所以我们输入6。
+- 7:00加上中子数。
+- 7:03加上中子数。
+- 所以中子数等于
+- 7:0612减去6，当然就是6。
+- 7:10所以有六个中子。
+- 7:11所以只要用质量数减去原子序数
+- 7:14质量数，就能得到
+- 7:16 原子中的中子数。
+- 7:19 我们再来做一个。
+- 7:21 这是碳，这次的上标是 13。
+- 7:27 原子序数不会改变
+- 7:30当你在谈论同位素时。
+- 7:32如果你改变了原子序数、
+- 7:34 你就改变了元素。
+- - 7:35所以原子核中仍有六个质子
+- 7:39 这个原子和一个中性原子、
+- 7:42必须有相同数量的电子。
+- 7:45所以有六个电子，最后、
+- 7:47 有多少个中子？
+- 7:50就像我们之前做的那样，我们用原子序数减去
+- 7:53 从质量数中减去原子序数。
+- 7:57所以我们只需要用13减去6
+- 8:03 算出中子的数量。
+- 8:05所以13减6当然就是7。
+- 8:07所以这个原子中有七个中子。
+- 8:11 另一种表示同位素的方法、
+- 8:15比方说，我们想用另一种方式来表示这种同位素
+- 8:17 换一种方式，有时你会看到
+- 8:19 写元素的名称。
+- 8:21所以这是碳。
+- 8:23 然后在这里加上连字符
+- 8:24 然后写上质量数。
+- 8:26所以碳的连字符13指的是这种同位素
+- 8:30 这就是所谓的连字符符号。
+- 8：34所以让我继续写这个连字符符号。
+- 8:38好的，我们再举一个例子。
+- - 8:42我们来做一个看起来更吓人的。
+- 8:45所以我们来做铀。
+- 8:48 所以 U 就是铀。
+- 8:50 铀的原子序数是 92。
+- 8:52 这种同位素的质量数是 235。
+- 8:56那么有多少质子、电子？
+- 8:59 鈾原子中有多少個質子、多少個電子、多少個中子？
+- 9:02因此，对于质子，我们再次查看
+- 9:05 原子序数是 92。
+- 9:07所以一定有 92 个质子。
+- 9:11 在中性原子中，电子数等于
+- 9:15 质子数。
+- 9:16所以有92个电子，最后、
+- 9:19 为了算出中子的数量、
+- 9:21我们从质量数中减去这个数。
+- 9:26所以我们只需要用235减去92。
+- 9:34得出143。
+- 9:37所以有143个中子。
+
+
+## english
+
+
+- •Current transcript segment:0:01So the atomic number is symbolized by Z
+- 0:05and it refers to the number of protons in a nucleus.
+- 0:09And you can find the atomic number on the periodic table.
+- 0:11So we're going to talk about hydrogen in this video.
+- 0:14So for hydrogen, hydrogen's atomic number is one.
+- 0:17So it's right here, so there's one proton
+- 0:19in the nucleus of a hydrogen atom.
+- 0:22In a neutral atom, the number of protons
+- 0:26is equal to the number of electrons,
+- 0:29because in a neutral atom there's
+- 0:31no overall charge and the positive charges
+- 0:32of the protons completely balance
+- 0:35with the negative charges of the electrons.
+- 0:39So let's go ahead and draw an atom of hydrogen.
+- 0:42We know the atomic number of hydrogen is one,
+- 0:45so there's one proton in the nucleus.
+- 0:47So there's my one proton in the nucleus, and we're talking
+- 0:50about a neutral hydrogen atom, so there's one electron.
+- 0:53I'm going to draw that one electron
+- 0:55somewhere outside the nucleus and I'm going
+- 0:57to use the oversimplified Bohr model.
+- 1:00So this isn't actually what an atom looks like,
+- 1:02but it's a very simply view that helps you get started.
+- 1:05So this is one, this one version of hydrogen.
+- 1:10This is one isotope of hydrogen.
+- 1:13So this is called protium.
+- 1:15Let me go ahead and write that here.
+- 1:16So this is protium and let's talk about isotopes.
+- 1:19An isotope, isotopes are atoms of a single element.
+- 1:22So we're talking about hydrogen here.
+- 1:25That differ in the number of neutrons in their nuclei.
+- 1:30So let's talk about the next isotope of hydrogen.
+- 1:33So this is called deuteriums.
+- 1:35Let me go ahead and write deuterium here.
+- 1:38Deuterium is hydrogen, so it must have one proton
+- 1:43in the nucleus and it must have one electron outside
+- 1:47the nucleus, but if you look at the definition
+- 1:50for isotopes, atoms of a single element that differ
+- 1:53in the number of neutrons, protium has zero
+- 1:56neutrons in the nucleus.
+- 1:59Deuterium has one.
+- 2:00So let me go ahead and draw in deuterium's one neutron.
+- 2:03I'll use blue here, so neutrons are going to be blue.
+- 2:07So deuterium has one neutron and since neutrons have mass,
+- 2:11deuterium has more mass than protium.
+- 2:14So isotopes have different masses because they differ
+- 2:17in terms of number of neutrons.
+- 2:19Notice though, that they have the same atomic number,
+- 2:21they have the same number of protons in the nucleus.
+- 2:24Right, it's one proton in the nucleus.
+- 2:26And that's important because if you change
+- 2:28the number of protons, you're changing the element,
+- 2:29and that's not what we're doing here.
+- 2:32We're talking about atoms of a single element.
+- 2:34Deuterium is still hydrogen, it's an isotope.
+- 2:38Finally, our last isotope, which is tritium.
+- 2:41So tritium has one proton in the nucleus,
+- 2:45one electron outside the nucleus, and we draw
+- 2:48that in here, and it must differ in terms
+- 2:51of number of neutrons, so tritium has two neutrons.
+- 2:55Let me go ahead and draw the two
+- 2:57neutrons here in the nucleus.
+- 2:59And so those are the isotopes of hydrogen.
+- 3:03How do we distinguish between the different isotopes?
+- 3:07Well we're going to write little symbols
+- 3:10to represent these isotopes.
+- 3:13And so the symbol that we'll draw here
+- 3:15for protium is going to have the element symbol,
+- 3:18which is, of course, hydrogen, and then down here
+- 3:21we're going to write the atomic number.
+- 3:24So the subscript is the atomic number which is one,
+- 3:27because there's one proton in the nucleus,
+- 3:30and then for the superscript, we're going
+- 3:33to write in the mass number.
+- 3:35So let me move down here so we can look
+- 3:38at the definition for the mass number.
+- 3:40The mass number is the combined number
+- 3:42of protons and neutrons in a nucleus,
+- 3:45so it's protons and neutrons, and it's symbolized by A.
+- 3:51So A is the mass number, which is equal
+- 3:53to the number of protons, that's the atomic
+- 3:56number which we symbolized by Z,
+- 3:58plus the number of neutrons.
+- 4:01So A is equal to Z plus N.
+- 4:05And for protium, let's look at protium here.
+- 4:08So in the nucleus there's only one proton
+- 4:12and zero neutrons, so one plus zero
+- 4:15gives us a mass number of one.
+- 4:18And I'll use red here for mass number so we can distinguish.
+- 4:21Alright, so mass number is red and let me use
+- 4:25a different color here for the atomic number.
+- 4:31Let me use magenta here.
+- 4:33So the subscript is the atomic number
+- 4:36and that's Z, and the superscript
+- 4:39is the mass number and that's A.
+- 4:43So this symbol represents the protium isotope.
+- 4:47Let's draw one for deuterium.
+- 4:50So it's hydrogen so we put an H here.
+- 4:52There is still one proton in the nucleus,
+- 4:56right one proton in the nucleus,
+- 4:58so we put an atomic number of one.
+- 5:00The mass number is the superscript,
+- 5:02it's the combined number of protons and neutrons.
+- 5:05So we look in the nucleus here.
+- 5:07There's one proton and one neutron.
+- 5:08So one plus one is equal to two.
+- 5:12So we put a two here for the superscript.
+- 5:14And finally for tritium, it's still hydrogen.
+- 5:17So we put hydrogen here.
+- 5:20There's one proton in the nucleus,
+- 5:24atomic number of one, so we put a one here.
+- 5:26And then the combined numbers of protons
+- 5:29and neutrons, that would be three.
+- 5:32So one proton plus two neutrons gives us three.
+- 5:37So there's the symbol for tritium.
+- 5:39So here are the isotopes of hydrogen
+- 5:42and using these symbols allows us
+- 5:44to differentiate between them.
+- 5:47So let's take what we've learned
+- 5:49and do a few more practice problems here.
+- 5:53So let's look at a symbol for carbon.
+- 5:56So here we have carbon with subscript six, superscript 12.
+- 6:02And if we want to know how many protons,
+- 6:05electrons and neutrons there are.
+- 6:08So let's first think about protons.
+- 6:10Well we know that the subscript is
+- 6:12the atomic number and the atomic number is
+- 6:14equal to the number of protons.
+- 6:16So there are six protons in this atom of carbon.
+- 6:21And if it's a neutral atom of carbon, the number
+- 6:23of electrons must be equal to the number of protons.
+- 6:27So if there are six protons, there
+- 6:29must also be six electrons.
+- 6:32And finally, how do we figure out the number of neutrons?
+- 6:36Well let's go ahead and write down the formula we discussed.
+- 6:40The mass number is equal to the atomic
+- 6:43number plus the number of neutrons.
+- 6:47So the mass number was right here, that's 12.
+- 6:53So we can put in a 12.
+- 6:55The atomic number was six, right here.
+- 6:59So we put in a six.
+- 7:00Plus the number of neutrons.
+- 7:03Plus the number of neutrons.
+- 7:04So the number of neutrons is just equal to
+- 7:0612 minus six, which is, of course, six.
+- 7:10So there are six neutrons.
+- 7:11So just subtract the atomic number
+- 7:14from the mass number and you'll get
+- 7:16the number of neutrons in your atom.
+- 7:19Let's do another one.
+- 7:21This is carbon and this time we have a superscript of 13.
+- 7:27The atomic number doesn't change
+- 7:30when you're talking about an isotope.
+- 7:32If you change the atomic number,
+- 7:34you change the element.
+- 7:35So there's still six protons in the nucleus
+- 7:39of this atom and in a neutral atom,
+- 7:42there must be the equal number of electrons.
+- 7:45So six electrons and then finally,
+- 7:47how many neutrons are there?
+- 7:50Well just like we did before, we subtract
+- 7:53the atomic number from the mass number.
+- 7:57So we just have to 13 minus six
+- 8:03to figure out the number of neutrons.
+- 8:05So 13 minus six is, of course, seven.
+- 8:07So there are seven neutrons in this atom.
+- 8:11Another way to represent isotopes,
+- 8:15let's say we wanted to represent this isotope
+- 8:17in a different way, sometimes you'll see it
+- 8:19where you write the name of the element.
+- 8:21So this is carbon.
+- 8:23And then you put a hyphen here
+- 8:24and then you put the mass number.
+- 8:26So carbon hyphen 13 refers to this isotope
+- 8:30of carbon and this is called hyphen notation.
+- 8:34So let me go ahead and write this hyphen notation.
+- 8:38Alright, let's do one more example here.
+- 8:42Let's do one that looks a little bit scarier.
+- 8:45So let's do uranium.
+- 8:48So U is uranium.
+- 8:50The atomic number of uranium is 92.
+- 8:52The mass number for this isotope is 235.
+- 8:56So how many protons, electrons,
+- 8:59and neutrons in this atom of uranium?
+- 9:02So once again for protons, we look
+- 9:05at the atomic number, that's 92.
+- 9:07So there must be 92 protons.
+- 9:11In a neutral atom, the number of electrons is equal
+- 9:15to the number of protons.
+- 9:16So there are 92 electrons and then finally,
+- 9:19to figure out the number of neutrons,
+- 9:21we subtract this number from the mass number.
+- 9:26So we just need to do 235 minus 92.
+- 9:34And that gives us 143.
+- 9:37So there are 143 neutrons.
