@@ -2,6 +2,7 @@
 title: Android 操作系统架构开篇
 author: gityuan
 permalink: /android/
+hide: true
 tags:
   - 转载
 categories:

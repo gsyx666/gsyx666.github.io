@@ -4,31 +4,27 @@
     "type": "split",
     "children": [
       {
-        "id": "7312c41c5572db9d",
+        "id": "e70171cae4c48ce5",
         "type": "tabs",
         "children": [
           {
-            "id": "05ef50b9340714e9",
+            "id": "fd4e4daf8caf3938",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "source/_posts/Electricity/Atomic number, mass number, and isotopes.md",
+                "file": "备忘录.md",
                 "mode": "source",
                 "source": true
               }
             }
           },
           {
-            "id": "0d72911971e42a03",
+            "id": "7465cec1b0328a12",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "source/_posts/Electricity/Elements and atoms.md",
-                "mode": "source",
-                "source": true
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -105,7 +101,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "source/_posts/Electricity/Atomic number, mass number, and isotopes.md",
+                "file": "备忘录.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -122,7 +118,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "source/_posts/Electricity/Atomic number, mass number, and isotopes.md",
+                "file": "备忘录.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -145,7 +141,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "source/_posts/Electricity/Atomic number, mass number, and isotopes.md"
+                "file": "备忘录.md"
               }
             }
           }
@@ -167,34 +163,40 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "05ef50b9340714e9",
+  "active": "fd4e4daf8caf3938",
   "lastOpenFiles": [
+    "source/_posts/Electricity/khan electrical-engineering.md",
     "source/_posts/Electricity/Elements and atoms.md",
-    "source/_posts/Electricity/Atomic number, mass number, and isotopes.md",
-    "source/_posts/Area/What Is a Printed Circuit Board (PCB).md",
-    "source/_posts/Area/What Educated Citizens Should Know About Statistics and Probability.md",
-    "source/_posts/Area/Electricity.md",
-    "source/_posts/Electricity",
     "source/_posts/Web Log.md",
-    "Templates/Log.md",
-    "source/_posts/Philosophy/如何理解哲学——维特根斯坦的哲学观.md",
-    "source/_posts/Philosophy/此在素描.md",
-    "备忘录.md",
+    "source/_posts/hello-world.md",
+    "source/_posts/Python/Python.md",
+    "source/_posts/Resources/NFT精神史：罐头、青蛙和平凡人的15分钟英雄梦想.md",
+    "source/_posts/Resources/2021-08-27-resources.md",
     "source/_posts/Python/action-python.md",
+    "source/_posts/Linux/Linux.md",
+    "source/_posts/Programming/代码可读性.md",
+    "source/_posts/kotlin/Kotlin-CheatSheet.md",
+    "source/_posts/kotlin/两万六千字带你Kotlin入门.md",
+    "source/_posts/java/Java-CheatSheet.md",
+    "source/_posts/Git/version-control.md",
+    "source/_posts/java/cs-notes-java-io.md",
+    "source/_posts/java/cs-notes-java-虚拟机.md",
+    "source/_posts/java/cs-notes-java-容器.md",
+    "source/_posts/java/cs-notes-java-基础.md",
+    "source/_posts/java/cs-notes-java-并发.md",
+    "source/_posts/Git/cs-notes-git.md",
+    "source/_posts/English/1368个单词就够了.md",
+    "source/_posts/Electricity/Atomic number, mass number, and isotopes.md",
+    "source/_posts/Bin/What-happens-when.md",
+    "source/_posts/Design Pattern/Singleton.md",
+    "source/_posts/Design Pattern/Simple Factory.md",
+    "source/_posts/Design Pattern/设计模式 - 目录.md",
+    "source/_posts/Electricity",
     "source/_posts/Philosophy",
-    "source/_posts/Area/张无常两篇.md",
-    "未命名.md",
-    "source/_posts/Area/通识：学问的门类.md",
-    "source/_posts/Area/电影编剧的秘密.md",
     "source/img/Electricity/1.png",
     "source/img/Electricity/4049.png",
     "source/img/Electricity",
     "source/img/新建文件夹",
-    "source/img/4049.png",
-    "source/_posts/Area/如何避免愚蠢的见识.md",
-    "source/_posts/hello-world.md",
-    "node_modules/_ws@8.12.0@ws/README.md",
-    "source/_posts/Area/News/2022-08-15-news.md",
-    "source/_posts/Area/hide.md"
+    "source/img/4049.png"
   ]
 }

@@ -1,0 +1,373 @@
+---
+title: Elements and atoms
+excerpt: Elements and atoms
+author: Sal Khan
+tags:
+  - Electricity
+categories:
+  - Electricity
+date: 2023-11-20 22:29:11 
+---
+
+[Diode (video) | Semiconductor devices | Khan Academy](https://www.khanacademy.org/science/electrical-engineering/ee-semiconductor-devices/ee-diode/v/ee-diode)
+-   
+    •Current transcript segment:0:00- [Voiceover] 二极管是我们的第一个半导体器件、
+- 0:03 而且是非常重要的一个。
+- 0:04其他所有半导体基本上都是由二极管组合而成的
+- 0:07 由二极管组合而成。
+- 0:09 这是一张你能买到的二极管的图片。
+- 0:12 这是一个小小的玻璃封装、
+- 0:16 那里的距离大约是四毫米。
+- 0:20 而在这里面，就在这里面、
+- 0:23 是一个小硅芯片、
+- 0:26 它被制造成一个二极管。
+- 0：29那么问题来了，什么是二极管？
+- 0:32 二极管是单向导电的东西、
+- 0:36 而在另一个方向上不导电。
+- 0:41 二极管的符号是这样的。
+- 0:50 这里有一个大箭头、
+- 0:52 它指向正向电流的方向。
+- 0:58 了解二极管工作原理的一种方法是
+- 1:00 是绘制 IV 曲线。
+- 1:02让我们画出二极管的 IV 曲线。
+- 1:10如果这是一个用未知技术制造的完美二极管、
+- 1:13 会发生相反的情况、
+- 1:17 如果二极管两端的电压为负值、
+- 1:22 我们这样标注电压、
+- 1:25 如果二极管两端的电压是负值，也就是说、
+- 1:28 这个端子的电压比这个端子的电压高、
+- 1:33 则电流为零。
+- 1:35 如果电压为正，那么二极管上的电流为零、
+- 1:40 基本上，二极管看起来就像一根导线。
+- 1:44所以我可以把它称为
+- 1:45 二极管的零号模型。
+- 1:51现在，当我们制造真正的二极管时、
+- 1:52 会发生的情况是，我们并不能完全获得这种完美的行为、
+- 1:57 所以，特别是如果我们用硅材料制造二极管、
+- 2:01 我们可以使用第一种模型。
+- 2:08 硅二极管实际上不会传导
+- 2:11 到一个轻微的正电压、
+- 2:13 然后它就会像这样上升、
+- 2:16 这大约是六伏特。
+- 2:20 对于我们构建的许多简单电路来说、
+- 2:22 这是一个非常好的二极管 IV 模型。
+- 2:27 作为提醒，当我们有电阻器的 IV 曲线时、
+- 2:31 电阻器的 IV 曲线是这样的、
+- 2:35 它是一条经过零点的直线、
+- 2:38 而且斜率恒定、
+- 2:39 所以二极管是一种真正不同的器件、
+- 2:44 从这里我们可以看到，它是一种非线性器件。
+- 2:49让我把这里移上去，现在我们来看看下一级模型、
+- 2:53 这其实是我最想讲的一个。
+- 2:59 这就是我们经常使用的二极管模型、
+- 3:02 所以我称其为二号模型。
+- 3:06 这是你模拟电路时使用的模型
+- 3:08 或模拟二极管时使用的模型。
+- 3:11关于这一点更多一点。
+- 3:13当你有一个二极管时，如果我给你一个这样的二极管、
+- 3:20 我说它的 IV 曲线是怎样的？
+- 3:22 那么我会做的就是找到某种盒子
+- 3:27 它能为我提供电压，一个电源、
+- 3:32 上面有一个调节器、
+- 3:33 然后我还要找一个能读取电流的东西。
+- 3:40 这是电流表，这是电压表。
+- 3:46 像这样连接起来。
+- 3:48 我们要做的是生成 IV 曲线
+- 3:50 通过实际测量 I 和 V。
+- 3:57 所以我的第一个 V 设置为零、
+- 3:59 这样就得到了这个点、
+- 4:02 我希望测量到的电流为零、
+- 4:05 否则这东西就会发电、
+- 4:06 这是不可能的。
+- 4:09 然后我稍微调高电压、
+- 4:11 我发现没有电流、
+- 4:12 一伏特时没有电流
+- 4:15 或两伏时
+- 4:16 当电压达到六伏特左右时，二极管上就没有电流了、
+- 4:22 在二极管上，这里是VD，这里是、
+- 4:32当二极管上的电压在六伏特左右时
+- 4:34 我注意到电流上升了。
+- 4:35所以电流上升到五毫安、
+- 4:37 再高一点，就到了十毫安、
+- 4:40 就像这样，我可以绘制出所有这些点
+- 4:43 沿着曲线的这一部分。
+- 4:46现在，我回到这里，改变这里的电压
+- 4:49反过来读、
+- 4:52 这意味着我在电压轴上向这边移动。
+- 4:59 我的电流表读数为零毫安。
+- 5:03零、零、零、零、零。
+- 5:05所以它们就绘制在这条线的这一部分。
+- 5:09现在，如果我让这个电压变得非常大，非常负、
+- 5:12比如我把电压调到负50伏、
+- 5:15 就是这里、
+- 5:18 会发生什么呢？
+- 5:21 就像这样，一直持续下去。
+- 5:26 这就是所谓的击穿，VBR 就是击穿。
+- 5:30对于硅二极管来说、
+- 5:32 50 伏特以下是典型值。
+- 5:36这张图显示了刻度的中断、
+- 5:38 所以这是负一伏或负两伏、
+- 5:41 然后我们一直到 50 伏，负 50 伏、
+- 5:45 这就是发生故障的地方。
+- 5:47 大多数情况下，当我们使用二极管时、
+- 5:49 我们使用的是正负一伏之间的二极管
+- 5:52之间。
+- 5:56这就是我们如何知道二极管IV特性的方法。
+- 我们可以做的是
+- 6:02 对于这一段曲线，就在这里、
+- 6:05 对于曲线的这一部分、
+- 6:07 我可以用一个方程来模拟。
+- 6:09 等式看起来是这样的。
+- 6:13 这是二极管的 IV 方程、
+- 6:15 所以这有点像二极管的欧姆定律。
+- 6:20I 等于 IS，这是电流、
+- 6:25times e to the q, that's the charge on an electron、
+- 6:32 二极管上的 V 乘以二极管上的电压、
+- 6:36 除以 kT 减 1。
+- 6:44K 是玻耳兹曼常数、
+- 6:46 而 T 是设备的温度、
+- 6:48 测量单位是开尔文。
+- 6:52因此，这个等式实际上符合曲线的这一部分
+- 6:56 对于一个真正的二极管来说，这是一条拟合曲线。
+- 7:02 我们一个一个来看这些常数。
+- 7:03IS 称为饱和电流。
+- 7:11饱和电流。
+- 7:17 对于硅来说，对于硅来说，这个值是
+- 7:20大约是10到负12安培、
+- 7:26 也就是一皮安培，IS就是这么多。
+- 7:30Q 是电子上的电荷、
+- 7:35 等于1.602乘以10的负19次方库仑。
+- 7:47这是q，VD是二极管两端的电压、
+- 7:52K是波尔兹曼常数，通常是个小K、
+- 8:00 相当于 1.38 乘以 10
+- 8:06 到负 23 焦耳/开尔文。
+- 8:18 最后一个变量是 T、
+- 8:21 这就是温度、
+- 8:22 这是以开尔文为单位的，有一个大大的 K。
+- 8:28开尔文是绝对温标、
+- 8:30 所以零开尔文等于零下273摄氏度。
+- 8:41非常非常冷。
+- 8:44所以这里就是二极管方程、
+- 8:49 这就是二极管四方程。
+- 8:53 它有一个指数形状、
+- 8:57 它有一个指数项、
+- 8:59但是当我们看这里的时候、
+- 9:00也许这看起来不像指数曲线、
+- 9:02 你还没见过这样的曲线。
+- 9:03但实际上，这只是一个小技巧
+- 9:05 这幅图的比例、
+- 9:07 所以我现在要做的就是放大
+- 9:09 放大到非常近的距离，就在这个原点上、
+- 9:12 我们来看看这个指数项是如何显示出来的、
+- 9:17 我们来看看 IS 的含义。
+- 9:28 I等于IS乘以e qV超过KT减1、
+- 9:39 这是一个特写，这是一个极端特写
+- 9:41 二极管曲线的原点。
+- 9:44 电压刻度放大了约 10 倍、
+- 9:46 所以这里是二极管正向电压的十分之一伏、
+- 9:49 电流刻度被放大了很多、
+- 9:53 现在的单位是皮安、
+- 9:55 所以这里的单位是 10 到负 12 安培
+- 9:58 而不是 10 到负 3。
+- 10:01 你可以看到这里、
+- 10:02 这是一条更熟悉的指数曲线。
+- 10:05这里有一点偏移、
+- 10:07当电压为负时，在反方向会有一点微小的电流
+- 10:10当电压为负时。
+- 10:12这里的量，就是IS、
+- 10:17 流向二极管的负方向。
+- 10:21如果我们看一下二极管方程，让电压为负、
+- 10:24 会发生什么呢？
+- 10:29 与 1 相比，变得非常非常小。
+- 10:33 剩下的就是 IS 乘以 1、
+- 10:37 这就是我们现在看到的结果。
+- 10:39 这是一个非常小的电流、
+- 10:41 从这里的刻度可以看出、
+- 10:43 这是低皮安的电流。
+- 10:47 几乎所有时候，你都可以忽略这个电流、
+- 10:48 并将其视为零。
+- 10:52每当我想在电路中使用二极管时、
+- 10:54 我们将看到如何解决包含
+- 10:57 这些非线性二极管。
+
+
+
+-  Current transcript segment:0:00- [Voiceover] The diode is our first semi-conductor device,
+- 0:03and it's a really important one.
+- 0:04Every other semi-conductor is basically made
+- 0:07from combinations of diodes.
+- 0:09And here's a picture of a diode that you can buy.
+- 0:12This is a, just a small little glass package,
+- 0:16and that distance right there is about four millimeters.
+- 0:20And inside here, right inside here,
+- 0:23is a little silicon chip,
+- 0:26and it's manufactured to be a diode.
+- 0:29So the question is, what is a diode?
+- 0:32A diode is something that conducts current in one direction,
+- 0:36and does not conduct current in the other direction.
+- 0:41And the symbol we use for a diode looks like this.
+- 0:50It has this big arrow here,
+- 0:52that points in the direction of the forward current.
+- 0:58One way to understand how a diode works
+- 1:00is to draw an IV curve for it.
+- 1:02So let's draw an IV curve for a diode.
+- 1:10If it was a perfect diode, made in some unknown technology,
+- 1:13what would happen is in the reverse direction,
+- 1:17if the voltage across the diode was negative,
+- 1:22we'll label the voltage this way,
+- 1:25if the voltage across the diode was negative, that is,
+- 1:28this terminal is at a higher voltage than this terminal,
+- 1:33there would be zero current flowing.
+- 1:35And then for any positive voltage,
+- 1:40basically the diode would look like a wire.
+- 1:44So I can call that, that's essentially
+- 1:45model number zero of a diode.
+- 1:51Now when we build real diodes,
+- 1:52what happens is we don't quite get that perfect behavior,
+- 1:57so in particular, if we build a diode out of silicon,
+- 2:01we can go to a, I'll go to a number one model.
+- 2:08And a silicon diode actually doesn't conduct
+- 2:11to a slight positive voltage,
+- 2:13and then it would go up like that,
+- 2:16where this is around point six volts.
+- 2:20For a lot of simple circuits that we build,
+- 2:22this is a pretty good IV model of a diode.
+- 2:27Just as a reminder, when we have the IV curve of resistors,
+- 2:31a resistors IV curve looks something like this,
+- 2:35it was a line that went through zero,
+- 2:38and had a constant slope,
+- 2:39so a diode is a really different kind of device,
+- 2:44it's a non-linear device, as we can see from this.
+- 2:49Let me move up here and now we'll go to a next level model,
+- 2:53that is actually the one I wanna talk about most.
+- 2:59This is the model of diode that we use most of the time,
+- 3:02so I'll call this model number two.
+- 3:06This is the model that you use when you'll simulate circuits
+- 3:08or simulate diodes and we're gonna talk
+- 3:11about this a little bit more.
+- 3:13When you have a diode, if I gave you a diode like this,
+- 3:20and I said what's the IV curve of it?
+- 3:22So what I would do is I would find some sort of box
+- 3:27that made voltage for me, a power supply,
+- 3:32with an adjustment on it,
+- 3:33and then I would also have something that read current.
+- 3:40So this is an ammeter, and this is a voltage supply.
+- 3:46And we hook that up like that.
+- 3:48What we're gonna do is we're gonna generate this IV curve
+- 3:50by making actual measurements of I and V.
+- 3:57So my first V setting is zero,
+- 3:59that gives me this point here,
+- 4:02I hope I measure a current of zero,
+- 4:05otherwise this thing would be generating power,
+- 4:06which it's not gonna do.
+- 4:09And then I turn up the voltage slightly,
+- 4:11and what I notice is there's no current,
+- 4:12there's no current when it's at point one volts,
+- 4:15or point two volts.
+- 4:16And then when it gets to around point six volts,
+- 4:22on the diode, here's VD, and here's,
+- 4:32when the voltage on the diode is around point six volts
+- 4:34what I notice is the current goes up.
+- 4:35So it goes up to five milliamps,
+- 4:37and then a little bit higher, it goes up to ten milliamps,
+- 4:40like that, and I can plot out all these points
+- 4:43along this part of the curve.
+- 4:46Now, I go back here and I change the voltage here
+- 4:49to read the other way around,
+- 4:52and that means I'm traveling this way on the voltage axis.
+- 4:59And what I'll read, my ammeter, will read zero milliamps.
+- 5:03Zero, zero, zero, zero, zero.
+- 5:05And so they plot in this part of the line here.
+- 5:09Now if I make this voltage really large and really negative,
+- 5:12say I make this like minus 50 volts,
+- 5:15that's this point here,
+- 5:18what happens is I see a really sharp increasing current,
+- 5:21like that right there, and it keeps going.
+- 5:26And that is called the breakdown, VBR is breakdown.
+- 5:30And for silicon diodes,
+- 5:32minus 50 volts is a typical value for that.
+- 5:36This graph here shows a break in the scale,
+- 5:38so this is minus one volt, minus two volts,
+- 5:41and then we go all the way out to 50 volts, minus 50 volts,
+- 5:45and that's where the breakdown occurs.
+- 5:47And most of the time when we're using diodes,
+- 5:49we're using them between plus or minus one volt
+- 5:52across their terminals.
+- 5:56That's how we know what the IV characteristic of a diode is.
+- 6:00And what we can do is actually,
+- 6:02for this section of the curve right here,
+- 6:05for this part of the curve,
+- 6:07I can model this with an equation.
+- 6:09And the equation looks like this.
+- 6:13This is the IV equation for a diode,
+- 6:15so this is sort of like the Ohm's law for a diode.
+- 6:20I equals IS, this is the current,
+- 6:25times e to the q, that's the charge on an electron,
+- 6:32times V on the diode, that's the voltage on the diode,
+- 6:36divided by kT minus one.
+- 6:44K is Boltzmann's constant,
+- 6:46and T is the temperature of the device,
+- 6:48measured in Kelvin.
+- 6:52So this equation actually fits this part of this curve
+- 6:56for a real diode, it's a fitting curve.
+- 7:02We'll look at these constants one at a time.
+- 7:03IS is called the saturation current.
+- 7:11Saturation current.
+- 7:17And for silicon, for silicon that's a value
+- 7:20of about 10 to the minus 12 amperes,
+- 7:26which is one picoampere, that's how much IS is.
+- 7:30Q is the charge on an electron,
+- 7:35and that equals 1.602 times 10 to the minus 19 coulombs.
+- 7:47That's q, VD is the voltage across the diode,
+- 7:52K is Boltzmann's constant, that's a small k, usually,
+- 8:00and that equals 1.38 times 10
+- 8:06to the minus 23 Joules per Kelvin.
+- 8:18And the last variable is T,
+- 8:21and that's the temperature,
+- 8:22and that's measured in Kelvin, with a big K.
+- 8:28Kelvin is the absolute temperature scale,
+- 8:30so zero Kelvin equals minus 273 degrees Celsius.
+- 8:41Very, very cold.
+- 8:44So this right here is the diode equation,
+- 8:49that's the diode IV equation.
+- 8:53And it has this exponential shape in it,
+- 8:57it has this exponential term in it,
+- 8:59but when we look over here,
+- 9:00maybe this doesn't look like an exponential curve,
+- 9:02you haven't seen a curve like that.
+- 9:03But that actually is just a trick
+- 9:05of the scale of this drawing,
+- 9:07so what I wanna do now is I'm gonna zoom in
+- 9:09really super close, right on this origin right here,
+- 9:12and we're gonna see how this exponential term shows up,
+- 9:17and we'll see what the meaning of IS is.
+- 9:28I equals IS times e qV over KT minus one,
+- 9:39and here's a close up, here's an extreme close-up
+- 9:41on the origin of the diode curve.
+- 9:44The voltage scale is blown up by about a factor of 10,
+- 9:46so here's 1/10th of a volt forward across the diode,
+- 9:49and the current scale is super blown up,
+- 9:53this is in picoamperes now,
+- 9:55so this is in 10 to the minus 12th amperes
+- 9:58instead of 10 to the minus three.
+- 10:01And you can see here,
+- 10:02this is a more familiar looking exponential curve.
+- 10:05And over here there's a little bit of an offset,
+- 10:07there's a little tiny current in the reverse direction
+- 10:10when the voltage is negative.
+- 10:12And this amount here, that's IS,
+- 10:17flowing in the negative direction in the diode.
+- 10:21If we look at the diode equation, and you let V go negative,
+- 10:24what happens is this term here in the diode equation
+- 10:29becomes very, very small compared to one.
+- 10:33And what's left is IS times one,
+- 10:37and that's what we're looking at right here.
+- 10:39This is a really small current,
+- 10:41as you can see from the scale here,
+- 10:43it's down in the low picoamps area.
+- 10:47Almost all the time you can ignore this current,
+- 10:48and just treat it as zero.
+- 10:52Whenever I wanna use a diode in a circuit,
+- 10:54and we'll see how we solve circuits that include
+- 10:57these non-linear diodes in them.
+

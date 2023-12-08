@@ -1,0 +1,577 @@
+---
+title: KVL in the frequency domain
+excerpt: KVL in the frequency domain
+author: Willy McAllister.
+tags:
+  - Electricity
+categories:
+  - Electricity
+date: 2023-11-24 21:18:40 
+---
+
+_本文翻译自 [KVL in the frequency domain](https://en.khanacademy.org/science/electrical-engineering/ee-circuit-analysis-topic/ee-ac-analysis/v/ee-kvl-frequency-domain)__
+
+
+- 0:00- [画外音] 当我们进行交流分析时、
+- 0:01 我们在频域进行运算、
+- 0:04 我们需要掌握基尔霍夫定律
+- 0:06 这样我们才能理解电路。
+- 0:08所以，在本视频中，我将基本上展示
+- 0:11 基尔霍夫电压定律在频域中的工作原理
+- 0:13 在频域中的作用。
+- 0:15 这里有一个电路
+- 0:16有一定电压源的交流电压源、
+- 0:19 让我们把交流电放在它上面、
+- 0:22 它连接了三个阻抗。
+- 0:25 每个盒子里都有一个 R、一个 L 或一个 C、
+- 0:29 我们不会显示是哪个
+- 0:30 因为我们要把这些
+- 0:32 只是作为一般阻抗。
+- 0:35所以，在交流分析中，电压都是余弦波。
+- 0:39所以，v-in 等于
+- 0:44 某一电压幅值乘以余弦值
+- 0:48 的欧米茄-t 加上
+- 0:52 我们称之为 phi-零、
+- 0:56 某个起始相移。
+- 0:58所以，这就是我们的输入信号。
+- 0:59现在让我给其他所有的电压贴上标签。
+- 1:01 我们称之为 v-1、
+- 1:04 我会这样标注、
+- 1:07 这里是 v-2、
+- 1:10 我会把它倒过来，像这样，加号、
+- 1: 13 这里是V-3
+- 1:15 减号，加号，V-3。
+- 1:20 哦，现在我有了 v-1、
+- 1:23 把它改成 v-zero
+- 1:25 这样我就不会把 "一 "和 "一 "搞混了。
+- 1:27所以，我们把它改成零。
+- 1:29 所以，输入源是 v-0、
+- 1:31 就是这个电压。
+- - 1:31 这就是电压。
+- 1:34现在，当我们将 KVL（基尔霍夫电压定律）应用于此、
+- 1:38 它说的是，如果我们从一个角落开始、
+- 1:40如果我们从电路中的某个地方开始、
+- 1:41 就从这里开始、
+- 1:42 绕一圈，加起来应该是
+- 1：46零伏
+- 1:46这是普通直流电路的 KVL、
+- 1:49 我们来看看它如何应用于交流电路。
+- 1:53所以在时域中，我们说 v-zero
+- 1:56 加上 v-one 再加上 v-two
+- 2:00 加上 v-3 等于零。
+- 2:04那么，让我们来讨论一下这将会是怎样的结果。
+- 2:06我们现在知道什么？
+- 2:07嗯，我们知道 v-zero 是一个余弦波
+- 2:10 在某个相位角上。
+- 2:12现在，我们对其中的其他电压了解多少？
+- 2:16 在交流分析中，我们要做的是寻找
+- 2:18 强制响应。
+- 2:20所以，我们已经让自然响应消失了。
+- 2:23 这个电路中没有开关、
+- 2:24 我们假设这个电路一直
+- 2:26 永远处于这种状态。
+- 2：28所以，自然反应、
+- 2:33自然反应已经消失了、
+- 2:39 这意味着我们要寻找强制反应。
+- 2：47所以，我们知道，我们有三种电压。
+- 2:49 我们有三种电压。
+- 2:56 我们知道所有这些电压
+- 2:58 会与输入电压相似。
+- 3:01所以，它们都是正弦波。
+- 3:09这里的所有电压都是交流正弦波
+- 3:12 因为强迫函数是正弦波。
+- 3:16我们还知道，它们都会
+- 3:20 有相同的欧米茄。
+- 3:25 这个电压和这个电压的频率、
+- 3:27 这个电压的频率和这个电压的频率都是一样的
+- 3:31我要在这里来个大爆炸
+- 3:34这真的很重要。
+- 3:35 在交流电路中，当你驱动它时
+- 3:37 从一个频率开始，系统中的其他频率
+- 3:41 都是相同的频率。
+- 3:44 这是一个线性系统和线性元件。
+- 3:47 我们所做的所有分析、
+- 3:49 线性元件不会产生新的频率。
+- 3:52它们都是Ω。
+- 3:55现在，我们还知道一些其他的东西。
+- 3:57这里会涉及到相移。
+- 3:58记住，当我们做阻抗时、
+- 4:00我们乘以j，然后旋转90度。
+- 4:04所以，我们会有不同的、
+- 4:09 不同的 phi。
+- 4:13另外，我们还要做一件事、
+- 4:15是我们会有不同的...
+- 4:20正弦波的振幅会不同
+- 4:22V-1的振幅可能不同
+- 4:25than the amplitude of v-two.
+- 4:27所以，这就是交流解的样子。
+- 4:29让我们继续往前走。
+- 4:31我现在要做的是把
+- 4:33 这个输入电压加上我们知道的这些东西、
+- 4:36 我们来看看基尔霍夫电压定律是如何工作的
+- 4:39 在频域中、
+- 4:40当我们使用这些转换后的Z，这些阻抗时。
+- 4:45好的，我们继续。
+- 4:49好的，让我们在时域中再多做一点。
+- 4:56 我们再写出 KVL 方程。
+- 4:58所以，KVL方程是v-naught、
+- 5:02余弦Ω-t加phi-零
+- 5:08加上v-one，就是v-one的振幅、
+- 5:13余弦Ω-t
+- 5:16 加上一些不同的相位角。
+- 5:19 我们还不知道那是什么。
+- 5:21 加上 v-2，v-2 的振幅、
+- 5:27 余弦欧米茄-t
+- 5:30 加 phi-three
+- 5:34plus v-三，v-三的振幅、
+- 5:39cosine omega-t plus phi-three
+- 5:44 都等于零。
+- 5:47 而Ω，所有这些Ω，都是相同的精确数字、
+- 5:50 相同的弧度频率。
+- 5:52 所有的 Phi 都不一样、
+- 5:53 所有的V-2和V-3都不一样。
+- 5:57好了，现在我要切换
+- 5:58 换成复指数符号。
+- 6:09 我们只是在这里改变符号。
+- 6:11 我们可以在这里表示这个数字
+- 6:13 因为这是实数部分
+- 6:16的V值，V值为零、
+- 6:20e 到 j
+- 6:22 欧米茄-t
+- 6：25加上Phi-0。
+- 6:30这和这个完全一样。
+- 6:31 这个余弦可以表示为
+- 6:33 作为复指数的实部
+- 6:37 用这个频率。
+- 6:40 剩下的我都可以写出来。
+- 6:47V-one, e to the j
+- 6:51omega-t 加上 phi-one
+- 6:56 加上
+- 7:00V-2, e 到 j-omega-t、
+- 7:06 加 phi-2，括号、
+- 7:11+V-3
+- 7:15 回环
+- 7:19 的实际部分
+- 7:23v-3
+- 7:25e 到 j-omega-t
+- 7:29 加 PHI 三
+- 7:35 等于零。
+- 7:41 好了，接下来我可以做一件事、
+- 7:43 我们可以开始分析这个因素。
+- 7:44 我们可以开始把它拆开一点。
+- 7:47 所以，我知道如果我有了表达式、
+- 7:49 如果我有表达式、
+- 7:50e 到 j-omega-t
+- 7:56 加 phi，只是一般情况、
+- 7:58 我可以通过指数特性改变它
+- 8:01 把 e 改成 j-phi，把括号放进去、
+- 8:06 就像这样、
+- 8:07 e 到 j-phi 乘以 e 到 j-omega-t。
+- 8:12所以，我要在所有这四个数字上进行这种变换
+- 8:14这里的所有四个术语。
+- 8:16我们继续。
+- 8:22所以，我们还在努力。
+- 8:23我们开始真正的部分...
+- 8:25现在我要拆开Ω-t
+- 8:28和Phi-零，在这里、
+- 8:30我得到V-Naught
+- 8: 33e到J -Phi -Zero
+- 8: 38e到J -OMEGA -T
+- 8:41 加上实际部分
+- 8:46v-one、
+- 8:47e 至 j-phi-one、
+- 8:51e 到 j-omega-t、
+- 8:55 加上实部，V-2、
+- 8:59e 到 j-phi-two、
+- 9:04times e 到 j-omega-t、
+- 9:09 加实部
+- 9:14 v-三，e 到 j-phi-三、
+- 9:19e 至 j-omega-t
+- 9:23 全部等于零。
+- 9:28 这里有一个很好的简化、
+- 9:31 我们去掉这个共项。
+- 9:32 我们要去掉这个公共项
+- 9:35整个方程。
+- 9:38 结果如何？
+- 9:39 我们得出...
+- 9:42结果就是
+- 9:46v-zero、
+- 9:48e 到 j-phi-zero、
+- 9:52 加上 v-one
+- 9:57e 到 j-phi-one
+- 10:00 加 v-二，e 到 j-phi-二。
+- 10:06看这个规律。
+- 10:13 所有次数
+- 10:18e 到 j-omega-t
+- 10:21 合上，等于零。
+- 10:24现在，我们越来越接近了。
+- 10:25我们正在接近。
+- 10:27好了，如何让这个等式为零？
+- 10:30e到j-omega-t永远为零吗？
+- 10:34那么，e 到 j-omega-t
+- 10:38 e到j-omega-t是一个旋转向量。
+- 10:41 它永远不会为零。
+- 10:45所以，这是不可能的。
+- 10:46那么，我们该如何得到它呢？
+- 10:47好吧，这意味着另一个项，在这里、
+- 10:49 必须等于零。
+- 10:52那么，我该怎么做呢？
+- 10:53 我要再做一个符号上的改变。
+- 10:56 这种数字，在这里、
+- 10:59 称为相量。
+- 11:04 它是一些振幅乘以 e
+- 11:07 到一个复数角度、
+- 11:09 这里没有时间。
+- 11:11没有时间。
+- 11:12时间只在这里。
+- 11:14时间只在这里出现、
+- 11:17这里是欧米茄出现的唯一地方
+- 11:19 这些只是相位角、
+- 11:21这些是起始相角。
+- 11:23所以，我的相位符号将是...
+- 11:27这将被称为...
+- 11:28 我把它叫做V-零，然后在它上面划一条线
+- 11:31 表示这是一个复矢量、
+- 11:33 这就等于
+- 11:36v-naught
+- 11:38e 到j-phi-naught。
+- 11:42所以，当你看到矢量符号和aught、
+- 11:46 就是这样。
+- 11:56 我们终于可以写作了、
+- 的真正部分
+- 12:04 V
+- 12: 05+ V一相位
+- 12: 10加V-2相位
+- 12:13加V-3相位
+- 12:18 等于零。
+- 12:21所以，这就是频域中的KVL。
+- 12:34幸运的是，它看起来...
+- 12:36 它看起来就像我们在直流分析中记得的 KVL
+- 12:39 在直流分析中。
+- 12:41 环路上的电压之和
+- 12:43 等于零，在这种情况下，
+- 12:45 环路相位之和
+- 12:48 等于零。
+- 12:51 让我们试着用图形来解释一下。
+- 13:01这是我们的实平面和虚平面，复平面、
+- 13:05 它说的是这些相位...
+- 13:09比方说，v-naught、
+- 13:10 假设 v-naught 是这样的。
+- 13:13这是我们的电压源。
+- 13:15 这表示一个矢量在旋转
+- 13:17 在频率欧米茄、
+- 13:19 它的偏移相位就是这个角度。
+- 13:24所以，这是phi-0。
+- 13:29这些其他分量都会有
+- 13:31 交流电压，正弦电压、
+- 13:34 有一定的相位和幅度、
+- 13:36 KVL告诉我们：
+- 13:38 它对这些电压施加了限制。
+- 13:42所以，我们这里有三个阻抗。
+- 13:43 我不知道它们是什么
+- 13:44 因为我们没有填写电路、
+- 13:46但每个阻抗都会有一些矢量
+- 13:48 但每一个都会有一些相关的矢量。
+- 13:50比方说，这是载体一、
+- 13:52 假设这是向量二、
+- 13:58它说的是向量三、
+- 14:00 当我们完成时
+- 14:02 向量三的总和必须归零。
+- 14:09所以，这种约束条件
+- 14:10电压会在一个圆圈中循环、
+- 14:14 必须归零、
+- 14:15 这就是 KVL 和频域。
+- 14:18就是这个意思。
+- 14:20所以，我们已经证明了KVL在频域中的作用。
+- 14:23 我可以做类似的分析
+- 14:24 并证明 KCL，即基尔霍夫电流定律、
+- 14:27 在频域也同样有效、
+- 14:29 这就意味着，太棒了、
+- 14:32 我们开发的所有工具
+- 14:34 用于电阻电路的直流分析、
+- 14:37 所有这些工具同样适用于交流分析。
+- 14:41感谢您的收听。
+
+
+
+
+
+
+-  0:00- [Voiceover] As we do AC analysis,
+- 0:01and we do operations in the frequency domain,
+- 0:04we need to bring along Kirchhoff's Laws
+- 0:06so that we can make sense of circuits.
+- 0:08So, in this video, I'm gonna basically show
+- 0:11that Kirchhoff's Voltage Law works
+- 0:13in the frequency domain.
+- 0:15And what I have here is a circuit
+- 0:16that has some voltage source, an AC voltage source,
+- 0:19let's put AC on it like that,
+- 0:22and it has three impedances connected.
+- 0:25Inside each of these boxes is an R, an L, or a C,
+- 0:29and we're not gonna show which
+- 0:30because we're gonna carry these along
+- 0:32just as general impedances.
+- 0:35So, in AC analysis, the voltages are all cosine waves.
+- 0:39So, v-in equals
+- 0:44some voltage amplitude times cos
+- 0:48of omega-t plus
+- 0:52we'll call it phi-zero,
+- 0:56some starting phase shift.
+- 0:58So, this is our input signal.
+- 0:59Now let me label the voltages on everything else.
+- 1:01We'll call this v-one,
+- 1:04and I'm gonna label it this way, here,
+- 1:07and this will be v-two,
+- 1:10and I'll put it upside-down like that, the plus,
+- 1:13and this will be v-three,
+- 1:15minus, plus, v-three.
+- 1:20And, oh, now that I have v-one here,
+- 1:23let's change the name of this to v-zero
+- 1:25just so I don't get i and one mixed up.
+- 1:27So, we'll change that to zero.
+- 1:29So, the input source is v-zero,
+- 1:31and that's that voltage.
+- 1:34Now, when we apply KVL to this, Kirchhoff's Voltage Law,
+- 1:38what it says is if we start in a corner,
+- 1:40if we start somewhere in the circuit,
+- 1:41let's start right here,
+- 1:42and go around the loop, it should add up to
+- 1:46zero volts.
+- 1:46That's KVL for normal DC circuits,
+- 1:49and we're gonna see how that applies to AC circuits, here.
+- 1:53So in time domain, we say that v-zero
+- 1:56plus v-one plus v-two
+- 2:00plus v-three equals zero.
+- 2:04So, let's talk about how this is gonna turn out.
+- 2:06Well, what do we know right now?
+- 2:07Well, we know that v-zero is a cosine wave
+- 2:10at some phase angle.
+- 2:12Now, what do we know about the other voltages in this?
+- 2:16In AC analysis, what we're doing is we're looking
+- 2:18for a forced response.
+- 2:20So, we've let the natural responses to die out.
+- 2:23There's no switch in this circuit,
+- 2:24and we just assume this circuit has been
+- 2:26in this state forever.
+- 2:28So, the natural response,
+- 2:33the natural response has died out,
+- 2:39and that means we're looking for the forced response.
+- 2:47So, what we know is, we have three voltages.
+- 2:49We have three voltages.
+- 2:56We know that all these voltages
+- 2:58are gonna resemble the input voltage.
+- 3:01So, they're all gonna be sinusoids.
+- 3:09All the voltages here are gonna be AC sinusoids
+- 3:12because the forcing function is a sinusoid.
+- 3:16The other thing we know, they're gonna all
+- 3:20have the same omega.
+- 3:25The frequency of this voltage, and this voltage,
+- 3:27and this voltage is gonna be identical to omega, here.
+- 3:31I'm gonna put a big bang there.
+- 3:34That's really important.
+- 3:35In an AC circuit, when you're driving it
+- 3:37from a frequency, every other frequency in the system
+- 3:41is the same frequency.
+- 3:44This is a linear system and linear components.
+- 3:47All the analysis we've done,
+- 3:49linear components don't create new frequencies.
+- 3:52They're all omega.
+- 3:55Now, some other things we know.
+- 3:57There's gonna be phase shifts involved here.
+- 3:58Remember when we do impedance,
+- 4:00we are multiplying by j and rotating things by 90 degrees.
+- 4:04So, we're gonna have different,
+- 4:09different phi, for each one.
+- 4:13And, the other thing we're gonna have,
+- 4:15is we're gonna have different...
+- 4:20The amplitude of our sinusoids are gonna be different.
+- 4:22The amplitude of v-one could be different
+- 4:25than the amplitude of v-two.
+- 4:27So, this is what an AC solution is going to look like.
+- 4:29Let's move on a little farther here.
+- 4:31What I'm gonna do now is we're gonna take
+- 4:33this input voltage plus these things that we know, here,
+- 4:36and we're gonna see how Kirchhoff's Voltage Law works
+- 4:39in the frequency domain,
+- 4:40when we worked with these transformed z's, these impedances.
+- 4:45Okay, let's go ahead and do that.
+- 4:49Okay, let's do a little more in the time domain.
+- 4:56And we'll write out our KVL equation again.
+- 4:58So, the KVL equation was v-naught,
+- 5:02cosine omega-t plus phi-zero
+- 5:08plus v-one, that's the amplitude of v-one,
+- 5:13cosine omega-t
+- 5:16plus some different phase angle.
+- 5:19We don't know what that is yet.
+- 5:21Plus, v-two, amplitude of v-two,
+- 5:27cosine omega-t
+- 5:30plus phi-three
+- 5:34plus v-three, the amplitude of v-three,
+- 5:39cosine omega-t plus phi-three
+- 5:44all equals zero.
+- 5:47And omega, all these omegas, are the same exact number,
+- 5:50the same radian frequency.
+- 5:52All the phi's are different,
+- 5:53and all the v-twos and v-threes are different.
+- 5:57Okay, now I'm gonna switch
+- 5:58to complex exponential notation.
+- 6:09We just changing notation here.
+- 6:11We can represent this number here
+- 6:13as this is the real part
+- 6:16of v-naught, v-zero,
+- 6:20e to the j
+- 6:22times omega-t
+- 6:25plus phi-zero.
+- 6:30That's exactly the same as this.
+- 6:31This cosine can be represented
+- 6:33as the real part of a complex exponential
+- 6:37with this frequency.
+- 6:40And, I can write out the rest of these.
+- 6:47V-one, e to the j
+- 6:51omega-t plus phi-one
+- 6:56plus the real part of
+- 7:00v-two, e to the j-omega-t,
+- 7:06plus phi-two, parentheses,
+- 7:11plus v-three,
+- 7:15oops,
+- 7:19real part of
+- 7:23v-three,
+- 7:25e to the j-omega-t
+- 7:29plus phi-three
+- 7:35equals zero.
+- 7:41All right, now, one thing I can do next,
+- 7:43we can start to factor this.
+- 7:44We can start to take this apart a little bit.
+- 7:47So, I know that if I have the expression,
+- 7:49if I have the expression,
+- 7:50e to the j-omega-t
+- 7:56plus phi, just in general,
+- 7:58I can change that just by exponent properties
+- 8:01to e to the j-phi, let's get the parentheses in there,
+- 8:06like that,
+- 8:07e to the j-phi times e to the j-omega-t.
+- 8:12So, I'm gonna do this transformation
+- 8:14on all four of these terms here.
+- 8:16Let's keep going.
+- 8:22So, we're still working on this.
+- 8:23Let's go real part...
+- 8:25Now I'm gonna take apart omega-t
+- 8:28and phi-zero, here,
+- 8:30and I get v-naught
+- 8:33e to the j-phi-zero,
+- 8:38e to the j-omega-t,
+- 8:41plus real part,
+- 8:46v-one,
+- 8:47e to the j-phi-one,
+- 8:51e to the j-omega-t,
+- 8:55plus real part, v-two,
+- 8:59e to the j-phi-two,
+- 9:04times e to the j-omega-t,
+- 9:09plus real part
+- 9:14v-three, e to the j-phi-three,
+- 9:19e to the j-omega-t
+- 9:23all equals zero.
+- 9:28And here's a nice simplification,
+- 9:31we take out this common term.
+- 9:32We're gonna factor out this common term
+- 9:35across the entire equation.
+- 9:38And what do we come up with?
+- 9:39We come up with...
+- 9:42The result is the real part of
+- 9:46v-zero,
+- 9:48e to the j-phi-zero,
+- 9:52plus v-one
+- 9:57e to the j-phi-one
+- 10:00plus v-two, e to the j-phi-two.
+- 10:06See the pattern.
+- 10:13All that times
+- 10:18e to the j-omega-t.
+- 10:21And we close that and that equals zero.
+- 10:24Now, we're getting close.
+- 10:25We're getting close.
+- 10:27All right, how do we make this equation zero?
+- 10:30Does e to the j-omega-t ever become zero?
+- 10:34Well, e to the j-omega-t
+- 10:38e to the j-omega-t is a rotating vector.
+- 10:41It's never zero.
+- 10:45So, that's not gonna do it.
+- 10:46So, how do we get it?
+- 10:47Well, that means that this other term, here,
+- 10:49has to be equal to zero.
+- 10:52So, how am I gonna do that?
+- 10:53I'm gonna make one more notational change.
+- 10:56This kind of a number, here,
+- 10:59is called a phasor.
+- 11:04It's some amplitude times e
+- 11:07to a complex one angle,
+- 11:09and there's no time up here.
+- 11:11There's no time.
+- 11:12The time is only over here.
+- 11:14This is the only place that time appears in the equation,
+- 11:17and this is the only place that omega appears
+- 11:19in the equation, and these are just phase angles,
+- 11:21these are starting phase angles.
+- 11:23So, my notation for a phasor is gonna be...
+- 11:27This gonna be called...
+- 11:28I'm gonna call it v-zero and I'm gonna put a line over it
+- 11:31to indicate that it's a complex vector,
+- 11:33and that equals
+- 11:36v-naught,
+- 11:38e to the j-phi-naught.
+- 11:42So, when you see the vector symbol and the aught,
+- 11:46that's that right there.
+- 11:56And we can write now, finally,
+- 12:00the real part of
+- 12:04V-naught
+- 12:05plus V-one phasor
+- 12:10plus V-two phasor
+- 12:13plus V-three phasor
+- 12:18equals zero.
+- 12:21So, this is KVL in the frequency domain.
+- 12:34And fortunately, it looks like...
+- 12:36It looks exactly like KVL that we remember
+- 12:39from our DC analysis.
+- 12:41The sum of the voltages, going around the loop,
+- 12:43is equal to zero, and, in this case,
+- 12:45it's the sum of the phasors going around the loop
+- 12:48is equal to zero.
+- 12:51Let's try to give a graphical interpretation to this.
+- 13:01Here's our real and imaginary plane, the complex plane,
+- 13:05and what it says is that these phasors...
+- 13:09So, let's say that v-naught,
+- 13:10let's say that v-naught look like that.
+- 13:13That was our voltage source, okay.
+- 13:15This represents a vector spinning around
+- 13:17at the frequency, omega,
+- 13:19and it's offset phase is this angle right here.
+- 13:24So, this is phi-zero.
+- 13:29Each of these other components is gonna have
+- 13:31an AC voltage, a sinusoidal voltage on it,
+- 13:34with some phase and some magnitude,
+- 13:36and what KVL tells us,
+- 13:38it puts a constraint on what those voltages can be.
+- 13:42So, we have three impedances here.
+- 13:43I don't know what they are
+- 13:44because we didn't fill in the circuit,
+- 13:46but there's gonna be some vector
+- 13:48associated with each one of those.
+- 13:50Let's say that's vector-one,
+- 13:52and let's say that this is vector-two,
+- 13:58and what it says is that vector-three,
+- 14:00by the time we get done,
+- 14:02vector-three has to sum back to zero.
+- 14:09So, this kind of a constraint
+- 14:10where voltage is going around in a circle,
+- 14:14have to come back to zero,
+- 14:15that's KVL and the frequency domain.
+- 14:18That's what that means.
+- 14:20So, we've shown that KVL works in the frequency domain.
+- 14:23I could do a similar analysis
+- 14:24and show that KCL, Kirchhoff's Current Law,
+- 14:27also works in the frequency domain,
+- 14:29and that means, fantastically,
+- 14:32that all the tools that we developed
+- 14:34for DC analysis of just resistor circuits,
+- 14:37all those tools work for AC analysis as well.
+- 14:41Thanks for listening.

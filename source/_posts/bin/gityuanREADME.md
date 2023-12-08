@@ -1,6 +1,7 @@
 ---
 title: gityuan
 author: gityuan
+hide: true
 tags:
   - 转载
 categories:

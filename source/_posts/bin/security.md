@@ -1,6 +1,7 @@
 ---
 title: security
 author: gsyx
+hide: true
 categories:
   - Bin
 tags:
