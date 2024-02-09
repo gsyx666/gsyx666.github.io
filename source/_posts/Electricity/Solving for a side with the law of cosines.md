@@ -1,0 +1,202 @@
+---
+title: 用余弦定则求解边长
+excerpt: 用余弦定则求解边长
+author: Sal Khan
+tags:
+  - Electricity
+categories:
+  - Electricity
+date: 2023-12-14 20:50:01 
+---
+
+https://en.khanacademy.org/math/precalculus/x9e81a4f98389efdf:trig/x9e81a4f98389efdf:law-of-cosines/v/law-of-cosines-example
+
+
+- 当前文字记录片段：0:00- [画外音] 假设我有一个三角形、
+- 0:03 这一边的长度是 b、
+- 0:07 等于 12、
+- 0:1012 个单位，或者我们使用的任何测量单位。
+- 0:14比方说，这条边就在这里、
+- 0:17这边的长度是c、
+- 0:20 而长度恰好等于 9。
+- 0:23 我们要算出这条边的长度
+- 0:30 这一边的长度是 a、
+- 0:33 所以我们需要算出 a 等于多少。
+- 0:36现在，除非我们还知道
+- 0:38 除非我们还知道这里的角度、
+- 0:40因为你可以把蓝边
+- 0:44 和绿色的一边靠近、
+- 0:45 然后 a 就会很小、
+- 0：46 但是如果这个角度大于 a，那么 a 就会更大。
+- 0:49所以我们还需要知道这个角度是多少。
+- 0:51比方说，我们知道这个角、
+- 0:53 我们称其为θ、
+- 0:55 等于 87 度。
+- 0:59那么我们如何计算 a 呢？
+
+
+- 1:01 我鼓励大家暂停一下，自己试一试。
+- 1:04幸运的是，我们有余弦定律、
+- 1:07 如果我们知道了两条边和两条边之间的夹角，就有办法确定第三条边了。
+- 1:10 如果我们知道两条边和它们之间的夹角。
+- 1:13 余弦定律告诉我们，a 的平方将
+- 1:18 等于 b 的平方加上 c 的平方。
+- 1:23 现在，如果我们面对的是一个纯直角三角形、
+- 1:25 如果是 90 度，那么 a 就是斜边、
+- 1:28 然后我们就完成了，这就是勾股定理。
+- 1:30但是余弦定律给了我们一个调整的方法
+- 1:32 对勾股定理进行了调整，因此我们可以对任何任意角
+- 1:34 对于任意角度都可以这样做。
+- 1:36所以余弦定理告诉我们a的平方将
+- 1:38 是 b 的平方加上 c 的平方、
+- 1:41 减去 bc 的两倍、
+- 1:48乘以θ的余弦。
+- 1:55这个θ就是向
+- 1:59 到我们关心的那一面。
+- 2:02所以我们可以使用θ，因为我们正在寻找a。
+- 2:05 如果他们给了我们另一个角度，就在这里、
+- 2:06 那就不是我们要找的角度了。
+
+- 2:08 我们关心的是打开的角度
+- 2:10 进入我们要求解的边。
+- 2:13现在我们来求解 a、
+- 2:14 因为我们知道 bc 和 theta 的实际值。
+- 2:18所以 a 的平方等于 b 的平方...
+- 2:24 所以等于144、
+- 2:27 加上 c 的平方，也就是 81，所以再加上 81、
+- 2:32 减去 2 乘以 b 乘以 c。
+- 2:35所以是减2，我就写出来。
+- 2:37减2乘以12再乘以9、
+- 2:45乘以 87 度的余弦。
+- 2:52这等于、
+- 2:56 让我们看看，这是 225 减、
+- 3:00让我们来看看，12乘以9等于108。
+- 3:03108乘以2等于216。
+- 3:05减去216乘以87度的余弦。
+- 3:12现在，让我们拿出计算器
+- 3:13 以求近似值。
+- 3:15 记住，这是平方。
+
+- 3:16实际上，在我拿出计算器之前、
+- 3:18 先求解 a。
+- 3:19所以a就是这个的平方根。
+- 3:21所以a等于平方根...
+- 3:26所有这些我都可以复制粘贴。
+- 3:29 它等于这个的平方根。
+- 3:31所以让我复制并粘贴它。
+- 3:34所以a等于它的平方根、
+- 3:36 现在我们可以用计算器算出来。
+- 3:39让我把这个基数增大一点、
+- 3:40 这样我们就能确保取的是平方根了。
+- 3:42 整件事的平方根。
+- 3:43让我拿出计算器。
+- 3:45 所以我想找出 220 的平方根。
+- 3:49实际上，在我计算之前，让我先确定我是在
+- 3:50 在度数模式，我在度数模式。
+- 3:53因为我们正在用度来计算三角函数。
+- 3:58所以没问题，让我退出。
+- 3:59所以是 225 减 216、
+- 4:04 times cosine
+- 4:08 是 87 度的余弦
+- 4:10不是88度，是87度。
+- 4:13现在该我们击鼓了。
+- 4:16 这将是 14.61、
+- 4：20或14.618。
+- 4:22如果说，我们想四舍五入到最接近的十分之一、
+- 4:24只是为了得到一个近似值、
+- 4:25 約為 14.6。
+- 4:28因此，a 大约等于
+- 4:31到14.6，不管我们用的是什么单位。
+- 
+
+- •Current transcript segment:0:00- [Voiceover] Let's say that I've got a triangle,
+- 0:03and this side has length b,
+- 0:07which is equal to 12,
+- 0:1012 units or whatever units of measurement we're using.
+- 0:14Let's say that this side right over here,
+- 0:17this side right over here, has length c,
+- 0:20and that happens to be equal to nine.
+- 0:23And that we want to figure out the length
+- 0:30of this side, and this side has length a,
+- 0:33so we need to figure out what a is going to be equal to.
+- 0:36Now, we won't be able to figure this out
+- 0:38unless we also know the angle here,
+- 0:40because you could bring the blue side
+- 0:44and the green side close together,
+- 0:45and then a would be small,
+- 0:46but if this angle was larger than a would be larger.
+- 0:49So we need to know what this angle is as well.
+- 0:51So let's say that we know that this angle,
+- 0:53which we will call theta,
+- 0:55is equal to 87 degrees.
+- 0:59So how can we figure out a?
+- 1:01I encourage you to pause this and try this on your own.
+- 1:04Well, lucky for us, we have the Law of Cosines,
+- 1:07which gives us a way for determining a third side
+- 1:10if we know two of the sides and the angle between them.
+- 1:13The Law of Cosines tells us that a squared is going
+- 1:18to be equal b squared plus c squared.
+- 1:23Now, if we were dealing with a pure right triangle,
+- 1:25if this was 90 degrees, then a would be the hypotenuse,
+- 1:28and we would be done, this would be the Pythagorean Theorem.
+- 1:30But the Law of Cosines gives us an adjustment
+- 1:32to the Pythagorean Theorem, so that we can do this
+- 1:34for any arbitrary angle.
+- 1:36So Law of Cosines tell us a squared is going
+- 1:38to be b squared plus c squared,
+- 1:41minus two times bc,
+- 1:48times the cosine of theta.
+- 1:55And this theta is the angle that opens up
+- 1:59to the side that we care about.
+- 2:02So we can use theta because we're looking for a.
+- 2:05If they gave us another angle right over here,
+- 2:06that's not the angle that we would use.
+- 2:08We care about the angle that opens up
+- 2:10into the side that we are going to solve for.
+- 2:13So now let's solve for a,
+- 2:14because we know what bc and theta actually are.
+- 2:18So a squared is going to be equal to b squared...
+- 2:24so it's going to be equal to 144,
+- 2:27plus c squared which is 81, so plus 81,
+- 2:32minus two times b times c.
+- 2:35So, it's minus two, I'll just write it out.
+- 2:37Minus two times 12 times nine,
+- 2:45times the cosine of 87 degrees.
+- 2:52And this is going to be equal to,
+- 2:56let's see, this is 225 minus,
+- 3:00let's see, 12 times nine is 108.
+- 3:03108 times two is 216.
+- 3:05Minus 216 times the cosine of 87 degrees.
+- 3:12Now, let's get our calculator out
+- 3:13in order to approximate this.
+- 3:15And remember, this is a squared.
+- 3:16Actually, before I get my calculator out,
+- 3:18let's just solve for a.
+- 3:19So a is just going to be the square root of this.
+- 3:21So a is going to be equal to the square root...
+- 3:26of all of this business, which I can just copy and paste.
+- 3:29It's going to be equal to the square root of that.
+- 3:31So let me copy and paste it.
+- 3:34So a is going to be equal to the square root of that,
+- 3:36which we can now use the calculator to figure out.
+- 3:39Let me increase this radical a little bit,
+- 3:40so that we make sure we're taking the square root
+- 3:42of this whole thing.
+- 3:43So let me get my calculator out.
+- 3:45So I want to find that square root of 220.
+- 3:49Actually, before I do that, let me just make sure I'm
+- 3:50in degree mode, and I am in degree mode.
+- 3:53Because we're evaluating a trig function in degrees here.
+- 3:58So that's fine, so let me exit.
+- 3:59So it's going to be 225 minus 216,
+- 4:04times cosine
+- 4:08of 87 degrees.
+- 4:10Not 88 degrees, 87 degrees.
+- 4:13And we deserve a drumroll now.
+- 4:16This is going to be 14.61,
+- 4:20or 14.618.
+- 4:22If, say, we wanted to round to the nearest tenth,
+- 4:24just to get an approximation,
+- 4:25it would be approximately 14.6.
+- 4:28So a is approximately equal
+- 4:31to 14.6, whatever units we're using long.

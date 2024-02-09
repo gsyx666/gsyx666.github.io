@@ -1,0 +1,532 @@
+---
+title: 使用正式定义求 x² 在任意点的导数
+excerpt: 使用正式定义求 x² 在任意点的导数
+author: Sal Khan
+tags:
+  - Electricity
+categories:
+  - Electricity
+date: 2023-12-14 20:50:01 
+---
+
+https://www.khanacademy.org/math/ap-calculus-ab/ab-differentiation-1-new/ab-2-2/v/calculus-derivatives-2-5-new-hd-version
+
+
+
+- 当前文字记录片段：0:00 在上一段视频中，我们发现了曲线上某一点的斜率
+- 0:04 曲线 y 等于 x 的平方。
+- 0:07但是让我们看看能否将其推广并得出
+- 0:09 有一个公式可以求出曲线任意一点的斜率 y 等于 x 的平方。
+- 0:12曲线 y 等于 x 的平方。
+- 0:15让我在这里重画一下我的函数。
+- 0:18 有一张漂亮的图永远不会错。
+- 0:21这是我的 y 轴。
+- 0:24这是我的 x 轴。
+- 0:28 我的 X 轴。
+- 0:29我来画我的曲线。
+- 0:30 看起来是这样的。
+- 0:32 你已经看过多次了。
+- 0:34 这就是 y 等于 x 的平方。
+- 0:37所以我们现在就来做个概括。
+- 0:39记住，如果我们想找到--让我写出
+- 0:42 导数的定义。
+- 0:44所以，如果我们这里有一个点，我们称之为 x。
+- 0:48所以我们要非常概括。
+- 0:49 我们要找到 x 点的斜率。
+- 0:52 我们想找到一个函数，你给我一个 x
+- 0:55 我就会告诉你该点的斜率。
+- 0:57 我们把这个函数叫做 x 的质数 f。
+- 0:59这将是 f 对 x 的导数。
+- 1:06但它所做的就是，你看，f of x，你给--这是一个函数
+- 1:09 你给它一个 x，它就会告诉你这个值。
+- 1:12 然后我们在这里画出曲线。
+- 1:14对于 x 的 f，你给出了相同的 x，但它不会告诉你
+- 1:19 它不会告诉你曲线的值。
+- 1:21 它不会说，哦，这就是你的 x 的 f。
+- 1:22 它会告诉你曲线在该点的斜率值。
+- 1:24 那一点的曲线斜率。
+- 1:26所以，如果你把 x 的 f 放进那个函数，它应该会告诉你
+- 1:28 你就会知道，哦，在那一点的斜率等于--你知道的、
+- 1:31 如果你把 3 放到那里，你会说，哦，那里的斜率
+- 1:33 等于 6。
+- 1:34 我们在上一个例子中看到过。
+- 1:35所以这就是我们要做的。
+- 1:37 我们在上一个--我想是两个视频之前、
+- 1:40 我们定义了 x 的质数 f 等于 -- 只是 --
+- 1:47 我这样写吧
+- 1:48 它是 x 与某个点之间的正割直线的斜率。
+- 1:51 离 x 稍远一点的点。
+- 1:53所以，正割直线的斜率就是 y 的变化。
+- 1:56所以它是离x稍远一点的点的y值。
+- 2:00 距离 x 稍远的点的 y 值。
+- 2:02所以x的f加上h减去x处的y值，对吗？
+- 2:07因为就在这里。
+- 2:08这是 x 的 f。
+- 2:11所以减去 x 的 f。
+- 2:13所有这些都超过了 x 的变化。
+- 2:15所以如果这里是 x 加 h，那么 x 的变化
+- 2:19是 x 加 h 減 x。
+- 2:21或者这里的距离只是h。
+- 2:23x的变化等于h。
+- 2:26所以这就是正割直线的斜率。
+- 2:29 两点之间的斜率。
+- 2:31 然后我们说，嘿，我们可以求出切线的斜率
+- 2:33 如果我们把它的极限取为
+- 2:36 当h接近0时
+- 2:40 然后我们就能找到切线的斜率了。
+- 2:42 现在，让我们将这一思想应用于一个特殊的函数，f 的
+- 2:48x 等于 x 的平方。
+- 2:49 或者 y 等于 x 的平方。
+- 2:52所以在这里，我们可以把这个点--我们可以把这个
+- 2:55 是點 x - x 的平方。
+- 2:58所以x的f等于x的平方。
+- 3:01然后这个点--让我用
+- 3: 05 更鲜艳的颜色
+- 3:07这是点 x 加 h -- 就是这里的这个点。
+- 3:11 再往下一点。
+- 3:13 然后是 x 加 h 的平方。
+- 3:19 你知道，在上一个视频中，我们是这样做的
+- 3:20 对于一个特定的 x。
+- 3:21 我们是针对 3 做的。
+- 3:22 但现在我需要一个通用公式。
+- 3:24 你给我任何一个 x，我就不用像在
+- 3:26上一段视频中的方法。
+- 3:28 我将得到一个通用函数。
+- 3:29 你给我 7，我会告诉你 7 时的斜率是多少。
+- 3:31 你给我负 3，我会告诉你负 3 时的斜率是多少。
+- 3:33 负 3 时的斜率是多少。
+- 3:34你给我 100,000，我会告诉你
+- 3:36 100,000 时的斜率是多少。
+- 3:37所以，让我们在这里应用它。
+- 3:39所以我们要找到 y 的变化超过 x 的变化。
+- 3:45首先，y 的变化就是这个人的 y 值、
+- 3:51 也就是 x 加 h 的平方。
+- 3:57这就是这个人的 y 值。
+- 3:59这里就是这个。
+- 4:00这是 x 加 h 的平方。
+- 4:02我只是把x加h，进行了评估，然后把它平方，然后
+- 4:06 这就是它在曲线上的点。
+- 4:07所以是 x 加 h 的平方。
+- 4:08所以就在这里。
+- 4:10 这个值是多少？
+- 4:12这里x的f等于 我知道越来越乱了
+- 4:15等于x的平方
+- 4:16如果求出 x 值，对函数进行求值
+- 4:18 在这一点上，你会得到 x 的平方。
+- 4:20所以它等于减去 x 的平方。
+- 4:23 这就是 y 的变化。
+- 4:24这就是这里的距离。
+- 4:29 再联系一下导数的定义、
+- 4:33 这个蓝色的东西就相当于这个
+- 4:35 这里的东西。
+- 4:36 我们刚刚评估了我们的函数。
+- 4:39 我们的函数是 x 的 f 等于 x 的平方。
+- 4:42 我们刚刚求出了当 x 等于 x 加 h 时的值。
+- 4:46所以如果你要平方，如果我在这里放一个a、
+- 4:48它就是一个平方
+- 4:49如果我在这里放一个苹果，它就会变成苹果的平方。
+- 4:51如果我在这里放一个 x 加 h，它就会是
+- 4:52 是 x 加 h 的平方。
+- 4:54所以这就是那个东西。
+- 4:56然后，这里的这个东西就是被求值的函数
+- 5:00在问题点。
+- 5:01 就在这里
+- 5:02所以这就是 y 的变化。
+- 5:05再除以 x 的变化。
+- 5:07我们的x变化--如果这是x加h，而这只是x，那么我们的
+- 5:10 x的变化就是h。
+- 5:13所以这就是这个词的来源。
+- 5:14所以这只是这两点之间的斜率。
+- 5:17这只是这两点之间的斜率。
+- 5:19当然，我们要找到--这一点上的极限
+- 5:22越来越接近这一点，而这一点越来越
+- 5:25越来越接近这一点。
+- 5:26所以这变成了一条切线。
+- 5:29所以我们要取 h 接近 0 时的极限，而
+- 5:34 这就是 x 的 f 素数。
+- 5:37这是完全相同的定义，而不是
+- 5:39 而不是笼统地说，对于任何函数，我们都知道
+- 5:42 这个函数是什么。
+- 5:43 是 x 的 f 等于 x 的平方。
+- 5:45 所以我们实际应用了它。
+- 5:46 我们用 x 的平方代替了 f of x。
+- 5:48我们写 x 加 h 的平方，而不是 x 加 h 的 f。
+- 5:52那么让我们看看是否能评估这个极限。
+- 5:56所以当 h 接近时，这个值将等于极限值。
+- 6:040 把它平方。
+- 6:06 我会用同样的颜色来做。
+- 6:09这是 x 的平方加上 2xh 加上 h 的平方，然后我们有
+- 6:19这里是减去 x 的平方。
+- 6:22我刚刚把这个家伙乘出来了。
+- 6:24 然后全部除以 h。
+- 6:27现在让我们看看能不能再简化一点。
+- 6:30好了，你马上就能看到你有一个 x 的平方，你
+- 6:32 有一个负 x 的平方，所以这两个就抵消了。
+- 6:35 然后我们可以用 h 除以分子和
+- 6:36分母除以 h。
+- 6:38所以这就简化为--所以我们得到 x 的质数等于--
+- 6:44 如果我们把分子和分母除以h
+- 6:46 我们得到 2x 加 h。
+- 6:50 对不起，我忘了我的极限。
+- 6:52 等于极限。
+- 6:53非常重要。
+- 6:54 当 h 接近 0 时的极限，用 h 除以一切，然后
+- 7:01你得到2x加h的平方除以h就是h。
+- 7:08 如果你还记得上一个视频，当我们用一个
+- 7:10 特别的 x，我们说 x 等于 3，我们得到了 6
+- 7:13 加上 delta x。
+- 7:14或者这里是 6 加 h，所以非常相似。
+- 7:17所以，如果你把这里有限的h趋近于0，那
+- 7:20 就会消失。
+- 7:21所以这里等于2x。
+- 7:24所以我们刚刚发现，如果x的f--这是一个很大的结果。
+- 7:28 太令人兴奋了！
+- 7:30如果 x 的 f 等于 x 的平方，那么 x 的质数 f
+- 7:35 x 的质数等于 2x。
+- 7:37这就是我们刚刚发现的。
+- 7:39 我想让你们明白
+- 7:41 如何理解这一点。
+- 7:42 如果你给我一个 x 的值，它就会告诉你在那个值上
+- 7:45 函数在这一点上的值。
+- 7:47 在 x 的质点上，它将告诉你
+- 7:48 该点的斜率。
+- 7:49 我来画一下。
+- 7:51因为这是一个关键的认识。
+- 7:53 你可能会觉得，你知道，这最初可能有点
+- 7:56不直观地认为一个函数给了我们
+- 7:58 在任何一点上，另一个函数的斜率。
+- 8:02 所以看起来是这样的。
+- 8:05 让我画得整齐一点。
+- 8:07啊，还是没那么整齐。
+- 8:10很满意。
+- 8:11我来画正坐标。
+- 8:13好吧，我就画整个--曲线看起来
+- 8:15类似这样
+- 8:17现在这是 x 的 f 曲线。
+- 8:20这是 x 的 f 等于 x 的平方的曲线。
+- 8:23就像这样。
+- 8:24所以，如果你给我一个点。
+- 8:26 你给我点 7。
+- 8:27你应用，把它放在这里，然后平方。
+- 8:30然后映射到数字 49。
+- 8:34所以你就得到了数字 49。
+- 8:36 这是数字 7，49。
+- 8:38 你已经习惯了在这里处理函数。
+- 8:40 那什么是 7 的质数 f 呢？
+- 8:43 7的f质数。
+- 8:45 你说 2 乘以 7 等于 14。
+- 8:47 这里的 14 是什么数字？
+- 8：49这是什么东西？
+- 8:51嗯，这是切线的斜率。
+- 8：53 x等于7。
+- 8:55所以，如果我取这一点，画一条切线--一个
+- 8:59 与我们的曲线擦过的点--如果我只是
+- 9:02画一条切线。
+- 9:03这对我来说还不够切。
+- 9:06所以这就是我的切线。
+- 9:08 你明白了吧。
+- 9:10这家伙的斜率--你把Y的变化与你的
+- 9:13 x的变化等于14。
+- 9:16y处的曲线斜率等于7
+- 9:18 是一条相当陡峭的曲线
+- 9:20如果你想找到斜率，假设这个
+- 9:21 是 y -- 假设它的 x 等于 2。
+- 9:25 我说 x 等于 7 时，斜率是 14。
+- 9：30 x等于2时，斜率是多少？
+- 9:32那么，你可以算出 2 的质数 f，等于 2 乘以
+- 9：372，等于4。
+- 9:38所以这里的斜率就是4。
+- 9:43可以说 m 等于 4。
+- 9:46 0的质数f是多少？
+- 9：50f是质数。
+- 9:51 我们知道0的f是0，对吗？
+- 9:530 平方是 0。
+- 9:55 那么什么是 0 的 f 的质数呢？
+- 9:57那么，2乘以0等于0。
+- 9:59也等于0。
+- 10:00这又是什么意思？
+- 10:01怎么解释？
+- 10:03 意思是切线的斜率为 0。
+- 10:05所以斜率为0的直线看起来是这样的。
+- 10:08看起来就像一条水平线。
+- 10:09看起来差不多。
+- 10:11 一条水平线将与
+- 10:14曲线的Y等于0。
+- 10:15让我们再试一次。
+- 10:17让我们试试负1点。
+- 10:23假设我们就在这里，x等于负1。
+- 10:26所以减1的F，你只需将其平方。
+- 10:29因为我们处理的是 x 的平方。
+- 10:30所以等于1。
+- 10:31就是这一点。
+- 10:33减1的质数f是多少？
+- 10:36负1的f质数是负1的2倍。
+- 10:402 负数的2倍就是负2。
+- 10:42这是什么意思？
+- 10:43 這表示 x 處的切線斜率等於
+- 10:471 對於這條曲線，對於這個函數，是負 2。
+- 10:51所以，如果我在这里画出切线--切线就像这样
+- 10:54 切线就像这样--看，它是一条向下
+- 10:57 斜线。
+- 10:57 这就说得通了。
+- 10:58这里的斜率等于负2。
+
+
+
+- •Current transcript segment:0:00In the last video, we found the slope at a particular point of
+- 0:04the curve y is equal to x squared.
+- 0:07But let's see if we can generalize this and come up
+- 0:09with a formula that finds us the slope at any point of the
+- 0:12curve y is equal to x squared.
+- 0:15So let me redraw my function here.
+- 0:18It never hurts to have a nice drawing.
+- 0:21So that is my y-axis.
+- 0:24That is my x-axis right there.
+- 0:28My x-axis.
+- 0:29Let me draw my curve.
+- 0:30It looks something like that.
+- 0:32You've seen that multiple times.
+- 0:34This is y is equal to x squared.
+- 0:37So let's be very general right now.
+- 0:39Remember, if we want to find-- let me just write the
+- 0:42definition of our derivative.
+- 0:44So if we have some point right here-- let's call that x.
+- 0:48So we want to be very general.
+- 0:49We want to find the slope at the point x.
+- 0:52We want to find a function where you give me an x
+- 0:55and I'll tell you the slope at that point.
+- 0:57We're going to call that f prime of x.
+- 0:59That's going to be the derivative of f of x.
+- 1:06But all it does is, look, f of x, you give-- it's a function
+- 1:09that you give it an x, and it tells you the value of that.
+- 1:12And we draw the curve here.
+- 1:14With f of x, you give that same x but it's not going to tell
+- 1:19you the value of the curve.
+- 1:21It's not going to say, oh, this is your f of x.
+- 1:22It's going to give you the value of the slope of
+- 1:24the curve at that point.
+- 1:26So f of x, if you put it into that function, it should tell
+- 1:28you, oh, the slope at that point, is equal to-- you know,
+- 1:31if you put 3 there, you'll say, oh, the slope there
+- 1:33is equal to 6.
+- 1:34We saw that in the last example.
+- 1:35So that's what we want to do.
+- 1:37And we saw on the last-- I think it was 2-- videos ago,
+- 1:40that we defined f prime of x to be equal to-- just the--
+- 1:47well, I'll write it this way.
+- 1:48It's the slope of the secant line between x and some
+- 1:51point that's a little bit further away from x.
+- 1:53So the slope of the secant line is change in y.
+- 1:56So it's the y value of the point that's a little
+- 2:00bit further away from x.
+- 2:02So f of x plus h minus the y value at x, right?
+- 2:07Because this is right here.
+- 2:08This is f of x.
+- 2:11So minus f of x.
+- 2:13All of that over the change in x.
+- 2:15So if this is x plus h here, the change in x
+- 2:19is x plus h minus x.
+- 2:21Or this distance right here is just h.
+- 2:23The change in x is going to be equal to h.
+- 2:26So that's just slope of the secant line, between
+- 2:29any 2 points like that.
+- 2:31And we said, hey, we could find the slope of the tangent line
+- 2:33if we just take the limit of this as it approaches--
+- 2:36as h approaches 0.
+- 2:40And then we'll be finding the slope of the tangent line.
+- 2:42Now let's apply this idea to a particular function, f of
+- 2:48x is equal to x squared.
+- 2:49Or y is equal to x squared.
+- 2:52So here, we could have the point-- we could consider this
+- 2:55to be the point x-- x squared.
+- 2:58So f of x is just equal to x squared.
+- 3:01And then this would be the point-- let me do it in
+- 3:05a more vibrant color.
+- 3:07This is the point x plus h-- that's this point right here.
+- 3:11It's a little bit further down.
+- 3:13And then x plus h squared.
+- 3:19And you know, in the last video, we did this
+- 3:20for a particular x.
+- 3:21We did it for 3.
+- 3:22But now I want a general formula.
+- 3:24You give me any x and I won't have to do what I did in the
+- 3:26last video for any particular number.
+- 3:28I'll have a general function.
+- 3:29You give me 7, I'll tell you what the slope is at 7.
+- 3:31You give me negative 3, I'll tell you what the slope
+- 3:33is at negative 3.
+- 3:34You give me 100,000, I'll tell you what the
+- 3:36slope is at 100,000.
+- 3:37So let's apply it here.
+- 3:39So we want to find the change in y over the change in x.
+- 3:45So first of all, the change in y is this guy's y value,
+- 3:51which is x plus h squared.
+- 3:57That's this guy's y value right here.
+- 3:59That's this right here.
+- 4:00That's x plus h squared.
+- 4:02I just took x plus h, evaluated, I squared it, and
+- 4:06that's its point on the curve.
+- 4:07So it's x plus h squared.
+- 4:08So that's there right there.
+- 4:10And then what's this value?
+- 4:12f of x right here is equal to-- I know it's getting messy--
+- 4:15is equal to x squared.
+- 4:16If you take your x, you evaluate the function
+- 4:18at that point, you're going to get x squared.
+- 4:20So it's equal to minus x squared.
+- 4:23This is your change in y.
+- 4:24That's this distance right there.
+- 4:29And just to relate it to our definition of a derivative,
+- 4:33this blue thing right here is equivalent to this
+- 4:35thing right here.
+- 4:36We just evaluated our function.
+- 4:39Our function is f of x is equal to x squared.
+- 4:42We just evaluated when x is equal to x plus h.
+- 4:46So if you have to square it, if I put an a there,
+- 4:48it'd be a squared.
+- 4:49If I put an apple there, it'd be apple squared.
+- 4:51If I put an x plus h in there, it's going to
+- 4:52be x plus h squared.
+- 4:54So this is that thing.
+- 4:56And then, this thing right here is just the function evaluated
+- 5:00at the point in question.
+- 5:01Right there.
+- 5:02So this is our change in y.
+- 5:05And let's divide that by our change in x.
+- 5:07Our change in x-- if this is x plus h and this is just x, our
+- 5:10change in x is just going to be h.
+- 5:13So that's where we get that term from.
+- 5:14So this is just a slope between these 2 points.
+- 5:17This is just a slope between those two points.
+- 5:19But, of course, we want to find-- the limit at this point
+- 5:22gets closer and closer to this point, and this point gets
+- 5:25closer and closer to that point.
+- 5:26So this becomes a tangent line.
+- 5:29So we're going to take the limit as h approaches 0, and
+- 5:34this is our f prime of x.
+- 5:37And this is the exact same definition of this, instead
+- 5:39of being general and saying, for any function, we know
+- 5:42what the function was.
+- 5:43It was f of x is equal to x squared.
+- 5:45So we actually applied it.
+- 5:46Instead of f of x, we wrote x squared.
+- 5:48Instead of f of x plus h, we wrote x plus h squared.
+- 5:52So let's see if we can evaluate this limit.
+- 5:56So this is going to be equal to the limit as h approaches
+- 6:040 to square this out.
+- 6:06I'll do it in the same color.
+- 6:09That's x squared plus 2xh plus h squared, and then we have
+- 6:19this minus x squared over here.
+- 6:22I just multiplied this guy out over here.
+- 6:24And then all of that is divided by h.
+- 6:27Now let's see if we can simplify this a little bit.
+- 6:30Well, you immediately see you have an x squared and you
+- 6:32have a minus x squared, so those cancel out.
+- 6:35And then we can divide the numerator and the
+- 6:36denominator by h.
+- 6:38So this simplifies to-- so we get f prime of x is equal to--
+- 6:44if we divide the numerator and the denominator by h--
+- 6:46we get 2x plus h.
+- 6:50I'm sorry, I forgot my limit.
+- 6:52It equals the limit.
+- 6:53Very important.
+- 6:54Limit as h approaches 0 of divide everything by h, and
+- 7:01you get 2x plus h squared divided by h is h.
+- 7:08And if you remember the last video, when we did it with a
+- 7:10particular x, we said x is equal to 3, we got 6
+- 7:13plus delta x here.
+- 7:14Or 6 plus h here, so it's very similar.
+- 7:17So if you take the limited h approaches 0 here, that's
+- 7:20just going to disappear.
+- 7:21So this is just going to be equal to 2x.
+- 7:24So we just figured out that if f of x-- this is a big result.
+- 7:28This is exciting!
+- 7:30That if f of x is equal to x squared, f prime
+- 7:35of x is equal to 2x.
+- 7:37That's what we just figured out.
+- 7:39And I wanted to make sure you understand
+- 7:41how to interpret this.
+- 7:42f of x, if you give me a value, is going to tell you the value
+- 7:45of the function at that point.
+- 7:47At prime of x it's going to tell you the
+- 7:48slope at that point.
+- 7:49Let me draw that.
+- 7:51Because this is a key realization.
+- 7:53And you might, you know, it's kind of maybe initially
+- 7:56unintuitive to think of a function that gives us the
+- 7:58slope, at any point, of another function.
+- 8:02So it looks like this.
+- 8:05Let me draw a little neater than that.
+- 8:07Ah, it's still not that neat.
+- 8:10That's satisfactory.
+- 8:11Let me just draw it in the positive coordinate.
+- 8:13Well, I'll just draw the whole-- the curve looks
+- 8:15something like that.
+- 8:17Now this is the curve of f of x.
+- 8:20This is the curve of f of x is equal to x squared.
+- 8:23Just like that.
+- 8:24So if you give me a point.
+- 8:26You give me the point 7.
+- 8:27You apply, you put it in here, you square it.
+- 8:30And it is mapped to the number 49.
+- 8:34So you get the number 49 right there.
+- 8:36This is the number 7, 49.
+- 8:38You're used to dealing with functions right there.
+- 8:40But what is f prime of 7?
+- 8:43f prime of 7.
+- 8:45You say, 2 times 7 is equal to 14.
+- 8:47What is this 14 number here?
+- 8:49What is this thing?
+- 8:51Well, this is the slope of the tangent line
+- 8:53at x is equal to 7.
+- 8:55So if I were to take that point and draw a tangent line-- a
+- 8:59point that just grazes our curve-- if I were to just
+- 9:02draw a tangent line.
+- 9:03That wasn't tangent enough for me.
+- 9:06So that's my tangent line right there.
+- 9:08You get the idea.
+- 9:10The slope of this guy-- you do your change in y over your
+- 9:13change in x-- is going to be equal to 14.
+- 9:16The slope of the curve at y is equal to 7-- is
+- 9:18a pretty steep curve.
+- 9:20If you wanted to find the slope, let's say that this
+- 9:21is y-- let's say it's x is equal to 2.
+- 9:25I said at x is equal to 7, the slope is 14.
+- 9:30At x is equal to 2, what is the slope?
+- 9:32Well, you figure out f prime of 2, which is equal to 2 times
+- 9:372, which is equal to 4.
+- 9:38So the slope here is 4.
+- 9:43You could say m is equal to 4. m for slope.
+- 9:46What is f prime of 0?
+- 9:50f prime.
+- 9:51We know that f of 0 is 0, right?
+- 9:530 squared is 0.
+- 9:55But what is f prime of 0?
+- 9:57Well, 2 times 0 is 0.
+- 9:59That's also equal to 0.
+- 10:00But what does that mean?
+- 10:01What's the interpretation?
+- 10:03It means the slope of the tangent line is 0.
+- 10:05So a 0 sloped line looks like this.
+- 10:08Looks just like a horizontal line.
+- 10:09And that looks about right.
+- 10:11A horizontal line would be tangent to the
+- 10:14curve at y equals 0.
+- 10:15Let's try another one.
+- 10:17Let's try the point minus 1.
+- 10:23So let's say we're right there. x is equal to minus 1.
+- 10:26So f of minus 1, you just square it.
+- 10:29Because we're dealing with x squared.
+- 10:30So it's equal to 1.
+- 10:31That's that point right there.
+- 10:33What is f prime of minus 1?
+- 10:36f prime of minus 1 is 2 times minus 1.
+- 10:402 times minus is minus 2.
+- 10:42What does that mean?
+- 10:43It means that the slope of the tangent line at x is equal to
+- 10:471, to this curve, to the function, is minus 2.
+- 10:51So if I were to draw the tangent line here-- the tangent
+- 10:54line looks like that-- and look, it is a downward
+- 10:57sloping line.
+- 10:57And it makes sense.
+- 10:58The slope here is equal to minus 2.
